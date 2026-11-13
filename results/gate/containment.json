@@ -1,0 +1,220 @@
+{
+ "alpha": 0.1,
+ "mu_m": [
+  0.03,
+  0.04,
+  0.05,
+  0.075,
+  0.1
+ ],
+ "tasks": {
+  "franka_fmb": [
+   {
+    "mu_m": 0.03,
+    "handovers": 1500,
+    "containment": 200.0,
+    "recursion": 300,
+    "episodes": 100,
+    "episodes_containment": 0.0,
+    "episodes_recursion": 0,
+    "recursion_bound_violations": 3
+   },
+   {
+    "mu_m": 0.04,
+    "handovers": 1500,
+    "containment": 698.0,
+    "recursion": 1052,
+    "episodes": 100,
+    "episodes_containment": 0.0,
+    "episodes_recursion": 0,
+    "recursion_bound_violations": 3
+   },
+   {
+    "mu_m": 0.05,
+    "handovers": 1500,
+    "containment": 1179.0,
+    "recursion": 1400,
+    "episodes": 100,
+    "episodes_containment": 0.0,
+    "episodes_recursion": 0,
+    "recursion_bound_violations": 3
+   },
+   {
+    "mu_m": 0.075,
+    "handovers": 1500,
+    "containment": 1500.0,
+    "recursion": 1500,
+    "episodes": 100,
+    "episodes_containment": 99.0,
+    "episodes_recursion": 99,
+    "recursion_bound_violations": 3
+   },
+   {
+    "mu_m": 0.1,
+    "handovers": 1500,
+    "containment": 1500.0,
+    "recursion": 1500,
+    "episodes": 100,
+    "episodes_containment": 99.0,
+    "episodes_recursion": 99,
+    "recursion_bound_violations": 3
+   }
+  ],
+  "franka_peg_insertion": [
+   {
+    "mu_m": 0.03,
+    "handovers": 700,
+    "containment": 100.0,
+    "recursion": 100,
+    "episodes": 100,
+    "episodes_containment": 0.0,
+    "episodes_recursion": 0,
+    "recursion_bound_violations": 1
+   },
+   {
+    "mu_m": 0.04,
+    "handovers": 700,
+    "containment": 300.0,
+    "recursion": 401,
+    "episodes": 100,
+    "episodes_containment": 0.0,
+    "episodes_recursion": 0,
+    "recursion_bound_violations": 1
+   },
+   {
+    "mu_m": 0.05,
+    "handovers": 700,
+    "containment": 601.0,
+    "recursion": 700,
+    "episodes": 100,
+    "episodes_containment": 1.0,
+    "episodes_recursion": 99,
+    "recursion_bound_violations": 1
+   },
+   {
+    "mu_m": 0.075,
+    "handovers": 700,
+    "containment": 700.0,
+    "recursion": 700,
+    "episodes": 100,
+    "episodes_containment": 99.0,
+    "episodes_recursion": 99,
+    "recursion_bound_violations": 1
+   },
+   {
+    "mu_m": 0.1,
+    "handovers": 700,
+    "containment": 700.0,
+    "recursion": 700,
+    "episodes": 100,
+    "episodes_containment": 99.0,
+    "episodes_recursion": 99,
+    "recursion_bound_violations": 1
+   }
+  ],
+  "franka_cube_stack": [
+   {
+    "mu_m": 0.03,
+    "handovers": 697,
+    "containment": 199.0,
+    "recursion": 199,
+    "episodes": 100,
+    "episodes_containment": 0.0,
+    "episodes_recursion": 0,
+    "recursion_bound_violations": 5
+   },
+   {
+    "mu_m": 0.04,
+    "handovers": 697,
+    "containment": 236.0,
+    "recursion": 315,
+    "episodes": 100,
+    "episodes_containment": 0.0,
+    "episodes_recursion": 0,
+    "recursion_bound_violations": 5
+   },
+   {
+    "mu_m": 0.05,
+    "handovers": 697,
+    "containment": 478.0,
+    "recursion": 597,
+    "episodes": 100,
+    "episodes_containment": 0.0,
+    "episodes_recursion": 0,
+    "recursion_bound_violations": 5
+   },
+   {
+    "mu_m": 0.075,
+    "handovers": 697,
+    "containment": 672.0,
+    "recursion": 697,
+    "episodes": 100,
+    "episodes_containment": 75.0,
+    "episodes_recursion": 100,
+    "recursion_bound_violations": 5
+   },
+   {
+    "mu_m": 0.1,
+    "handovers": 697,
+    "containment": 697.0,
+    "recursion": 697,
+    "episodes": 100,
+    "episodes_containment": 100.0,
+    "episodes_recursion": 100,
+    "recursion_bound_violations": 5
+   }
+  ],
+  "franka_drawer": [
+   {
+    "mu_m": 0.03,
+    "handovers": 1300,
+    "containment": 126.0,
+    "recursion": 300,
+    "episodes": 100,
+    "episodes_containment": 0.0,
+    "episodes_recursion": 0,
+    "recursion_bound_violations": 0
+   },
+   {
+    "mu_m": 0.04,
+    "handovers": 1300,
+    "containment": 300.0,
+    "recursion": 700,
+    "episodes": 100,
+    "episodes_containment": 0.0,
+    "episodes_recursion": 0,
+    "recursion_bound_violations": 0
+   },
+   {
+    "mu_m": 0.05,
+    "handovers": 1300,
+    "containment": 900.0,
+    "recursion": 1000,
+    "episodes": 100,
+    "episodes_containment": 0.0,
+    "episodes_recursion": 0,
+    "recursion_bound_violations": 0
+   },
+   {
+    "mu_m": 0.075,
+    "handovers": 1300,
+    "containment": 1200.0,
+    "recursion": 1200,
+    "episodes": 100,
+    "episodes_containment": 0.0,
+    "episodes_recursion": 0,
+    "recursion_bound_violations": 0
+   },
+   {
+    "mu_m": 0.1,
+    "handovers": 1300,
+    "containment": 1300.0,
+    "recursion": 1300,
+    "episodes": 100,
+    "episodes_containment": 100.0,
+    "episodes_recursion": 100,
+    "recursion_bound_violations": 0
+   }
+  ]
+ }
+}

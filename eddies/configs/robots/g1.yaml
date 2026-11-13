@@ -1,0 +1,19 @@
+# Unitree G1 humanoid (29 DoF) with Dex3-1 hands: peg insertion and drawer.
+name: g1
+display: Unitree G1 + Dex3
+short: G1
+family: g1
+color: orange
+menagerie_xml: unitree_g1/g1_with_hands.xml
+skillbook: eddies.envs.skillbook.g1:G1_BOOK
+primitives: [reach, grasp, lift, transport, place, release, insert, push, pull, retreat]
+tasks: [g1_peg_insertion_sb, g1_drawer_sb]
+n_eddies: 25
+rho_step: 0.0075                  # 0.15 m/s hand speed at 50 Hz
+control_dt: 0.02
+physics_dt: 0.002
+embedding:
+  names: [x, y, z, rx, ry, rz, grasp]
+  weights: [1.0, 1.0, 1.0, 0.3, 0.3, 0.3, 0.05]
+  ranges: {x: [-0.05, 0.75], y: [-0.55, 0.25], z: [0.55, 1.35]}
+block: {pose: [0, 1, 2, 3, 4, 5], position: [0, 1, 2]}

@@ -1,0 +1,9118 @@
+{
+ "about": "counts of eddies.cert.tables.gate_margin from the per-step logs <task>.npz / <task>_a.json (dataset derived/gate_margin/); per_task[mu][method][task] = {n, would, caught, missed, false, finished}",
+ "mu": [
+  0.02,
+  0.025,
+  0.03,
+  0.035,
+  0.04,
+  0.045,
+  0.05
+ ],
+ "tasks": {
+  "franka_fmb": {
+   "q0": 1.2160365790558048,
+   "U_plan": 0.03559111063623328,
+   "check_b": {
+    "0.03": [
+     0,
+     0
+    ],
+    "0.05": [
+     188,
+     188
+    ],
+    "0.075": [
+     188,
+     188
+    ],
+    "0.1": [
+     188,
+     188
+    ],
+    "0.15": [
+     188,
+     188
+    ]
+   }
+  },
+  "franka_peg_insertion": {
+   "q0": 1.09736124445467,
+   "U_plan": 0.03531306971843759,
+   "check_b": {
+    "0.03": [
+     0,
+     0
+    ],
+    "0.05": [
+     184,
+     184
+    ],
+    "0.075": [
+     184,
+     184
+    ],
+    "0.1": [
+     184,
+     184
+    ],
+    "0.15": [
+     184,
+     184
+    ]
+   }
+  },
+  "franka_cube_stack": {
+   "q0": 1.232630073015472,
+   "U_plan": 0.042987065542925536,
+   "check_b": {
+    "0.03": [
+     0,
+     0
+    ],
+    "0.05": [
+     180,
+     180
+    ],
+    "0.075": [
+     180,
+     180
+    ],
+    "0.1": [
+     180,
+     180
+    ],
+    "0.15": [
+     180,
+     180
+    ]
+   }
+  },
+  "franka_drawer": {
+   "q0": 1.1835817945620253,
+   "U_plan": 0.05240761437484033,
+   "check_b": {
+    "0.03": [
+     0,
+     0
+    ],
+    "0.05": [
+     0,
+     0
+    ],
+    "0.075": [
+     169,
+     169
+    ],
+    "0.1": [
+     169,
+     169
+    ],
+    "0.15": [
+     169,
+     169
+    ]
+   }
+  },
+  "g1_peg_insertion_sb": {
+   "q0": 2.7952242347425456,
+   "U_plan": 0.06572653078308986,
+   "check_b": {
+    "0.03": [
+     0,
+     0
+    ],
+    "0.05": [
+     0,
+     0
+    ],
+    "0.075": [
+     172,
+     172
+    ],
+    "0.1": [
+     172,
+     172
+    ],
+    "0.15": [
+     172,
+     172
+    ]
+   }
+  },
+  "g1_drawer_sb": {
+   "q0": 1.3192434792393948,
+   "U_plan": 0.08250141989311281,
+   "check_b": {
+    "0.03": [
+     0,
+     0
+    ],
+    "0.05": [
+     0,
+     0
+    ],
+    "0.075": [
+     0,
+     0
+    ],
+    "0.1": [
+     190,
+     190
+    ],
+    "0.15": [
+     190,
+     190
+    ]
+   }
+  },
+  "leap_wheel_sb": {
+   "q0": 1.4536536282609978,
+   "U_plan": 0.11865920329552375,
+   "check_b": {
+    "0.03": [
+     0,
+     0
+    ],
+    "0.05": [
+     0,
+     0
+    ],
+    "0.075": [
+     0,
+     0
+    ],
+    "0.1": [
+     0,
+     0
+    ],
+    "0.15": [
+     180,
+     180
+    ]
+   }
+  },
+  "leap_peg_tighten_sb": {
+   "q0": 1.1230773335876865,
+   "U_plan": 0.0457237344139719,
+   "check_b": {
+    "0.03": [
+     0,
+     0
+    ],
+    "0.05": [
+     174,
+     174
+    ],
+    "0.075": [
+     174,
+     174
+    ],
+    "0.1": [
+     174,
+     174
+    ],
+    "0.15": [
+     174,
+     174
+    ]
+   }
+  },
+  "aero_wheel_sb": {
+   "q0": 1.199058222164434,
+   "U_plan": 0.06536095295719883,
+   "check_b": {
+    "0.03": [
+     0,
+     0
+    ],
+    "0.05": [
+     0,
+     0
+    ],
+    "0.075": [
+     176,
+     176
+    ],
+    "0.1": [
+     176,
+     176
+    ],
+    "0.15": [
+     176,
+     176
+    ]
+   }
+  },
+  "aero_peg_tighten_sb": {
+   "q0": 1.093021928560556,
+   "U_plan": 0.0450269815564895,
+   "check_b": {
+    "0.03": [
+     0,
+     0
+    ],
+    "0.05": [
+     164,
+     164
+    ],
+    "0.075": [
+     164,
+     164
+    ],
+    "0.1": [
+     164,
+     164
+    ],
+    "0.15": [
+     164,
+     164
+    ]
+   }
+  }
+ },
+ "per_task": {
+  "0.02": {
+   "a self-cal gate": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 200,
+     "caught": 193,
+     "missed": 7,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 200,
+     "caught": 194,
+     "missed": 6,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 200,
+     "caught": 175,
+     "missed": 25,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 26,
+     "caught": 22,
+     "missed": 4,
+     "false": 21,
+     "finished": 153
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 196,
+     "missed": 4,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 101,
+     "finished": 98
+    }
+   },
+   "b fixed gate": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 26,
+     "caught": 26,
+     "missed": 0,
+     "false": 174,
+     "finished": 0
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    }
+   },
+   "c one-step, fixed cal (env. raised)": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 26,
+     "caught": 26,
+     "missed": 0,
+     "false": 174,
+     "finished": 0
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 17,
+     "finished": 182
+    }
+   },
+   "c' one-step, fixed cal (eps fixed)": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 26,
+     "caught": 26,
+     "missed": 0,
+     "false": 174,
+     "finished": 0
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 5,
+     "finished": 194
+    }
+   },
+   "monitor margin 0 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 200,
+     "caught": 0,
+     "missed": 200,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 200,
+     "caught": 0,
+     "missed": 200,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 200,
+     "caught": 0,
+     "missed": 200,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 200,
+     "caught": 0,
+     "missed": 200,
+     "false": 0,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 26,
+     "caught": 0,
+     "missed": 26,
+     "false": 0,
+     "finished": 174
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 0,
+     "missed": 200,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 0,
+     "missed": 200,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 0,
+     "missed": 200,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 0,
+     "missed": 200,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 1,
+     "caught": 0,
+     "missed": 1,
+     "false": 0,
+     "finished": 199
+    }
+   },
+   "monitor margin 0.25 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 26,
+     "caught": 20,
+     "missed": 6,
+     "false": 4,
+     "finished": 170
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 21,
+     "finished": 178
+    }
+   },
+   "monitor margin 0.5 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 26,
+     "caught": 26,
+     "missed": 0,
+     "false": 174,
+     "finished": 0
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    }
+   },
+   "monitor margin 1 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 26,
+     "caught": 26,
+     "missed": 0,
+     "false": 174,
+     "finished": 0
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    }
+   },
+   "monitor margin 1.5 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 26,
+     "caught": 26,
+     "missed": 0,
+     "false": 174,
+     "finished": 0
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    }
+   },
+   "monitor margin 2 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 26,
+     "caught": 26,
+     "missed": 0,
+     "false": 174,
+     "finished": 0
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    }
+   },
+   "monitor velocity c=1": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 200,
+     "caught": 187,
+     "missed": 13,
+     "false": 0,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 26,
+     "caught": 18,
+     "missed": 8,
+     "false": 4,
+     "finished": 170
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 198,
+     "missed": 2,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 14,
+     "finished": 185
+    }
+   },
+   "monitor velocity c=2": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 26,
+     "caught": 20,
+     "missed": 6,
+     "false": 9,
+     "finished": 165
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 198,
+     "missed": 2,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 40,
+     "finished": 159
+    }
+   },
+   "monitor velocity c=4": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 26,
+     "caught": 26,
+     "missed": 0,
+     "false": 174,
+     "finished": 0
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    }
+   }
+  },
+  "0.025": {
+   "a self-cal gate": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 169,
+     "caught": 169,
+     "missed": 0,
+     "false": 26,
+     "finished": 5
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 112,
+     "caught": 112,
+     "missed": 0,
+     "false": 55,
+     "finished": 33
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 42,
+     "caught": 42,
+     "missed": 0,
+     "false": 138,
+     "finished": 20
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 8,
+     "caught": 8,
+     "missed": 0,
+     "false": 138,
+     "finished": 54
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 18,
+     "missed": 4,
+     "false": 8,
+     "finished": 170
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 87,
+     "caught": 87,
+     "missed": 0,
+     "false": 103,
+     "finished": 10
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 18,
+     "finished": 182
+    }
+   },
+   "b fixed gate": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 169,
+     "caught": 169,
+     "missed": 0,
+     "false": 31,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 112,
+     "caught": 112,
+     "missed": 0,
+     "false": 88,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 42,
+     "caught": 42,
+     "missed": 0,
+     "false": 158,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 8,
+     "caught": 8,
+     "missed": 0,
+     "false": 192,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 22,
+     "missed": 0,
+     "false": 178,
+     "finished": 0
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 87,
+     "caught": 87,
+     "missed": 0,
+     "false": 113,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    }
+   },
+   "c one-step, fixed cal (env. raised)": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 169,
+     "caught": 169,
+     "missed": 0,
+     "false": 27,
+     "finished": 4
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 112,
+     "caught": 112,
+     "missed": 0,
+     "false": 80,
+     "finished": 8
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 42,
+     "caught": 42,
+     "missed": 0,
+     "false": 157,
+     "finished": 1
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 8,
+     "caught": 8,
+     "missed": 0,
+     "false": 192,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 22,
+     "missed": 0,
+     "false": 8,
+     "finished": 170
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 87,
+     "caught": 87,
+     "missed": 0,
+     "false": 113,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    }
+   },
+   "c' one-step, fixed cal (eps fixed)": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 169,
+     "caught": 169,
+     "missed": 0,
+     "false": 27,
+     "finished": 4
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 112,
+     "caught": 112,
+     "missed": 0,
+     "false": 80,
+     "finished": 8
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 42,
+     "caught": 41,
+     "missed": 1,
+     "false": 156,
+     "finished": 2
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 8,
+     "caught": 8,
+     "missed": 0,
+     "false": 192,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 22,
+     "missed": 0,
+     "false": 8,
+     "finished": 170
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 87,
+     "caught": 87,
+     "missed": 0,
+     "false": 113,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 0 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 169,
+     "caught": 0,
+     "missed": 169,
+     "false": 0,
+     "finished": 31
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 112,
+     "caught": 0,
+     "missed": 112,
+     "false": 0,
+     "finished": 88
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 42,
+     "caught": 0,
+     "missed": 42,
+     "false": 0,
+     "finished": 158
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 8,
+     "caught": 0,
+     "missed": 8,
+     "false": 0,
+     "finished": 192
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 0,
+     "missed": 22,
+     "false": 0,
+     "finished": 178
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 0,
+     "missed": 200,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 0,
+     "missed": 200,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 0,
+     "missed": 200,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 87,
+     "caught": 0,
+     "missed": 87,
+     "false": 0,
+     "finished": 113
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 0.25 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 169,
+     "caught": 169,
+     "missed": 0,
+     "false": 31,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 112,
+     "caught": 112,
+     "missed": 0,
+     "false": 88,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 42,
+     "caught": 42,
+     "missed": 0,
+     "false": 155,
+     "finished": 3
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 8,
+     "caught": 8,
+     "missed": 0,
+     "false": 192,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 22,
+     "missed": 0,
+     "false": 0,
+     "finished": 178
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 87,
+     "caught": 87,
+     "missed": 0,
+     "false": 87,
+     "finished": 26
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    }
+   },
+   "monitor margin 0.5 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 169,
+     "caught": 169,
+     "missed": 0,
+     "false": 31,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 112,
+     "caught": 112,
+     "missed": 0,
+     "false": 88,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 42,
+     "caught": 42,
+     "missed": 0,
+     "false": 158,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 8,
+     "caught": 8,
+     "missed": 0,
+     "false": 192,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 22,
+     "missed": 0,
+     "false": 4,
+     "finished": 174
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 87,
+     "caught": 87,
+     "missed": 0,
+     "false": 113,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    }
+   },
+   "monitor margin 1 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 169,
+     "caught": 169,
+     "missed": 0,
+     "false": 31,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 112,
+     "caught": 112,
+     "missed": 0,
+     "false": 88,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 42,
+     "caught": 42,
+     "missed": 0,
+     "false": 158,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 8,
+     "caught": 8,
+     "missed": 0,
+     "false": 192,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 22,
+     "missed": 0,
+     "false": 178,
+     "finished": 0
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 87,
+     "caught": 87,
+     "missed": 0,
+     "false": 113,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    }
+   },
+   "monitor margin 1.5 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 169,
+     "caught": 169,
+     "missed": 0,
+     "false": 31,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 112,
+     "caught": 112,
+     "missed": 0,
+     "false": 88,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 42,
+     "caught": 42,
+     "missed": 0,
+     "false": 158,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 8,
+     "caught": 8,
+     "missed": 0,
+     "false": 192,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 22,
+     "missed": 0,
+     "false": 178,
+     "finished": 0
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 87,
+     "caught": 87,
+     "missed": 0,
+     "false": 113,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    }
+   },
+   "monitor margin 2 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 169,
+     "caught": 169,
+     "missed": 0,
+     "false": 31,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 112,
+     "caught": 112,
+     "missed": 0,
+     "false": 88,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 42,
+     "caught": 42,
+     "missed": 0,
+     "false": 158,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 8,
+     "caught": 8,
+     "missed": 0,
+     "false": 192,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 22,
+     "missed": 0,
+     "false": 178,
+     "finished": 0
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 87,
+     "caught": 87,
+     "missed": 0,
+     "false": 113,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    }
+   },
+   "monitor velocity c=1": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 169,
+     "caught": 169,
+     "missed": 0,
+     "false": 31,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 112,
+     "caught": 111,
+     "missed": 1,
+     "false": 82,
+     "finished": 6
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 42,
+     "caught": 42,
+     "missed": 0,
+     "false": 52,
+     "finished": 106
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 8,
+     "caught": 8,
+     "missed": 0,
+     "false": 21,
+     "finished": 171
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 18,
+     "missed": 4,
+     "false": 0,
+     "finished": 178
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 87,
+     "caught": 78,
+     "missed": 9,
+     "false": 43,
+     "finished": 70
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor velocity c=2": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 169,
+     "caught": 169,
+     "missed": 0,
+     "false": 31,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 112,
+     "caught": 112,
+     "missed": 0,
+     "false": 88,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 42,
+     "caught": 42,
+     "missed": 0,
+     "false": 158,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 8,
+     "caught": 8,
+     "missed": 0,
+     "false": 192,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 22,
+     "missed": 0,
+     "false": 8,
+     "finished": 170
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 87,
+     "caught": 84,
+     "missed": 3,
+     "false": 113,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    }
+   },
+   "monitor velocity c=4": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 169,
+     "caught": 169,
+     "missed": 0,
+     "false": 31,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 112,
+     "caught": 112,
+     "missed": 0,
+     "false": 88,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 42,
+     "caught": 42,
+     "missed": 0,
+     "false": 158,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 8,
+     "caught": 8,
+     "missed": 0,
+     "false": 192,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 22,
+     "missed": 0,
+     "false": 86,
+     "finished": 92
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 87,
+     "caught": 86,
+     "missed": 1,
+     "false": 113,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 108,
+     "finished": 92
+    }
+   }
+  },
+  "0.03": {
+   "a self-cal gate": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 90,
+     "finished": 108
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 58,
+     "finished": 142
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 16,
+     "missed": 6,
+     "false": 8,
+     "finished": 170
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 150,
+     "caught": 149,
+     "missed": 1,
+     "false": 50,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 199,
+     "missed": 1,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 19,
+     "caught": 19,
+     "missed": 0,
+     "false": 70,
+     "finished": 111
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    }
+   },
+   "b fixed gate": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 198,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 22,
+     "missed": 0,
+     "false": 178,
+     "finished": 0
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 150,
+     "caught": 150,
+     "missed": 0,
+     "false": 50,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 19,
+     "caught": 19,
+     "missed": 0,
+     "false": 181,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    }
+   },
+   "c one-step, fixed cal (env. raised)": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 9,
+     "finished": 189
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 66,
+     "finished": 134
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 22,
+     "missed": 0,
+     "false": 8,
+     "finished": 170
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 150,
+     "caught": 150,
+     "missed": 0,
+     "false": 50,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 199,
+     "missed": 1,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 19,
+     "caught": 19,
+     "missed": 0,
+     "false": 86,
+     "finished": 95
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "c' one-step, fixed cal (eps fixed)": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 0,
+     "missed": 1,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 0,
+     "missed": 1,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 2,
+     "caught": 1,
+     "missed": 1,
+     "false": 1,
+     "finished": 197
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 66,
+     "finished": 134
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 22,
+     "missed": 0,
+     "false": 8,
+     "finished": 170
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 150,
+     "caught": 150,
+     "missed": 0,
+     "false": 50,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 199,
+     "missed": 1,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 19,
+     "caught": 19,
+     "missed": 0,
+     "false": 86,
+     "finished": 95
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 0 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 0,
+     "missed": 1,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 0,
+     "missed": 1,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 2,
+     "caught": 0,
+     "missed": 2,
+     "false": 0,
+     "finished": 198
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 0,
+     "missed": 22,
+     "false": 0,
+     "finished": 178
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 150,
+     "caught": 0,
+     "missed": 150,
+     "false": 0,
+     "finished": 50
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 0,
+     "missed": 200,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 19,
+     "caught": 0,
+     "missed": 19,
+     "false": 0,
+     "finished": 181
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 0.25 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 1,
+     "finished": 197
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 4,
+     "finished": 196
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 21,
+     "missed": 1,
+     "false": 0,
+     "finished": 178
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 150,
+     "caught": 150,
+     "missed": 0,
+     "false": 20,
+     "finished": 30
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 137,
+     "finished": 63
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 19,
+     "caught": 19,
+     "missed": 0,
+     "false": 23,
+     "finished": 158
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 0.5 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 168,
+     "finished": 31
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 111,
+     "finished": 88
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 40,
+     "finished": 158
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 8,
+     "finished": 192
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 22,
+     "missed": 0,
+     "false": 0,
+     "finished": 178
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 150,
+     "caught": 150,
+     "missed": 0,
+     "false": 50,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 19,
+     "caught": 19,
+     "missed": 0,
+     "false": 68,
+     "finished": 113
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 1 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 198,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 22,
+     "missed": 0,
+     "false": 4,
+     "finished": 174
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 150,
+     "caught": 150,
+     "missed": 0,
+     "false": 50,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 19,
+     "caught": 19,
+     "missed": 0,
+     "false": 181,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    }
+   },
+   "monitor margin 1.5 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 198,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 22,
+     "missed": 0,
+     "false": 178,
+     "finished": 0
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 150,
+     "caught": 150,
+     "missed": 0,
+     "false": 50,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 19,
+     "caught": 19,
+     "missed": 0,
+     "false": 181,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    }
+   },
+   "monitor margin 2 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 198,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 22,
+     "missed": 0,
+     "false": 178,
+     "finished": 0
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 150,
+     "caught": 150,
+     "missed": 0,
+     "false": 50,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 19,
+     "caught": 19,
+     "missed": 0,
+     "false": 181,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    }
+   },
+   "monitor velocity c=1": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 0,
+     "finished": 198
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 2,
+     "finished": 198
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 19,
+     "missed": 3,
+     "false": 0,
+     "finished": 178
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 150,
+     "caught": 138,
+     "missed": 12,
+     "false": 10,
+     "finished": 40
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 199,
+     "missed": 1,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 19,
+     "caught": 17,
+     "missed": 2,
+     "false": 3,
+     "finished": 178
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor velocity c=2": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 26,
+     "finished": 173
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 15,
+     "finished": 184
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 14,
+     "finished": 184
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 80,
+     "finished": 120
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 22,
+     "missed": 0,
+     "false": 0,
+     "finished": 178
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 150,
+     "caught": 150,
+     "missed": 0,
+     "false": 49,
+     "finished": 1
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 180,
+     "finished": 20
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 19,
+     "caught": 19,
+     "missed": 0,
+     "false": 29,
+     "finished": 152
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor velocity c=4": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 198,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 22,
+     "caught": 22,
+     "missed": 0,
+     "false": 10,
+     "finished": 168
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 150,
+     "caught": 150,
+     "missed": 0,
+     "false": 50,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 200,
+     "caught": 200,
+     "missed": 0,
+     "false": 0,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 19,
+     "caught": 19,
+     "missed": 0,
+     "false": 181,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   }
+  },
+  "0.035": {
+   "a self-cal gate": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 11,
+     "finished": 189
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 23,
+     "finished": 177
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 17,
+     "caught": 13,
+     "missed": 4,
+     "false": 3,
+     "finished": 180
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 54,
+     "caught": 54,
+     "missed": 0,
+     "false": 124,
+     "finished": 22
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 69,
+     "caught": 68,
+     "missed": 1,
+     "false": 31,
+     "finished": 100
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 12,
+     "caught": 12,
+     "missed": 0,
+     "false": 13,
+     "finished": 175
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "b fixed gate": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 17,
+     "caught": 17,
+     "missed": 0,
+     "false": 183,
+     "finished": 0
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 54,
+     "caught": 54,
+     "missed": 0,
+     "false": 146,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 69,
+     "caught": 69,
+     "missed": 0,
+     "false": 131,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 12,
+     "caught": 12,
+     "missed": 0,
+     "false": 188,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    }
+   },
+   "c one-step, fixed cal (env. raised)": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 11,
+     "finished": 189
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 8,
+     "finished": 192
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 17,
+     "caught": 17,
+     "missed": 0,
+     "false": 10,
+     "finished": 173
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 54,
+     "caught": 54,
+     "missed": 0,
+     "false": 139,
+     "finished": 7
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 69,
+     "caught": 67,
+     "missed": 2,
+     "false": 19,
+     "finished": 112
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 12,
+     "caught": 12,
+     "missed": 0,
+     "false": 6,
+     "finished": 182
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "c' one-step, fixed cal (eps fixed)": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 0,
+     "missed": 1,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 0,
+     "missed": 1,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 8,
+     "finished": 192
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 17,
+     "caught": 17,
+     "missed": 0,
+     "false": 10,
+     "finished": 173
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 54,
+     "caught": 54,
+     "missed": 0,
+     "false": 139,
+     "finished": 7
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 69,
+     "caught": 64,
+     "missed": 5,
+     "false": 12,
+     "finished": 119
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 12,
+     "caught": 12,
+     "missed": 0,
+     "false": 3,
+     "finished": 185
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 0 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 0,
+     "missed": 1,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 0,
+     "missed": 1,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 17,
+     "caught": 0,
+     "missed": 17,
+     "false": 0,
+     "finished": 183
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 54,
+     "caught": 0,
+     "missed": 54,
+     "false": 0,
+     "finished": 146
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 69,
+     "caught": 0,
+     "missed": 69,
+     "false": 0,
+     "finished": 131
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 12,
+     "caught": 0,
+     "missed": 12,
+     "false": 0,
+     "finished": 188
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 0.25 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 17,
+     "caught": 17,
+     "missed": 0,
+     "false": 2,
+     "finished": 181
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 54,
+     "caught": 54,
+     "missed": 0,
+     "false": 60,
+     "finished": 86
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 69,
+     "caught": 69,
+     "missed": 0,
+     "false": 67,
+     "finished": 64
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 12,
+     "caught": 12,
+     "missed": 0,
+     "false": 4,
+     "finished": 184
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 0.5 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 2,
+     "finished": 198
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 17,
+     "caught": 17,
+     "missed": 0,
+     "false": 5,
+     "finished": 178
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 54,
+     "caught": 54,
+     "missed": 0,
+     "false": 96,
+     "finished": 50
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 69,
+     "caught": 69,
+     "missed": 0,
+     "false": 131,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 12,
+     "caught": 12,
+     "missed": 0,
+     "false": 7,
+     "finished": 181
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 1 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 168,
+     "finished": 31
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 111,
+     "finished": 88
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 42,
+     "finished": 158
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 8,
+     "finished": 192
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 17,
+     "caught": 17,
+     "missed": 0,
+     "false": 5,
+     "finished": 178
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 54,
+     "caught": 54,
+     "missed": 0,
+     "false": 146,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 69,
+     "caught": 69,
+     "missed": 0,
+     "false": 131,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 12,
+     "caught": 12,
+     "missed": 0,
+     "false": 75,
+     "finished": 113
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 1.5 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 17,
+     "caught": 17,
+     "missed": 0,
+     "false": 9,
+     "finished": 174
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 54,
+     "caught": 54,
+     "missed": 0,
+     "false": 146,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 69,
+     "caught": 69,
+     "missed": 0,
+     "false": 131,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 12,
+     "caught": 12,
+     "missed": 0,
+     "false": 188,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    }
+   },
+   "monitor margin 2 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 17,
+     "caught": 17,
+     "missed": 0,
+     "false": 183,
+     "finished": 0
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 54,
+     "caught": 54,
+     "missed": 0,
+     "false": 146,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 69,
+     "caught": 69,
+     "missed": 0,
+     "false": 131,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 12,
+     "caught": 12,
+     "missed": 0,
+     "false": 188,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    }
+   },
+   "monitor velocity c=1": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 17,
+     "caught": 14,
+     "missed": 3,
+     "false": 2,
+     "finished": 181
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 54,
+     "caught": 48,
+     "missed": 6,
+     "false": 47,
+     "finished": 99
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 69,
+     "caught": 63,
+     "missed": 6,
+     "false": 13,
+     "finished": 118
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 12,
+     "caught": 11,
+     "missed": 1,
+     "false": 3,
+     "finished": 185
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor velocity c=2": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 17,
+     "caught": 17,
+     "missed": 0,
+     "false": 2,
+     "finished": 181
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 54,
+     "caught": 54,
+     "missed": 0,
+     "false": 83,
+     "finished": 63
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 69,
+     "caught": 67,
+     "missed": 2,
+     "false": 55,
+     "finished": 76
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 12,
+     "caught": 12,
+     "missed": 0,
+     "false": 5,
+     "finished": 183
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor velocity c=4": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 188,
+     "finished": 11
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 17,
+     "caught": 17,
+     "missed": 0,
+     "false": 7,
+     "finished": 176
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 54,
+     "caught": 54,
+     "missed": 0,
+     "false": 146,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 69,
+     "caught": 69,
+     "missed": 0,
+     "false": 131,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 192,
+     "finished": 8
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 12,
+     "caught": 12,
+     "missed": 0,
+     "false": 86,
+     "finished": 102
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   }
+  },
+  "0.04": {
+   "a self-cal gate": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 10,
+     "finished": 190
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 8,
+     "caught": 7,
+     "missed": 1,
+     "false": 7,
+     "finished": 185
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 85,
+     "finished": 112
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 5,
+     "caught": 4,
+     "missed": 1,
+     "false": 75,
+     "finished": 120
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 6,
+     "finished": 192
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "b fixed gate": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 11,
+     "finished": 188
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 16,
+     "finished": 184
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 8,
+     "caught": 8,
+     "missed": 0,
+     "false": 192,
+     "finished": 0
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 197,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 5,
+     "caught": 5,
+     "missed": 0,
+     "false": 195,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 198,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    }
+   },
+   "c one-step, fixed cal (env. raised)": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 10,
+     "finished": 190
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 8,
+     "caught": 8,
+     "missed": 0,
+     "false": 10,
+     "finished": 182
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 74,
+     "finished": 123
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 5,
+     "caught": 4,
+     "missed": 1,
+     "false": 13,
+     "finished": 182
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 4,
+     "finished": 194
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "c' one-step, fixed cal (eps fixed)": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 0,
+     "missed": 1,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 8,
+     "caught": 7,
+     "missed": 1,
+     "false": 8,
+     "finished": 184
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 73,
+     "finished": 124
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 5,
+     "caught": 2,
+     "missed": 3,
+     "false": 0,
+     "finished": 195
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 1,
+     "finished": 197
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 0 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 0,
+     "missed": 1,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 8,
+     "caught": 0,
+     "missed": 8,
+     "false": 0,
+     "finished": 192
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 0,
+     "missed": 3,
+     "false": 0,
+     "finished": 197
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 5,
+     "caught": 0,
+     "missed": 5,
+     "false": 0,
+     "finished": 195
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 0,
+     "missed": 2,
+     "false": 0,
+     "finished": 198
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 0.25 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 8,
+     "caught": 8,
+     "missed": 0,
+     "false": 4,
+     "finished": 188
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 14,
+     "finished": 183
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 5,
+     "caught": 5,
+     "missed": 0,
+     "false": 16,
+     "finished": 179
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 1,
+     "finished": 197
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 0.5 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 8,
+     "caught": 8,
+     "missed": 0,
+     "false": 9,
+     "finished": 183
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 51,
+     "finished": 146
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 5,
+     "caught": 5,
+     "missed": 0,
+     "false": 64,
+     "finished": 131
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 10,
+     "finished": 188
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 1 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 2,
+     "finished": 198
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 8,
+     "caught": 8,
+     "missed": 0,
+     "false": 14,
+     "finished": 178
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 147,
+     "finished": 50
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 5,
+     "caught": 5,
+     "missed": 0,
+     "false": 195,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 17,
+     "finished": 181
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 1.5 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 168,
+     "finished": 31
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 112,
+     "finished": 88
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 42,
+     "finished": 158
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 8,
+     "finished": 192
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 8,
+     "caught": 8,
+     "missed": 0,
+     "false": 14,
+     "finished": 178
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 197,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 5,
+     "caught": 5,
+     "missed": 0,
+     "false": 195,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 85,
+     "finished": 113
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 2 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 199,
+     "finished": 0
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 8,
+     "caught": 8,
+     "missed": 0,
+     "false": 18,
+     "finished": 174
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 197,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 5,
+     "caught": 5,
+     "missed": 0,
+     "false": 195,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 198,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    }
+   },
+   "monitor velocity c=1": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 8,
+     "caught": 7,
+     "missed": 1,
+     "false": 2,
+     "finished": 190
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 4,
+     "finished": 193
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 5,
+     "caught": 4,
+     "missed": 1,
+     "false": 1,
+     "finished": 194
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 1,
+     "missed": 1,
+     "false": 1,
+     "finished": 197
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor velocity c=2": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 0,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 8,
+     "caught": 8,
+     "missed": 0,
+     "false": 8,
+     "finished": 184
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 15,
+     "finished": 182
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 5,
+     "caught": 4,
+     "missed": 1,
+     "false": 16,
+     "finished": 179
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 4,
+     "finished": 194
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor velocity c=4": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 1,
+     "caught": 1,
+     "missed": 0,
+     "false": 39,
+     "finished": 160
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 49,
+     "finished": 151
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 8,
+     "caught": 8,
+     "missed": 0,
+     "false": 9,
+     "finished": 183
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 140,
+     "finished": 57
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 5,
+     "caught": 4,
+     "missed": 1,
+     "false": 131,
+     "finished": 64
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 17,
+     "finished": 183
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 15,
+     "finished": 183
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   }
+  },
+  "0.045": {
+   "a self-cal gate": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 10,
+     "finished": 190
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 3,
+     "finished": 195
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 1,
+     "missed": 1,
+     "false": 18,
+     "finished": 180
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 50,
+     "finished": 147
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 2,
+     "finished": 198
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "b fixed gate": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 12,
+     "finished": 188
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 16,
+     "finished": 184
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 20,
+     "finished": 180
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 198,
+     "finished": 0
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 198,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 197,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    }
+   },
+   "c one-step, fixed cal (env. raised)": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 10,
+     "finished": 190
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 5,
+     "finished": 193
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 6,
+     "finished": 192
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 14,
+     "finished": 183
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 2,
+     "finished": 198
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "c' one-step, fixed cal (eps fixed)": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 4,
+     "finished": 194
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 0,
+     "missed": 2,
+     "false": 5,
+     "finished": 193
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 1,
+     "missed": 2,
+     "false": 0,
+     "finished": 197
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 0 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 0,
+     "missed": 2,
+     "false": 0,
+     "finished": 198
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 0,
+     "missed": 2,
+     "false": 0,
+     "finished": 198
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 0,
+     "missed": 3,
+     "false": 0,
+     "finished": 197
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 0.25 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 5,
+     "finished": 193
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 0,
+     "finished": 198
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 2,
+     "finished": 195
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 2,
+     "finished": 198
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 0.5 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 6,
+     "finished": 192
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 1,
+     "finished": 197
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 2,
+     "finished": 195
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 2,
+     "finished": 198
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 1 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 15,
+     "finished": 183
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 52,
+     "finished": 146
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 66,
+     "finished": 131
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 12,
+     "finished": 188
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 1.5 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 2,
+     "finished": 198
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 20,
+     "finished": 178
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 148,
+     "finished": 50
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 197,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 19,
+     "finished": 181
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 2 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 169,
+     "finished": 31
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 112,
+     "finished": 88
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 42,
+     "finished": 158
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 8,
+     "finished": 192
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 20,
+     "finished": 178
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 198,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 197,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 87,
+     "finished": 113
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor velocity c=1": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 0,
+     "finished": 198
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 0,
+     "finished": 198
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 2,
+     "finished": 195
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor velocity c=2": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 5,
+     "finished": 193
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 0,
+     "finished": 198
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 2,
+     "finished": 195
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 2,
+     "finished": 198
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor velocity c=4": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 2,
+     "finished": 198
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 2,
+     "finished": 198
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 5,
+     "finished": 195
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 8,
+     "finished": 190
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 39,
+     "finished": 159
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 3,
+     "caught": 3,
+     "missed": 0,
+     "false": 32,
+     "finished": 165
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 6,
+     "finished": 194
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   }
+  },
+  "0.05": {
+   "a self-cal gate": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 9,
+     "finished": 191
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 3,
+     "finished": 197
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 1,
+     "missed": 1,
+     "false": 1,
+     "finished": 197
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 26,
+     "finished": 172
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "b fixed gate": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 12,
+     "finished": 188
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 16,
+     "finished": 184
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 20,
+     "finished": 180
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 198,
+     "finished": 0
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 198,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 26,
+     "finished": 174
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 200,
+     "finished": 0
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 36,
+     "finished": 164
+    }
+   },
+   "c one-step, fixed cal (env. raised)": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 9,
+     "finished": 191
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 2,
+     "finished": 198
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 0,
+     "finished": 198
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 15,
+     "finished": 183
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "c' one-step, fixed cal (eps fixed)": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 2,
+     "finished": 198
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 0,
+     "missed": 2,
+     "false": 0,
+     "finished": 198
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 0,
+     "missed": 2,
+     "false": 0,
+     "finished": 198
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 0 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 0,
+     "missed": 2,
+     "false": 0,
+     "finished": 198
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 0,
+     "missed": 2,
+     "false": 0,
+     "finished": 198
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 0.25 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 0,
+     "finished": 198
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 0,
+     "finished": 198
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 0.5 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 2,
+     "finished": 198
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 0,
+     "finished": 198
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 1,
+     "finished": 197
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 1 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 8,
+     "finished": 192
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 1,
+     "finished": 197
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 3,
+     "finished": 195
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 2,
+     "finished": 198
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 1.5 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 17,
+     "finished": 183
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 52,
+     "finished": 146
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 67,
+     "finished": 131
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 12,
+     "finished": 188
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor margin 2 cm": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 2,
+     "finished": 198
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 22,
+     "finished": 178
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 148,
+     "finished": 50
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 198,
+     "finished": 0
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 19,
+     "finished": 181
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor velocity c=1": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 0,
+     "finished": 198
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 0,
+     "finished": 198
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor velocity c=2": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 0,
+     "finished": 198
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 1,
+     "finished": 197
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   },
+   "monitor velocity c=4": {
+    "franka_fmb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_peg_insertion": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 1,
+     "finished": 199
+    },
+    "franka_cube_stack": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "franka_drawer": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "g1_peg_insertion_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 2,
+     "finished": 198
+    },
+    "g1_drawer_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 0,
+     "finished": 198
+    },
+    "leap_wheel_sb": {
+     "n": 200,
+     "would": 2,
+     "caught": 2,
+     "missed": 0,
+     "false": 3,
+     "finished": 195
+    },
+    "leap_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    },
+    "aero_wheel_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 2,
+     "finished": 198
+    },
+    "aero_peg_tighten_sb": {
+     "n": 200,
+     "would": 0,
+     "caught": 0,
+     "missed": 0,
+     "false": 0,
+     "finished": 200
+    }
+   }
+  }
+ },
+ "equal_rate": [
+  {
+   "mu": 0.02,
+   "group": "pooled",
+   "gate": "a",
+   "gate_catch": 0.9717271051014137,
+   "gate_false": 0.32707774798927614,
+   "mon_catch_best": 0.9963122311001844,
+   "mon_catch_interp": 0.9963122311001844,
+   "mon_false_at_gate_catch": 0.05361930294906166,
+   "m_at": 0.003178082191780822
+  },
+  {
+   "mu": 0.02,
+   "group": "pooled",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 0.5120643431635389,
+   "mon_catch_best": 0.9963122311001844,
+   "mon_catch_interp": 0.9963122311001844,
+   "mon_false_at_gate_catch": 1.0,
+   "m_at": 0.0034143835616438356
+  },
+  {
+   "mu": 0.02,
+   "group": "pooled",
+   "gate": "cf",
+   "gate_catch": 1.0,
+   "gate_false": 0.47989276139410186,
+   "mon_catch_best": 0.9963122311001844,
+   "mon_catch_interp": 0.9963122311001844,
+   "mon_false_at_gate_catch": 1.0,
+   "m_at": 0.0033732876712328766
+  },
+  {
+   "mu": 0.02,
+   "group": "pooled",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 1.0,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.02,
+   "group": "franka",
+   "gate": "a",
+   "gate_catch": 0.9525,
+   "gate_false": NaN,
+   "mon_catch_best": NaN,
+   "mon_catch_interp": NaN,
+   "mon_false_at_gate_catch": NaN,
+   "m_at": NaN
+  },
+  {
+   "mu": 0.02,
+   "group": "franka",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": NaN,
+   "mon_catch_best": NaN,
+   "mon_catch_interp": NaN,
+   "mon_false_at_gate_catch": NaN,
+   "m_at": NaN
+  },
+  {
+   "mu": 0.02,
+   "group": "franka",
+   "gate": "cf",
+   "gate_catch": 1.0,
+   "gate_false": NaN,
+   "mon_catch_best": NaN,
+   "mon_catch_interp": NaN,
+   "mon_false_at_gate_catch": NaN,
+   "m_at": NaN
+  },
+  {
+   "mu": 0.02,
+   "group": "franka",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": NaN,
+   "mon_catch_best": NaN,
+   "mon_catch_interp": NaN,
+   "mon_false_at_gate_catch": NaN,
+   "m_at": NaN
+  },
+  {
+   "mu": 0.02,
+   "group": "g1",
+   "gate": "a",
+   "gate_catch": 0.9823008849557522,
+   "gate_false": 0.1206896551724138,
+   "mon_catch_best": 0.9734513274336283,
+   "mon_catch_interp": 0.9741068502130449,
+   "mon_false_at_gate_catch": 0.8735632183908046,
+   "m_at": 0.003514814814814815
+  },
+  {
+   "mu": 0.02,
+   "group": "g1",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 1.0,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.02,
+   "group": "g1",
+   "gate": "cf",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 1.0,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.02,
+   "group": "g1",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 1.0,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.02,
+   "group": "leap",
+   "gate": "a",
+   "gate_catch": 0.99,
+   "gate_false": NaN,
+   "mon_catch_best": NaN,
+   "mon_catch_interp": NaN,
+   "mon_false_at_gate_catch": NaN,
+   "m_at": NaN
+  },
+  {
+   "mu": 0.02,
+   "group": "leap",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": NaN,
+   "mon_catch_best": NaN,
+   "mon_catch_interp": NaN,
+   "mon_false_at_gate_catch": NaN,
+   "m_at": NaN
+  },
+  {
+   "mu": 0.02,
+   "group": "leap",
+   "gate": "cf",
+   "gate_catch": 1.0,
+   "gate_false": NaN,
+   "mon_catch_best": NaN,
+   "mon_catch_interp": NaN,
+   "mon_false_at_gate_catch": NaN,
+   "m_at": NaN
+  },
+  {
+   "mu": 0.02,
+   "group": "leap",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": NaN,
+   "mon_catch_best": NaN,
+   "mon_catch_interp": NaN,
+   "mon_false_at_gate_catch": NaN,
+   "m_at": NaN
+  },
+  {
+   "mu": 0.02,
+   "group": "aero",
+   "gate": "a",
+   "gate_catch": 1.0,
+   "gate_false": 0.507537688442211,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.09045226130653267,
+   "m_at": 0.003131578947368421
+  },
+  {
+   "mu": 0.02,
+   "group": "aero",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 0.08542713567839195,
+   "mon_catch_best": 0.9950248756218906,
+   "mon_catch_interp": 0.9975124378109452,
+   "mon_false_at_gate_catch": 0.09045226130653267,
+   "m_at": 0.0017499999999999996
+  },
+  {
+   "mu": 0.02,
+   "group": "aero",
+   "gate": "cf",
+   "gate_catch": 1.0,
+   "gate_false": 0.02512562814070352,
+   "mon_catch_best": 0.8208955223880597,
+   "mon_catch_interp": 0.8562741846323936,
+   "mon_false_at_gate_catch": 0.09045226130653267,
+   "m_at": 0.0006111111111111111
+  },
+  {
+   "mu": 0.02,
+   "group": "aero",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.09045226130653267,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.025,
+   "group": "pooled",
+   "gate": "a",
+   "gate_catch": 0.9961538461538462,
+   "gate_false": 0.50625,
+   "mon_catch_best": 0.9971153846153846,
+   "mon_catch_interp": 0.9982396449704142,
+   "mon_false_at_gate_catch": 0.4666666666666667,
+   "m_at": 0.001792307692307692
+  },
+  {
+   "mu": 0.025,
+   "group": "pooled",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 0.6020833333333333,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.5770833333333333,
+   "m_at": 0.003375
+  },
+  {
+   "mu": 0.025,
+   "group": "pooled",
+   "gate": "cf",
+   "gate_catch": 0.9990384615384615,
+   "gate_false": 0.6,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.534375,
+   "m_at": 0.0032500000000000003
+  },
+  {
+   "mu": 0.025,
+   "group": "pooled",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.5770833333333333,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.025,
+   "group": "franka",
+   "gate": "a",
+   "gate_catch": 1.0,
+   "gate_false": 0.7611940298507462,
+   "mon_catch_best": 0.9818731117824774,
+   "mon_catch_interp": 0.9895054857688026,
+   "mon_false_at_gate_catch": 0.8742004264392325,
+   "m_at": 0.0009210526315789472
+  },
+  {
+   "mu": 0.025,
+   "group": "franka",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 0.9722814498933902,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.8742004264392325,
+   "m_at": 0.0021875
+  },
+  {
+   "mu": 0.025,
+   "group": "franka",
+   "gate": "cf",
+   "gate_catch": 0.9969788519637462,
+   "gate_false": 0.9701492537313433,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.8742004264392325,
+   "m_at": 0.002156250000000001
+  },
+  {
+   "mu": 0.025,
+   "group": "franka",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.8742004264392325,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.025,
+   "group": "g1",
+   "gate": "a",
+   "gate_catch": 0.9819819819819819,
+   "gate_false": 0.0449438202247191,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.008
+  },
+  {
+   "mu": 0.025,
+   "group": "g1",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 0.0449438202247191,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.008
+  },
+  {
+   "mu": 0.025,
+   "group": "g1",
+   "gate": "cf",
+   "gate_catch": 1.0,
+   "gate_false": 0.0449438202247191,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.008
+  },
+  {
+   "mu": 0.025,
+   "group": "g1",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.025,
+   "group": "leap",
+   "gate": "a",
+   "gate_catch": 1.0,
+   "gate_false": NaN,
+   "mon_catch_best": NaN,
+   "mon_catch_interp": NaN,
+   "mon_false_at_gate_catch": NaN,
+   "m_at": NaN
+  },
+  {
+   "mu": 0.025,
+   "group": "leap",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": NaN,
+   "mon_catch_best": NaN,
+   "mon_catch_interp": NaN,
+   "mon_false_at_gate_catch": NaN,
+   "m_at": NaN
+  },
+  {
+   "mu": 0.025,
+   "group": "leap",
+   "gate": "cf",
+   "gate_catch": 1.0,
+   "gate_false": NaN,
+   "mon_catch_best": NaN,
+   "mon_catch_interp": NaN,
+   "mon_false_at_gate_catch": NaN,
+   "m_at": NaN
+  },
+  {
+   "mu": 0.025,
+   "group": "leap",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": NaN,
+   "mon_catch_best": NaN,
+   "mon_catch_interp": NaN,
+   "mon_false_at_gate_catch": NaN,
+   "m_at": NaN
+  },
+  {
+   "mu": 0.025,
+   "group": "aero",
+   "gate": "a",
+   "gate_catch": 1.0,
+   "gate_false": 0.3865814696485623,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.28115015974440893,
+   "m_at": 0.005722222222222222
+  },
+  {
+   "mu": 0.025,
+   "group": "aero",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 0.36421725239616615,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.28115015974440893,
+   "m_at": 0.005
+  },
+  {
+   "mu": 0.025,
+   "group": "aero",
+   "gate": "cf",
+   "gate_catch": 1.0,
+   "gate_false": 0.3610223642172524,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.28115015974440893,
+   "m_at": 0.0045
+  },
+  {
+   "mu": 0.025,
+   "group": "aero",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.28115015974440893,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.03,
+   "group": "pooled",
+   "gate": "a",
+   "gate_catch": 0.979746835443038,
+   "gate_false": 0.17258566978193146,
+   "mon_catch_best": 0.9974683544303797,
+   "mon_catch_interp": 0.9996865581675708,
+   "mon_false_at_gate_catch": 0.02118380062305296,
+   "m_at": 0.0029380952380952383
+  },
+  {
+   "mu": 0.03,
+   "group": "pooled",
+   "gate": "cw",
+   "gate_catch": 0.9974683544303797,
+   "gate_false": 0.13644859813084112,
+   "mon_catch_best": 0.9974683544303797,
+   "mon_catch_interp": 0.998288125376733,
+   "mon_false_at_gate_catch": 0.02118380062305296,
+   "m_at": 0.002661904761904762
+  },
+  {
+   "mu": 0.03,
+   "group": "pooled",
+   "gate": "cf",
+   "gate_catch": 0.9898734177215189,
+   "gate_false": 0.13146417445482866,
+   "mon_catch_best": 0.9974683544303797,
+   "mon_catch_interp": 0.998095238095238,
+   "mon_false_at_gate_catch": 0.02118380062305296,
+   "m_at": 0.002623809523809524
+  },
+  {
+   "mu": 0.03,
+   "group": "pooled",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.1806853582554517,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.03,
+   "group": "franka",
+   "gate": "a",
+   "gate_catch": 1.0,
+   "gate_false": 0.18592964824120603,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.0042699999999999995
+  },
+  {
+   "mu": 0.03,
+   "group": "franka",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 0.0942211055276382,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.0038137254901960786
+  },
+  {
+   "mu": 0.03,
+   "group": "franka",
+   "gate": "cf",
+   "gate_catch": 0.25,
+   "gate_false": 0.08417085427135679,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.003735294117647059
+  },
+  {
+   "mu": 0.03,
+   "group": "franka",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.03,
+   "group": "g1",
+   "gate": "a",
+   "gate_catch": 0.9593023255813954,
+   "gate_false": 0.2543859649122807,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.05263157894736842,
+   "m_at": 0.013
+  },
+  {
+   "mu": 0.03,
+   "group": "g1",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 0.2543859649122807,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.21929824561403508,
+   "m_at": 0.013
+  },
+  {
+   "mu": 0.03,
+   "group": "g1",
+   "gate": "cf",
+   "gate_catch": 1.0,
+   "gate_false": 0.2543859649122807,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.21929824561403508,
+   "m_at": 0.013
+  },
+  {
+   "mu": 0.03,
+   "group": "g1",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.21929824561403508,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.03,
+   "group": "leap",
+   "gate": "a",
+   "gate_catch": 0.995,
+   "gate_false": 0.0,
+   "mon_catch_best": 0.995,
+   "mon_catch_interp": 0.995,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.0015
+  },
+  {
+   "mu": 0.03,
+   "group": "leap",
+   "gate": "cw",
+   "gate_catch": 0.995,
+   "gate_false": 0.0,
+   "mon_catch_best": 0.995,
+   "mon_catch_interp": 0.995,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.0015
+  },
+  {
+   "mu": 0.03,
+   "group": "leap",
+   "gate": "cf",
+   "gate_catch": 0.995,
+   "gate_false": 0.0,
+   "mon_catch_best": 0.995,
+   "mon_catch_interp": 0.995,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.0015
+  },
+  {
+   "mu": 0.03,
+   "group": "leap",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.005,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.03,
+   "group": "aero",
+   "gate": "a",
+   "gate_catch": 1.0,
+   "gate_false": 0.18635170603674542,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.04461942257217848,
+   "m_at": 0.005125
+  },
+  {
+   "mu": 0.03,
+   "group": "aero",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 0.22572178477690288,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.04461942257217848,
+   "m_at": 0.005772727272727272
+  },
+  {
+   "mu": 0.03,
+   "group": "aero",
+   "gate": "cf",
+   "gate_catch": 1.0,
+   "gate_false": 0.22572178477690288,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.04461942257217848,
+   "m_at": 0.005772727272727272
+  },
+  {
+   "mu": 0.03,
+   "group": "aero",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.04461942257217848,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.035,
+   "group": "pooled",
+   "gate": "a",
+   "gate_catch": 0.9675324675324676,
+   "gate_false": 0.11105092091007585,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.04658721560130011,
+   "m_at": 0.003875
+  },
+  {
+   "mu": 0.035,
+   "group": "pooled",
+   "gate": "cw",
+   "gate_catch": 0.987012987012987,
+   "gate_false": 0.10455037919826653,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.05796316359696641,
+   "m_at": 0.0035
+  },
+  {
+   "mu": 0.035,
+   "group": "pooled",
+   "gate": "cf",
+   "gate_catch": 0.9545454545454546,
+   "gate_false": 0.09317443120260022,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.04658721560130011,
+   "m_at": 0.003022727272727273
+  },
+  {
+   "mu": 0.035,
+   "group": "pooled",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.07258938244853738,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.035,
+   "group": "franka",
+   "gate": "a",
+   "gate_catch": 1.0,
+   "gate_false": 0.042606516290726815,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.008333333333333333
+  },
+  {
+   "mu": 0.035,
+   "group": "franka",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 0.023809523809523808,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.008106060606060606
+  },
+  {
+   "mu": 0.035,
+   "group": "franka",
+   "gate": "cf",
+   "gate_catch": 0.0,
+   "gate_false": 0.010025062656641603,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.0076
+  },
+  {
+   "mu": 0.035,
+   "group": "franka",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.035,
+   "group": "g1",
+   "gate": "a",
+   "gate_catch": 0.9436619718309859,
+   "gate_false": 0.3860182370820669,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.14285714285714285,
+   "m_at": 0.0076
+  },
+  {
+   "mu": 0.035,
+   "group": "g1",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 0.45288753799392095,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.1884498480243161,
+   "m_at": 0.007966666666666667
+  },
+  {
+   "mu": 0.035,
+   "group": "g1",
+   "gate": "cf",
+   "gate_catch": 1.0,
+   "gate_false": 0.45288753799392095,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.1884498480243161,
+   "m_at": 0.007966666666666667
+  },
+  {
+   "mu": 0.035,
+   "group": "g1",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.1884498480243161,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.035,
+   "group": "leap",
+   "gate": "a",
+   "gate_catch": 0.9855072463768116,
+   "gate_false": 0.09365558912386707,
+   "mon_catch_best": 0.9420289855072463,
+   "mon_catch_interp": 0.9699792960662525,
+   "mon_false_at_gate_catch": 0.10876132930513595,
+   "m_at": 0.0013214285714285715
+  },
+  {
+   "mu": 0.035,
+   "group": "leap",
+   "gate": "cw",
+   "gate_catch": 0.9710144927536232,
+   "gate_false": 0.05740181268882175,
+   "mon_catch_best": 0.8695652173913043,
+   "mon_catch_interp": 0.9202898550724637,
+   "mon_false_at_gate_catch": 0.10876132930513595,
+   "m_at": 0.0008500000000000001
+  },
+  {
+   "mu": 0.035,
+   "group": "leap",
+   "gate": "cf",
+   "gate_catch": 0.927536231884058,
+   "gate_false": 0.03625377643504532,
+   "mon_catch_best": 0.8695652173913043,
+   "mon_catch_interp": 0.8695652173913043,
+   "mon_false_at_gate_catch": 0.06646525679758308,
+   "m_at": 0.0005
+  },
+  {
+   "mu": 0.035,
+   "group": "leap",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.14501510574018128,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.035,
+   "group": "aero",
+   "gate": "a",
+   "gate_catch": 1.0,
+   "gate_false": 0.03350515463917526,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.007731958762886598,
+   "m_at": 0.006
+  },
+  {
+   "mu": 0.035,
+   "group": "aero",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 0.015463917525773196,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.007731958762886598,
+   "m_at": 0.0035
+  },
+  {
+   "mu": 0.035,
+   "group": "aero",
+   "gate": "cf",
+   "gate_catch": 1.0,
+   "gate_false": 0.007731958762886598,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.007731958762886598,
+   "m_at": 0.002
+  },
+  {
+   "mu": 0.035,
+   "group": "aero",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.007731958762886598,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.04,
+   "group": "pooled",
+   "gate": "a",
+   "gate_catch": 0.8947368421052632,
+   "gate_false": 0.0933871781928319,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.011610297829379102,
+   "m_at": 0.005909090909090909
+  },
+  {
+   "mu": 0.04,
+   "group": "pooled",
+   "gate": "cw",
+   "gate_catch": 0.9473684210526315,
+   "gate_false": 0.05653710247349823,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.011610297829379102,
+   "m_at": 0.004603448275862069
+  },
+  {
+   "mu": 0.04,
+   "group": "pooled",
+   "gate": "cf",
+   "gate_catch": 0.7368421052631579,
+   "gate_false": 0.04139323573952549,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.005552751135790005,
+   "m_at": 0.003911764705882353
+  },
+  {
+   "mu": 0.04,
+   "group": "pooled",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 0.812216052498738,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.011610297829379102,
+   "m_at": 0.020071428571428563
+  },
+  {
+   "mu": 0.04,
+   "group": "franka",
+   "gate": "a",
+   "gate_catch": 1.0,
+   "gate_false": 0.015018773466833541,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0012515644555694619,
+   "m_at": 0.0129
+  },
+  {
+   "mu": 0.04,
+   "group": "franka",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 0.01376720901126408,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0012515644555694619,
+   "m_at": 0.0128
+  },
+  {
+   "mu": 0.04,
+   "group": "franka",
+   "gate": "cf",
+   "gate_catch": 0.0,
+   "gate_false": 0.0,
+   "mon_catch_best": 0.0,
+   "mon_catch_interp": 0.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.0
+  },
+  {
+   "mu": 0.04,
+   "group": "franka",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 0.5344180225281602,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0012515644555694619,
+   "m_at": 0.015175090252707581
+  },
+  {
+   "mu": 0.04,
+   "group": "g1",
+   "gate": "a",
+   "gate_catch": 0.9090909090909091,
+   "gate_false": 0.2365038560411311,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.017994858611825194,
+   "m_at": 0.00603125
+  },
+  {
+   "mu": 0.04,
+   "group": "g1",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 0.2159383033419023,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.030848329048843187,
+   "m_at": 0.005833333333333334
+  },
+  {
+   "mu": 0.04,
+   "group": "g1",
+   "gate": "cf",
+   "gate_catch": 0.9090909090909091,
+   "gate_false": 0.20822622107969152,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.017994858611825194,
+   "m_at": 0.0057619047619047615
+  },
+  {
+   "mu": 0.04,
+   "group": "g1",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.030848329048843187,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.04,
+   "group": "leap",
+   "gate": "a",
+   "gate_catch": 0.8,
+   "gate_false": 0.189873417721519,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.010126582278481013,
+   "m_at": 0.005458333333333333
+  },
+  {
+   "mu": 0.04,
+   "group": "leap",
+   "gate": "cw",
+   "gate_catch": 0.8,
+   "gate_false": 0.03291139240506329,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.010126582278481013,
+   "m_at": 0.002285714285714286
+  },
+  {
+   "mu": 0.04,
+   "group": "leap",
+   "gate": "cf",
+   "gate_catch": 0.4,
+   "gate_false": 0.0,
+   "mon_catch_best": 0.0,
+   "mon_catch_interp": 0.0,
+   "mon_false_at_gate_catch": 0.010126582278481013,
+   "m_at": 0.0
+  },
+  {
+   "mu": 0.04,
+   "group": "leap",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.02278481012658228,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.04,
+   "group": "aero",
+   "gate": "a",
+   "gate_catch": 1.0,
+   "gate_false": 0.01507537688442211,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.002512562814070352,
+   "m_at": 0.00375
+  },
+  {
+   "mu": 0.04,
+   "group": "aero",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 0.010050251256281407,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.002512562814070352,
+   "m_at": 0.003375
+  },
+  {
+   "mu": 0.04,
+   "group": "aero",
+   "gate": "cf",
+   "gate_catch": 1.0,
+   "gate_false": 0.002512562814070352,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.002512562814070352,
+   "m_at": 0.003
+  },
+  {
+   "mu": 0.04,
+   "group": "aero",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.002512562814070352,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.045,
+   "group": "pooled",
+   "gate": "a",
+   "gate_catch": 0.8571428571428571,
+   "gate_false": 0.04264927245358756,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0005017561465127947,
+   "m_at": 0.008647058823529412
+  },
+  {
+   "mu": 0.045,
+   "group": "pooled",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 0.019568489713998997,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0015052684395383843,
+   "m_at": 0.007153846153846154
+  },
+  {
+   "mu": 0.045,
+   "group": "pooled",
+   "gate": "cf",
+   "gate_catch": 0.42857142857142855,
+   "gate_false": 0.004515805318615153,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0005017561465127947,
+   "m_at": 0.002333333333333333
+  },
+  {
+   "mu": 0.045,
+   "group": "pooled",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 0.7230306071249373,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0015052684395383843,
+   "m_at": 0.021122641509433965
+  },
+  {
+   "mu": 0.045,
+   "group": "g1",
+   "gate": "a",
+   "gate_catch": 0.75,
+   "gate_false": 0.05303030303030303,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.007166666666666667
+  },
+  {
+   "mu": 0.045,
+   "group": "g1",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 0.027777777777777776,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.0055
+  },
+  {
+   "mu": 0.045,
+   "group": "g1",
+   "gate": "cf",
+   "gate_catch": 0.5,
+   "gate_false": 0.022727272727272728,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.00525
+  },
+  {
+   "mu": 0.045,
+   "group": "g1",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.045,
+   "group": "leap",
+   "gate": "a",
+   "gate_catch": 1.0,
+   "gate_false": 0.12594458438287154,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.009375
+  },
+  {
+   "mu": 0.045,
+   "group": "leap",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 0.03526448362720403,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.007214285714285715
+  },
+  {
+   "mu": 0.045,
+   "group": "leap",
+   "gate": "cf",
+   "gate_catch": 0.3333333333333333,
+   "gate_false": 0.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.0005
+  },
+  {
+   "mu": 0.045,
+   "group": "leap",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.05,
+   "group": "pooled",
+   "gate": "a",
+   "gate_catch": 0.75,
+   "gate_false": 0.020541082164328657,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.012115384615384616
+  },
+  {
+   "mu": 0.05,
+   "group": "pooled",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 0.014028056112224449,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.000501002004008016,
+   "m_at": 0.0115
+  },
+  {
+   "mu": 0.05,
+   "group": "pooled",
+   "gate": "cf",
+   "gate_catch": 0.0,
+   "gate_false": 0.001002004008016032,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.00375
+  },
+  {
+   "mu": 0.05,
+   "group": "pooled",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 0.5541082164328658,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.000501002004008016,
+   "m_at": 0.025121107266435988
+  },
+  {
+   "mu": 0.05,
+   "group": "g1",
+   "gate": "a",
+   "gate_catch": 0.5,
+   "gate_false": 0.010050251256281407,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.00675
+  },
+  {
+   "mu": 0.05,
+   "group": "g1",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 0.005025125628140704,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.006
+  },
+  {
+   "mu": 0.05,
+   "group": "g1",
+   "gate": "cf",
+   "gate_catch": 0.0,
+   "gate_false": 0.005025125628140704,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.006
+  },
+  {
+   "mu": 0.05,
+   "group": "g1",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 1.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.03
+  },
+  {
+   "mu": 0.05,
+   "group": "leap",
+   "gate": "a",
+   "gate_catch": 1.0,
+   "gate_false": 0.06532663316582915,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.013142857142857142
+  },
+  {
+   "mu": 0.05,
+   "group": "leap",
+   "gate": "cw",
+   "gate_catch": 1.0,
+   "gate_false": 0.03768844221105527,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.012214285714285714
+  },
+  {
+   "mu": 0.05,
+   "group": "leap",
+   "gate": "cf",
+   "gate_catch": 0.0,
+   "gate_false": 0.0,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.0035
+  },
+  {
+   "mu": 0.05,
+   "group": "leap",
+   "gate": "b",
+   "gate_catch": 1.0,
+   "gate_false": 0.5628140703517588,
+   "mon_catch_best": 1.0,
+   "mon_catch_interp": 1.0,
+   "mon_false_at_gate_catch": 0.0,
+   "m_at": 0.02209191176470588
+  }
+ ]
+}

@@ -1,0 +1,414 @@
+{
+ "task": "franka_cube_stack",
+ "features": "state",
+ "n_features": 31,
+ "vocab": [
+  "grasp:cube",
+  "lift:cube",
+  "place:cube_top",
+  "reach:cube_above",
+  "reach:cube_grasp",
+  "release:cube",
+  "retreat:cube",
+  "transport:cube_above",
+  "<done>"
+ ],
+ "hidden": "64,64",
+ "fit": {
+  "epochs_run": 97,
+  "best_epoch": 16,
+  "best_val_loss": 0.15261657875668172
+ },
+ "train_sets": "sb:nominal:1000-1199,tokprop:perturbed:1000-1199",
+ "val_sets": "sb:nominal:1200-1399,tokprop:perturbed:1200-1399",
+ "test_sets": "tokprop:nominal:2000-2099,tokprop:perturbed:2000-2099",
+ "episodes": {
+  "train": 400,
+  "val": 400,
+  "test": 200
+ },
+ "label_counts_train": {
+  "grasp:cube": 476,
+  "lift:cube": 462,
+  "place:cube_top": 370,
+  "reach:cube_above": 494,
+  "reach:cube_grasp": 491,
+  "release:cube": 368,
+  "retreat:cube": 370,
+  "transport:cube_above": 580,
+  "<done>": 369
+ },
+ "train": {
+  "n": 3980,
+  "acc": 0.9751256281407035,
+  "errors": 99,
+  "recovery_n": 71,
+  "recovery_acc": 0.9577464788732394,
+  "per_label": {
+   "grasp:cube": [
+    476,
+    476
+   ],
+   "lift:cube": [
+    461,
+    462
+   ],
+   "place:cube_top": [
+    357,
+    370
+   ],
+   "reach:cube_above": [
+    491,
+    494
+   ],
+   "reach:cube_grasp": [
+    491,
+    491
+   ],
+   "release:cube": [
+    368,
+    368
+   ],
+   "retreat:cube": [
+    368,
+    370
+   ],
+   "transport:cube_above": [
+    500,
+    580
+   ],
+   "<done>": [
+    369,
+    369
+   ]
+  },
+  "confusions": {
+   "transport:cube_above -> place:cube_top": 80,
+   "place:cube_top -> transport:cube_above": 13,
+   "retreat:cube -> reach:cube_above": 2,
+   "reach:cube_above -> retreat:cube": 1,
+   "reach:cube_above -> lift:cube": 2,
+   "lift:cube -> release:cube": 1
+  }
+ },
+ "val": {
+  "n": 4306,
+  "acc": 0.9205759405480725,
+  "errors": 342,
+  "recovery_n": 87,
+  "recovery_acc": 0.8505747126436781,
+  "per_label": {
+   "grasp:cube": [
+    486,
+    488
+   ],
+   "lift:cube": [
+    476,
+    477
+   ],
+   "place:cube_top": [
+    358,
+    375
+   ],
+   "reach:cube_above": [
+    490,
+    503
+   ],
+   "reach:cube_grasp": [
+    499,
+    500
+   ],
+   "release:cube": [
+    375,
+    375
+   ],
+   "retreat:cube": [
+    374,
+    375
+   ],
+   "transport:cube_above": [
+    530,
+    837
+   ],
+   "<done>": [
+    376,
+    376
+   ]
+  },
+  "confusions": {
+   "transport:cube_above -> place:cube_top": 307,
+   "place:cube_top -> transport:cube_above": 17,
+   "grasp:cube -> retreat:cube": 1,
+   "reach:cube_above -> lift:cube": 6,
+   "reach:cube_above -> grasp:cube": 7,
+   "reach:cube_grasp -> reach:cube_above": 1,
+   "retreat:cube -> reach:cube_above": 1,
+   "grasp:cube -> place:cube_top": 1,
+   "lift:cube -> release:cube": 1
+  }
+ },
+ "test": {
+  "n": 2058,
+  "acc": 0.9125364431486881,
+  "errors": 180,
+  "recovery_n": 34,
+  "recovery_acc": 1.0,
+  "per_label": {
+   "grasp:cube": [
+    233,
+    234
+   ],
+   "lift:cube": [
+    227,
+    232
+   ],
+   "place:cube_top": [
+    174,
+    180
+   ],
+   "reach:cube_above": [
+    241,
+    242
+   ],
+   "reach:cube_grasp": [
+    234,
+    235
+   ],
+   "release:cube": [
+    178,
+    179
+   ],
+   "retreat:cube": [
+    178,
+    179
+   ],
+   "transport:cube_above": [
+    230,
+    394
+   ],
+   "<done>": [
+    183,
+    183
+   ]
+  },
+  "confusions": {
+   "transport:cube_above -> place:cube_top": 164,
+   "place:cube_top -> transport:cube_above": 6,
+   "lift:cube -> release:cube": 5,
+   "retreat:cube -> reach:cube_above": 1,
+   "reach:cube_grasp -> <done>": 1,
+   "grasp:cube -> retreat:cube": 1,
+   "reach:cube_above -> reach:cube_grasp": 1,
+   "release:cube -> retreat:cube": 1
+  }
+ },
+ "val_nominal": {
+  "n": 1954,
+  "acc": 0.9150460593654043,
+  "errors": 166,
+  "recovery_n": 0,
+  "recovery_acc": null,
+  "per_label": {
+   "grasp:cube": [
+    200,
+    200
+   ],
+   "lift:cube": [
+    200,
+    200
+   ],
+   "place:cube_top": [
+    187,
+    197
+   ],
+   "reach:cube_above": [
+    200,
+    200
+   ],
+   "reach:cube_grasp": [
+    200,
+    200
+   ],
+   "release:cube": [
+    197,
+    197
+   ],
+   "retreat:cube": [
+    197,
+    197
+   ],
+   "transport:cube_above": [
+    210,
+    366
+   ],
+   "<done>": [
+    197,
+    197
+   ]
+  },
+  "confusions": {
+   "transport:cube_above -> place:cube_top": 156,
+   "place:cube_top -> transport:cube_above": 10
+  }
+ },
+ "val_perturbed": {
+  "n": 2352,
+  "acc": 0.9251700680272109,
+  "errors": 176,
+  "recovery_n": 87,
+  "recovery_acc": 0.8505747126436781,
+  "per_label": {
+   "grasp:cube": [
+    286,
+    288
+   ],
+   "lift:cube": [
+    276,
+    277
+   ],
+   "place:cube_top": [
+    171,
+    178
+   ],
+   "reach:cube_above": [
+    290,
+    303
+   ],
+   "reach:cube_grasp": [
+    299,
+    300
+   ],
+   "release:cube": [
+    178,
+    178
+   ],
+   "retreat:cube": [
+    177,
+    178
+   ],
+   "transport:cube_above": [
+    320,
+    471
+   ],
+   "<done>": [
+    179,
+    179
+   ]
+  },
+  "confusions": {
+   "grasp:cube -> retreat:cube": 1,
+   "transport:cube_above -> place:cube_top": 151,
+   "place:cube_top -> transport:cube_above": 7,
+   "reach:cube_above -> lift:cube": 6,
+   "reach:cube_above -> grasp:cube": 7,
+   "reach:cube_grasp -> reach:cube_above": 1,
+   "retreat:cube -> reach:cube_above": 1,
+   "grasp:cube -> place:cube_top": 1,
+   "lift:cube -> release:cube": 1
+  }
+ },
+ "test_nominal": {
+  "n": 995,
+  "acc": 0.893467336683417,
+  "errors": 106,
+  "recovery_n": 0,
+  "recovery_acc": null,
+  "per_label": {
+   "grasp:cube": [
+    100,
+    100
+   ],
+   "lift:cube": [
+    100,
+    100
+   ],
+   "place:cube_top": [
+    94,
+    98
+   ],
+   "reach:cube_above": [
+    100,
+    100
+   ],
+   "reach:cube_grasp": [
+    100,
+    100
+   ],
+   "release:cube": [
+    98,
+    98
+   ],
+   "retreat:cube": [
+    98,
+    98
+   ],
+   "transport:cube_above": [
+    101,
+    203
+   ],
+   "<done>": [
+    98,
+    98
+   ]
+  },
+  "confusions": {
+   "transport:cube_above -> place:cube_top": 102,
+   "place:cube_top -> transport:cube_above": 4
+  }
+ },
+ "test_perturbed": {
+  "n": 1063,
+  "acc": 0.9303857008466604,
+  "errors": 74,
+  "recovery_n": 34,
+  "recovery_acc": 1.0,
+  "per_label": {
+   "grasp:cube": [
+    133,
+    134
+   ],
+   "lift:cube": [
+    127,
+    132
+   ],
+   "place:cube_top": [
+    80,
+    82
+   ],
+   "reach:cube_above": [
+    141,
+    142
+   ],
+   "reach:cube_grasp": [
+    134,
+    135
+   ],
+   "release:cube": [
+    80,
+    81
+   ],
+   "retreat:cube": [
+    80,
+    81
+   ],
+   "transport:cube_above": [
+    129,
+    191
+   ],
+   "<done>": [
+    85,
+    85
+   ]
+  },
+  "confusions": {
+   "transport:cube_above -> place:cube_top": 62,
+   "lift:cube -> release:cube": 5,
+   "place:cube_top -> transport:cube_above": 2,
+   "retreat:cube -> reach:cube_above": 1,
+   "reach:cube_grasp -> <done>": 1,
+   "grasp:cube -> retreat:cube": 1,
+   "reach:cube_above -> reach:cube_grasp": 1,
+   "release:cube -> retreat:cube": 1
+  }
+ }
+}

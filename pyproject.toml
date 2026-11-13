@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eddies"
+version = "0.1.0"
+description = "Eddies: dynamical action tokens with certified composition (L4DC 2027)"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+authors = [
+  {name = "Aditya Narendra", email = "adityanarendra5@gmail.com"},
+  {name = "Grik Tadevosyan"},
+  {name = "Abdalla Swikir"},
+]
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "pyyaml>=6.0",
+  "matplotlib>=3.7",
+  "pillow>=10.0",
+  "imageio>=2.31",
+  "imageio-ffmpeg>=0.4.9",
+  "mujoco>=3.3,<4",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+eddies = "eddies.cli:main"
+
+[project.urls]
+Homepage = "https://ozzey.github.io/papers/eddies/"
+Repository = "https://github.com/Ozzey/EDDIES"
+Dataset = "https://huggingface.co/datasets/Ozzey/eddies"
+
+[tool.setuptools.packages.find]
+include = ["eddies*"]
+
+[tool.setuptools.package-data]
+eddies = ["config.yaml", "configs/**/*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

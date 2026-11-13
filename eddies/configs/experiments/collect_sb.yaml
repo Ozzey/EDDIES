@@ -1,0 +1,6 @@
+# eddies.collect: the paper's skillbook episodes (tag sb, nominal): train 1000-1199, calibration 1200-1399, test 2000-2199
+tag: sb
+conditions: [nominal]
+seeds: "1000-1399,2000-2199"
+tasks: [franka_fmb, franka_peg_insertion, franka_cube_stack, franka_drawer, g1_peg_insertion_sb, g1_drawer_sb,
+        leap_wheel_sb, leap_peg_tighten_sb, aero_wheel_sb, aero_peg_tighten_sb]

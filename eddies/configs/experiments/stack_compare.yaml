@@ -1,0 +1,7 @@
+# eddies.cert.experiments.stack_compare: cube stacking in MuJoCo (splits.gate_test), PhysX and on the robot
+# through both gates (Table 3); rows mujoco | physx_sim | physx_own | real_sim | real_own
+task: franka_cube_stack
+rows: [mujoco, physx_sim, physx_own, real_sim, real_own]
+mu_cm: [2, 3, 4, 5, 7.5, 10]
+speeds: [2, 3, 4]               # slew-bound multiples of the faster runs (tag gate, label bistl_rho<s>) used for "caught"
+physx_ref_tasks: [franka_fmb, franka_peg_insertion]   # extra PhysX episodes for the reference (truth) certificate

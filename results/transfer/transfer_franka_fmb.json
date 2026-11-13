@@ -1,0 +1,1408 @@
+{
+ "alpha": 0.1,
+ "mu_m": [
+  0.05,
+  0.075,
+  0.1,
+  0.15
+ ],
+ "loto": {
+  "franka_fmb": {
+   "eddie/joint0": {
+    "n_test": 100,
+    "plan": [
+     "reach:peg_above",
+     "reach:peg_grasp",
+     "grasp:peg",
+     "lift:peg",
+     "transport:fixture_above",
+     "place:fixture",
+     "release:peg",
+     "transport:hole_above",
+     "insert:hole",
+     "push:peg_top",
+     "retreat:peg"
+    ],
+    "plan_certified": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false,
+     true,
+     true,
+     true,
+     false,
+     true
+    ],
+    "fallback_steps": 0.0,
+    "violation": {
+     "n": 100,
+     "violations": 1,
+     "rate": 0.01,
+     "wilson_upper": 0.05448752476093461
+    },
+    "radius": {
+     "median_cm": 3.0831676816914104,
+     "p90_cm": 3.49801819653467,
+     "uncertified_steps": 0.35690920649598334
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     }
+    ],
+    "eps": {
+     "reach:peg_above": 0.0010401845316065092,
+     "reach:peg_grasp": 0.0007351565203887535,
+     "grasp:peg": 0.0026322669994611847,
+     "lift:peg": 0.000562234104891282,
+     "transport:hole_above": 0.016174966521613324,
+     "insert:hole": 0.01429821028541229,
+     "release:peg": 0.0030536032590715682,
+     "retreat:peg": 0.008964355542850947,
+     "insert:hole_search": 0.013704931556297754,
+     "reach:cube_above": 0.0011112916110119415,
+     "reach:cube_grasp": 0.024055089876225656,
+     "grasp:cube": 0.0031100971615780943,
+     "lift:cube": 0.0005159880738742036,
+     "transport:cube_above": 0.017063985466744327,
+     "place:cube_top": 0.012594500513693976,
+     "release:cube": 0.0035418317845900475,
+     "retreat:cube": 0.000547453160354559,
+     "reach:handle_pre": 0.03335181062618525,
+     "reach:handle": 0.015329076121849292,
+     "grasp:handle": 0.006236818096886187,
+     "pull:drawer": 0.013972576285742413,
+     "release:handle": 0.014971916417512492,
+     "retreat:handle": 0.0007106883248062969,
+     "reach:box_above": 0.023898586626119444,
+     "reach:box_grasp": 0.0007571959021153984,
+     "grasp:box": 0.005058039070763059,
+     "lift:box": 0.0002973457427440783,
+     "transport:goal_above": 0.020559896124316104,
+     "place:goal": 0.000928755230575354,
+     "release:box": 0.0005266444144252364,
+     "retreat:box": 0.0008396340608053494
+    }
+   },
+   "eddie/label": {
+    "n_test": 100,
+    "plan": [
+     "reach:peg_above",
+     "reach:peg_grasp",
+     "grasp:peg",
+     "lift:peg",
+     "transport:fixture_above",
+     "place:fixture",
+     "release:peg",
+     "transport:hole_above",
+     "insert:hole",
+     "push:peg_top",
+     "retreat:peg"
+    ],
+    "plan_certified": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false,
+     true,
+     true,
+     true,
+     false,
+     true
+    ],
+    "fallback_steps": 0.0,
+    "violation": {
+     "n": 100,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.03699480747600191
+    },
+    "radius": {
+     "median_cm": 2.9603934779752685,
+     "p90_cm": 3.5307238079573757,
+     "uncertified_steps": 0.3653932844015489
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     }
+    ],
+    "eps": {
+     "reach:peg_above": 0.001161553953753911,
+     "reach:peg_grasp": 0.0014142002074076679,
+     "grasp:peg": 0.002448267980600014,
+     "lift:peg": 0.0005959253939057271,
+     "release:peg": 0.004677459770637611,
+     "transport:hole_above": 0.014976210711967405,
+     "insert:hole": 0.01326737389507493,
+     "retreat:peg": 0.00781312976185888
+    }
+   },
+   "eddie/label_max": {
+    "n_test": 100,
+    "plan": [
+     "reach:peg_above",
+     "reach:peg_grasp",
+     "grasp:peg",
+     "lift:peg",
+     "transport:fixture_above",
+     "place:fixture",
+     "release:peg",
+     "transport:hole_above",
+     "insert:hole",
+     "push:peg_top",
+     "retreat:peg"
+    ],
+    "plan_certified": [
+     true,
+     true,
+     true,
+     true,
+     false,
+     false,
+     true,
+     true,
+     true,
+     false,
+     true
+    ],
+    "fallback_steps": 0.0,
+    "violation": {
+     "n": 100,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.03699480747600191
+    },
+    "radius": {
+     "median_cm": 2.9603934779752685,
+     "p90_cm": 3.5307238079573757,
+     "uncertified_steps": 0.3653932844015489
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     }
+    ],
+    "eps": {
+     "reach:peg_above": 0.001161553953753911,
+     "reach:peg_grasp": 0.0014142002074076679,
+     "grasp:peg": 0.002448267980600014,
+     "lift:peg": 0.0005959253939057271,
+     "release:peg": 0.004677459770637611,
+     "transport:hole_above": 0.014976210711967405,
+     "insert:hole": 0.01326737389507493,
+     "retreat:peg": 0.00781312976185888
+    }
+   },
+   "hier/joint0": {
+    "n_test": 100,
+    "plan": [
+     "reach:peg_above",
+     "reach:peg_grasp",
+     "grasp:peg",
+     "lift:peg",
+     "transport",
+     "place",
+     "release:peg",
+     "transport:hole_above",
+     "insert:hole",
+     "push:peg_top",
+     "retreat:peg"
+    ],
+    "plan_certified": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     false,
+     true
+    ],
+    "fallback_steps": 0.14203317343813213,
+    "violation": {
+     "n": 100,
+     "violations": 1,
+     "rate": 0.01,
+     "wilson_upper": 0.05448752476093461
+    },
+    "radius": {
+     "median_cm": 3.323480981794915,
+     "p90_cm": 3.5588987654993396,
+     "uncertified_steps": 0.21487603305785125
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     }
+    ],
+    "eps": {
+     "reach": 0.02386930012062716,
+     "grasp": 0.0011602363564949252,
+     "lift": 0.001755395679445175,
+     "transport": 0.001198721309262952,
+     "insert": 0.0031912809052552474,
+     "release": 0.006150048479845013,
+     "retreat": 0.0019514594706455102,
+     "place": 0.003722970256350446,
+     "pull": 0.0055004161130763575,
+     "reach:peg_above": 0.0011869720519348925,
+     "reach:peg_grasp": 0.000838899461570972,
+     "grasp:peg": 0.0030037241149562513,
+     "lift:peg": 0.000641574786850451,
+     "transport:hole_above": 0.018457526158830076,
+     "insert:hole": 0.016315928074089624,
+     "release:peg": 0.003484518002413806,
+     "retreat:peg": 0.010229376778501144,
+     "insert:hole_search": 0.015638927744754984,
+     "reach:cube_above": 0.0012681135353778434,
+     "reach:cube_grasp": 0.027449667364081717,
+     "grasp:cube": 0.003548984144086203,
+     "lift:cube": 0.0005888026635759323,
+     "transport:cube_above": 0.01947200061931968,
+     "place:cube_top": 0.01437179621845171,
+     "release:cube": 0.004041643778791954,
+     "retreat:cube": 0.0006247080026086269,
+     "reach:handle_pre": 0.03805831166664825,
+     "reach:handle": 0.017492266406342466,
+     "grasp:handle": 0.007116937955780059,
+     "pull:drawer": 0.015944341643967495,
+     "release:handle": 0.01708470546475611,
+     "retreat:handle": 0.0008109783923422291,
+     "reach:box_above": 0.027271078874954554,
+     "reach:box_grasp": 0.000864048970486519,
+     "grasp:box": 0.005771813396722996,
+     "lift:box": 0.00033930622468875273,
+     "transport:goal_above": 0.02346124302825098,
+     "place:goal": 0.0010598182036784226,
+     "release:box": 0.0006009627928853358,
+     "retreat:box": 0.0009581205389483366
+    }
+   },
+   "hier/label": {
+    "n_test": 100,
+    "plan": [
+     "reach:peg_above",
+     "reach:peg_grasp",
+     "grasp:peg",
+     "lift:peg",
+     "transport",
+     "place",
+     "release:peg",
+     "transport:hole_above",
+     "insert:hole",
+     "push:peg_top",
+     "retreat:peg"
+    ],
+    "plan_certified": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     false,
+     true
+    ],
+    "fallback_steps": 0.14203317343813213,
+    "violation": {
+     "n": 100,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.03699480747600191
+    },
+    "radius": {
+     "median_cm": 2.9603934779752685,
+     "p90_cm": 3.5307238079573757,
+     "uncertified_steps": 0.22336011096341674
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     }
+    ],
+    "eps": {
+     "reach:peg_above": 0.001161553953753911,
+     "reach:peg_grasp": 0.0014142002074076679,
+     "grasp:peg": 0.002448267980600014,
+     "lift:peg": 0.0005959253939057271,
+     "transport": 0.0011003050034226285,
+     "place": 0.003121696899355145,
+     "release:peg": 0.004677459770637611,
+     "transport:hole_above": 0.014976210711967405,
+     "insert:hole": 0.01326737389507493,
+     "retreat:peg": 0.00781312976185888
+    }
+   },
+   "hier/label_max": {
+    "n_test": 100,
+    "plan": [
+     "reach:peg_above",
+     "reach:peg_grasp",
+     "grasp:peg",
+     "lift:peg",
+     "transport",
+     "place",
+     "release:peg",
+     "transport:hole_above",
+     "insert:hole",
+     "push:peg_top",
+     "retreat:peg"
+    ],
+    "plan_certified": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     false,
+     true
+    ],
+    "fallback_steps": 0.14203317343813213,
+    "violation": {
+     "n": 100,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.03699480747600191
+    },
+    "radius": {
+     "median_cm": 2.9858638279849496,
+     "p90_cm": 3.5307238079573757,
+     "uncertified_steps": 0.22336011096341674
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     }
+    ],
+    "eps": {
+     "reach:peg_above": 0.001161553953753911,
+     "reach:peg_grasp": 0.0014142002074076679,
+     "grasp:peg": 0.002448267980600014,
+     "lift:peg": 0.0005959253939057271,
+     "transport": 0.0011809950168607901,
+     "place": 0.003919988118892846,
+     "release:peg": 0.004677459770637611,
+     "transport:hole_above": 0.014976210711967405,
+     "insert:hole": 0.01326737389507493,
+     "retreat:peg": 0.00781312976185888
+    }
+   },
+   "hier/recal20": {
+    "n_test": 100,
+    "plan": [
+     "reach:peg_above",
+     "reach:peg_grasp",
+     "grasp:peg",
+     "lift:peg",
+     "transport",
+     "place",
+     "release:peg",
+     "transport:hole_above",
+     "insert:hole",
+     "push:peg_top",
+     "retreat:peg"
+    ],
+    "plan_certified": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     false,
+     true
+    ],
+    "fallback_steps": 0.14203317343813213,
+    "violation": {
+     "n": 100,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.03699480747600191
+    },
+    "radius": {
+     "median_cm": 4.680852199238169,
+     "p90_cm": 9.15260847995189,
+     "uncertified_steps": 0.21487603305785125
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 100
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 100
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 100
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     }
+    ],
+    "eps": {
+     "reach": 0.09546947333743792,
+     "grasp": 0.00464056982574854,
+     "lift": 0.007021014448204171,
+     "transport": 0.004794497178189201,
+     "insert": 0.01276409051613766,
+     "release": 0.02459820298053578,
+     "retreat": 0.007805206141795629,
+     "place": 0.014890675798138336,
+     "pull": 0.021999883817220185,
+     "reach:peg_above": 0.004747503952432802,
+     "reach:peg_grasp": 0.003355326271591436,
+     "grasp:peg": 0.01201392407220277,
+     "lift:peg": 0.002566091452101705,
+     "transport:hole_above": 0.07382412942944686,
+     "insert:hole": 0.06525843038433951,
+     "release:peg": 0.01393694397590601,
+     "retreat:peg": 0.040914195585055206,
+     "insert:hole_search": 0.06255064823051773,
+     "reach:cube_above": 0.005072043618487888,
+     "reach:cube_grasp": 0.10978978324848696,
+     "grasp:cube": 0.01419478767314294,
+     "lift:cube": 0.0023550200427828014,
+     "transport:cube_above": 0.07788169885828519,
+     "place:cube_top": 0.05748253233042495,
+     "release:cube": 0.01616526672457215,
+     "retreat:cube": 0.0024986297753736304,
+     "reach:handle_pre": 0.15222092615053642,
+     "reach:handle": 0.06996340290046991,
+     "grasp:handle": 0.028465447875716428,
+     "pull:drawer": 0.06377220495653814,
+     "release:handle": 0.06833329107274459,
+     "retreat:handle": 0.0032436510334899766,
+     "reach:box_above": 0.1090754871059551,
+     "reach:box_grasp": 0.0034559161656699637,
+     "grasp:box": 0.023085385093085622,
+     "lift:box": 0.0013571150560529493,
+     "transport:goal_above": 0.09383737706717088,
+     "place:goal": 0.0042389297225841754,
+     "release:box": 0.002403656623454082,
+     "retreat:box": 0.0038321719859784682
+    }
+   },
+   "hier/recal50": {
+    "n_test": 100,
+    "plan": [
+     "reach:peg_above",
+     "reach:peg_grasp",
+     "grasp:peg",
+     "lift:peg",
+     "transport",
+     "place",
+     "release:peg",
+     "transport:hole_above",
+     "insert:hole",
+     "push:peg_top",
+     "retreat:peg"
+    ],
+    "plan_certified": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     false,
+     true
+    ],
+    "fallback_steps": 0.14203317343813213,
+    "violation": {
+     "n": 100,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.03699480747600191
+    },
+    "radius": {
+     "median_cm": 4.678965097619554,
+     "p90_cm": 9.141634729246134,
+     "uncertified_steps": 0.21487603305785125
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 100
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 100
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 100
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "uncertified": 100
+      }
+     }
+    ],
+    "eps": {
+     "reach": 0.09533468087465193,
+     "grasp": 0.0046340178483082525,
+     "lift": 0.0070111015431084805,
+     "transport": 0.004787727872149516,
+     "insert": 0.012746069015277249,
+     "release": 0.02456347300618956,
+     "retreat": 0.007794186043730497,
+     "place": 0.014869651791267735,
+     "pull": 0.02196882238557022,
+     "reach:peg_above": 0.00474080099569214,
+     "reach:peg_grasp": 0.0033505889175892848,
+     "grasp:peg": 0.011996961724377801,
+     "lift:peg": 0.002562468411411616,
+     "transport:hole_above": 0.07371989782670557,
+     "insert:hole": 0.06516629261253089,
+     "release:peg": 0.013917266534137971,
+     "retreat:peg": 0.040856429212276286,
+     "insert:hole_search": 0.06246233355118509,
+     "reach:cube_above": 0.005064882447206702,
+     "reach:cube_grasp": 0.10963477207312938,
+     "grasp:cube": 0.014174746184253349,
+     "lift:cube": 0.0023516950118553227,
+     "transport:cube_above": 0.07777173841094973,
+     "place:cube_top": 0.05740137327686436,
+     "release:cube": 0.016142443134609566,
+     "retreat:cube": 0.0024951019831984016,
+     "reach:handle_pre": 0.15200600683857088,
+     "reach:handle": 0.06986462222166057,
+     "grasp:handle": 0.028425257774217567,
+     "pull:drawer": 0.06368216557260856,
+     "release:handle": 0.06823681193368607,
+     "retreat:handle": 0.00323907135271938,
+     "reach:box_above": 0.10892148443868756,
+     "reach:box_grasp": 0.0034510367897305355,
+     "grasp:box": 0.023052791052265247,
+     "lift:box": 0.0013551989579087523,
+     "transport:goal_above": 0.09370488894595169,
+     "place:goal": 0.004232944817075539,
+     "release:box": 0.0024002629229900384,
+     "retreat:box": 0.003826761377940611
+    }
+   },
+   "hier/few5": {
+    "n_test": 100,
+    "plan": [
+     "reach:peg_above",
+     "reach:peg_grasp",
+     "grasp:peg",
+     "lift:peg",
+     "transport:fixture_above",
+     "place:fixture",
+     "release:peg",
+     "transport:hole_above",
+     "insert:hole",
+     "push:peg_top",
+     "retreat:peg"
+    ],
+    "plan_certified": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "fallback_steps": 0.0010287233427729294,
+    "violation": {
+     "n": 100,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.03699480747600191
+    },
+    "radius": {
+     "median_cm": 4.691714860758286,
+     "p90_cm": 6.881780931340112,
+     "uncertified_steps": 0.0
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 100
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 100,
+      "accepted": 100,
+      "completed": 90,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 90,
+       "residual": 10
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 100,
+      "accepted": 100,
+      "completed": 90,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 90,
+       "residual": 10
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 100,
+      "accepted": 100,
+      "completed": 90,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 90,
+       "residual": 10
+      }
+     }
+    ],
+    "eps": {
+     "reach": 0.04688002360874754,
+     "grasp": 0.0022671507227950702,
+     "lift": 0.003452653305338038,
+     "transport": 0.00234281733048914,
+     "insert": 0.00636246306037372,
+     "release": 0.012127781985049347,
+     "retreat": 0.0038526496392667486,
+     "place": 0.007248100118547328,
+     "pull": 0.010827177408534063,
+     "push": 0.0036877875018982553,
+     "reach:peg_above": 0.04434906231404093,
+     "reach:peg_grasp": 0.0016726124064123191,
+     "grasp:peg": 0.0056701259049590814,
+     "lift:peg": 0.0012738821117858911,
+     "transport:hole_above": 0.036762977432605856,
+     "insert:hole": 0.03275609147222312,
+     "release:peg": 0.007635862142402529,
+     "retreat:peg": 0.020398679047023676,
+     "insert:hole_search": 0.030722084778795445,
+     "reach:cube_above": 0.0024911612981959267,
+     "reach:cube_grasp": 0.05392383810916221,
+     "grasp:cube": 0.00697184573857914,
+     "lift:cube": 0.001156680665298628,
+     "transport:cube_above": 0.03825201213300119,
+     "place:cube_top": 0.028232852600455747,
+     "release:cube": 0.007939657043263802,
+     "retreat:cube": 0.0012272153520608833,
+     "reach:handle_pre": 0.07476412044634749,
+     "reach:handle": 0.03436289880482137,
+     "grasp:handle": 0.013980956675001741,
+     "pull:drawer": 0.031322058885548135,
+     "release:handle": 0.033562260678966414,
+     "retreat:handle": 0.0015931365199679513,
+     "reach:box_above": 0.053573007745787604,
+     "reach:box_grasp": 0.0016973916727264509,
+     "grasp:box": 0.01133851012010602,
+     "lift:box": 0.0006665543041694125,
+     "transport:goal_above": 0.04608872865798529,
+     "place:goal": 0.0020819729609940284,
+     "release:box": 0.0011805687815212955,
+     "retreat:box": 0.0018821917273547162,
+     "transport:fixture_above": 0.036461775505173606,
+     "place:fixture": 0.001220890186208081,
+     "push:peg_top": 0.02802537821352319
+    }
+   },
+   "hier/few10": {
+    "n_test": 100,
+    "plan": [
+     "reach:peg_above",
+     "reach:peg_grasp",
+     "grasp:peg",
+     "lift:peg",
+     "transport:fixture_above",
+     "place:fixture",
+     "release:peg",
+     "transport:hole_above",
+     "insert:hole",
+     "push:peg_top",
+     "retreat:peg"
+    ],
+    "plan_certified": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "fallback_steps": 0.0010287233427729294,
+    "violation": {
+     "n": 100,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.03699480747600191
+    },
+    "radius": {
+     "median_cm": 4.604533200251249,
+     "p90_cm": 6.573372081615184,
+     "uncertified_steps": 0.0
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 100
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 100,
+      "accepted": 100,
+      "completed": 90,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 90,
+       "residual": 10
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 100,
+      "accepted": 100,
+      "completed": 90,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 90,
+       "residual": 10
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 100,
+      "accepted": 100,
+      "completed": 90,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 90,
+       "residual": 10
+      }
+     }
+    ],
+    "eps": {
+     "reach": 0.045424481457149175,
+     "grasp": 0.002182929971522795,
+     "lift": 0.003341233923535102,
+     "transport": 0.002262082845319365,
+     "insert": 0.006121867804623846,
+     "release": 0.011782556611116029,
+     "retreat": 0.0037648796249052053,
+     "place": 0.006971535395727994,
+     "pull": 0.010509732957137287,
+     "push": 0.003627236595193105,
+     "reach:peg_above": 0.041868970815019134,
+     "reach:peg_grasp": 0.0016141615669705096,
+     "grasp:peg": 0.005482271500572784,
+     "lift:peg": 0.001245755422370469,
+     "transport:hole_above": 0.03657601536381209,
+     "insert:hole": 0.03229379343496503,
+     "release:peg": 0.00749468836013193,
+     "retreat:peg": 0.02002604931786869,
+     "insert:hole_search": 0.029777442269193093,
+     "reach:cube_above": 0.0024145630830195827,
+     "reach:cube_grasp": 0.05226578820383846,
+     "grasp:cube": 0.006757475460569964,
+     "lift:cube": 0.001121115053969075,
+     "transport:cube_above": 0.03707583945465489,
+     "place:cube_top": 0.027364748989462017,
+     "release:cube": 0.007695528508083554,
+     "retreat:cube": 0.0011894809405344406,
+     "reach:handle_pre": 0.07246527364362673,
+     "reach:handle": 0.033306308563699365,
+     "grasp:handle": 0.013551070288865897,
+     "pull:drawer": 0.03035896837510274,
+     "release:handle": 0.03253028845494633,
+     "retreat:handle": 0.0015441507661951342,
+     "reach:box_above": 0.051925745170727705,
+     "reach:box_grasp": 0.001645200282036417,
+     "grasp:box": 0.010989873667465237,
+     "lift:box": 0.0006460590957481586,
+     "transport:goal_above": 0.04467159265900156,
+     "place:goal": 0.002017956466769812,
+     "release:box": 0.0011442686585132309,
+     "retreat:box": 0.00182431810550636,
+     "transport:fixture_above": 0.03675552747712279,
+     "place:fixture": 0.016673550047887193,
+     "push:peg_top": 0.027285831126660488
+    }
+   },
+   "hier/few20": {
+    "n_test": 100,
+    "plan": [
+     "reach:peg_above",
+     "reach:peg_grasp",
+     "grasp:peg",
+     "lift:peg",
+     "transport:fixture_above",
+     "place:fixture",
+     "release:peg",
+     "transport:hole_above",
+     "insert:hole",
+     "push:peg_top",
+     "retreat:peg"
+    ],
+    "plan_certified": [
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true,
+     true
+    ],
+    "fallback_steps": 0.0010287233427729294,
+    "violation": {
+     "n": 100,
+     "violations": 1,
+     "rate": 0.01,
+     "wilson_upper": 0.05448752476093461
+    },
+    "radius": {
+     "median_cm": 3.870815300603081,
+     "p90_cm": 5.62308070536937,
+     "uncertified_steps": 0.0
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 100,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 100
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 100,
+      "accepted": 100,
+      "completed": 87,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 87,
+       "residual": 13
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 100,
+      "accepted": 100,
+      "completed": 87,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 87,
+       "residual": 13
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 100,
+      "accepted": 100,
+      "completed": 87,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 87,
+       "residual": 13
+      }
+     }
+    ],
+    "eps": {
+     "reach": 0.03496699311469415,
+     "grasp": 0.0016798811149828007,
+     "lift": 0.002565618717335333,
+     "transport": 0.0017148913195156215,
+     "insert": 0.004743500884926152,
+     "release": 0.009124956449900343,
+     "retreat": 0.00297011320948106,
+     "place": 0.005305204795737608,
+     "pull": 0.008121937191361029,
+     "push": 0.0028181277102272274,
+     "reach:peg_above": 0.03414993469554589,
+     "reach:peg_grasp": 0.0014422449961740084,
+     "grasp:peg": 0.0044391819491099846,
+     "lift:peg": 0.0009747689626299026,
+     "transport:hole_above": 0.02941806260037002,
+     "insert:hole": 0.026647843531763693,
+     "release:peg": 0.007806871897659037,
+     "retreat:peg": 0.01598662097221618,
+     "insert:hole_search": 0.022885872342270717,
+     "reach:cube_above": 0.001855746439898755,
+     "reach:cube_grasp": 0.04016960711023549,
+     "grasp:cube": 0.005193552869603865,
+     "lift:cube": 0.0008616487532469815,
+     "transport:cube_above": 0.0284951582164464,
+     "place:cube_top": 0.021031562966004867,
+     "release:cube": 0.005914506741383658,
+     "retreat:cube": 0.0009141923175449743,
+     "reach:handle_pre": 0.05569420593156593,
+     "reach:handle": 0.025598032198007076,
+     "grasp:handle": 0.010414865787615758,
+     "pull:drawer": 0.023332812415337866,
+     "release:handle": 0.025001611021755448,
+     "retreat:handle": 0.001186778803662474,
+     "reach:box_above": 0.039908262251389014,
+     "reach:box_grasp": 0.0012644418312282907,
+     "grasp:box": 0.0084464220780809,
+     "lift:box": 0.0004965378106417154,
+     "transport:goal_above": 0.03433298124391027,
+     "place:goal": 0.0015509288431576579,
+     "release:box": 0.000879443781882103,
+     "retreat:box": 0.0014021053553517002,
+     "transport:fixture_above": 0.027835522382097536,
+     "place:fixture": 0.013118240856986573,
+     "push:peg_top": 0.021096893313260694
+    }
+   }
+  }
+ }
+}

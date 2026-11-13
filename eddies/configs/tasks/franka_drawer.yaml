@@ -1,0 +1,35 @@
+# Drawer: eddies.envs task franka_drawer (class attributes mirrored here; tests/test_config.py checks they agree)
+name: franka_drawer
+display: Drawer
+robot: franka
+registry: eddies.envs.tasks.franka_sb:FrankaDrawerTokens
+kwargs: {}
+legacy: eddies.envs.tasks.franka_drawer:FrankaDrawerTask
+horizon_s: 80.0
+failure_budget: 3
+rho_step: 0.012
+rho_game: 1.5
+control_dt: 0.02
+formula: G !bad & F(opened & F(grasped & F(placed & released)))
+tag: sb
+conditions:
+- nominal
+isaac: false
+ltl_variant: eddies.envs.tasks.franka_ltl:FrankaDrawerLTL
+n_eddies: 14
+n_distinct_eddies: 14
+nominal_plan:
+- reach:handle_pre
+- reach:handle
+- grasp:handle
+- pull:drawer
+- release:handle
+- retreat:handle
+- reach:box_above
+- reach:box_grasp
+- grasp:box
+- lift:box
+- transport:goal_above
+- place:goal
+- release:box
+- retreat:box

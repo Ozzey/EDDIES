@@ -1,0 +1,4 @@
+# eddies.cert.experiments.certify_task (one task: identify, calibrate, test the propagated tubes)
+tag: sb                         # episode tag (the paper's skillbook episodes); earlier runs used tag base
+conditions: [nominal]           # calibrate / test per condition; add perturbed for the shift test
+rho_star_mu_m: [0.02, 0.05, 0.10]

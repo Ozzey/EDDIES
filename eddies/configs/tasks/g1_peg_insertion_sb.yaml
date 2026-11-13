@@ -1,0 +1,28 @@
+# Peg insertion (G1): eddies.envs task g1_peg_insertion_sb (class attributes mirrored here; tests/test_config.py checks they agree)
+name: g1_peg_insertion_sb
+display: Peg insertion (G1)
+robot: g1
+registry: eddies.envs.tasks.g1_sb:G1PegTokens
+kwargs: {}
+legacy: eddies.envs.tasks.g1_peg:G1PegInsertionTask
+horizon_s: 60.0
+failure_budget: 2
+rho_step: 0.0075
+rho_game: 3.0
+control_dt: 0.02
+formula: G !bad & F(grasped & F(inserted & released))
+tag: sb
+conditions:
+- nominal
+isaac: false
+n_eddies: 8
+n_distinct_eddies: 8
+nominal_plan:
+- reach:peg_above
+- reach:peg_grasp
+- grasp:peg
+- lift:peg
+- transport:hole_above
+- insert:hole
+- release:peg
+- retreat:peg

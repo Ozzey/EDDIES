@@ -1,0 +1,19 @@
+# eddies.cert.experiments.gate_ltl + eddies.envs.scripts.compose_check: LTLf-specified tasks (Sec. 5.4, Appendix A)
+# episodes: tag ltl, splits.gate_test, nominal + perturbed (scripts/reproduce.sh collect-ltl)
+tag: ltl
+mu_cm: [3, 5, 7.5, 10, 15]
+# (scene, episode directory, label, spec or null for the hand-written task)
+runs:
+  - [franka_cube_stack, franka_cube_stack, bistl, null]
+  - [franka_cube_stack, franka_cube_stack_ltl, bistl, "G !bad & F(on_red_blue)"]
+  - [franka_peg_insertion, franka_peg_insertion, bistl, null]
+  - [franka_peg_insertion, franka_peg_insertion_ltl, bistl, "G !bad & F(in_peg_hole)"]
+  - [franka_drawer, franka_drawer, bistl, null]
+  - [franka_drawer, franka_drawer_ltl, bistl, "G !bad & F(on_box_goal)"]
+  - [franka_fmb, franka_fmb, bistl, null]
+  - [franka_fmb, franka_fmb_ltl, bistl, "G !bad & F(in_peg_fixture & !holding_peg & F(latched_peg))"]
+  - [franka_drawer, franka_drawer_ltl, drawer_open, "G !bad & F(open_drawer)"]
+  - [franka_drawer, franka_drawer_ltl, drawer_hold, "G !bad & F(open_drawer & F(holding_box))"]
+  - [franka_fmb, franka_fmb_ltl, fmb_stage, "G !bad & F(in_peg_fixture)"]
+  - [franka_fmb, franka_fmb_ltl, fmb_direct, "G !bad & F(latched_peg)"]
+  - [franka_fmb, franka_fmb_ltl, fmb_hole_fixture, "G !bad & F(in_peg_hole & F(in_peg_fixture))"]

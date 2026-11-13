@@ -1,0 +1,6 @@
+# eddies.cert.experiments.gate_fixed: certify-or-stop with a fixed calibration under faster commands (Table D.5)
+# certificates: tag sb training seeds of the four Franka tasks; eps per task on its calibration seeds;
+# test: splits.gate_test at nominal speed (tag sb) and at gate.speed_scales x the slew bound (tag gate, label bistl_rho<s>)
+pool: eddy                      # eddy | primitive (one model per Eddie / per primitive)
+mu_cm: [2, 3, 4, 5, 7.5, 10, 15]
+recal: false                    # --recal: eps re-calibrated at the commanded speed (gate_eddy_recal.json)

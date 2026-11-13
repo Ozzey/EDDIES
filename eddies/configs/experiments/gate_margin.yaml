@@ -1,0 +1,7 @@
+# eddies.cert.experiments.gate_margin + eddies.cert.tables.gate_margin: one-step check with a fixed
+# calibration vs threshold / velocity monitors at intermediate tolerances, all ten tasks (Appendix D "1,968")
+mu_cm: [2, 2.5, 3, 3.5, 4, 4.5, 5]
+margins_m: [0.0, 0.0025, 0.005, 0.01, 0.015, 0.02]
+velocities: [1.0, 2.0, 4.0]
+n_test: 200
+workers: 10

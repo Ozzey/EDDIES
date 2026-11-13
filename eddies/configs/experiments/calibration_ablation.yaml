@@ -1,0 +1,3 @@
+# eddies.cert.experiments.calibration_ablation: per-step bound + union bound (b1) vs the episode-level envelope of
+# Eddies (Table 1 row "Eddies, per-step bound", Appendix D)
+mu_cm: [3, 5, 7.5, 10, 15]

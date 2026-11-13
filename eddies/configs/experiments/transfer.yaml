@@ -1,0 +1,6 @@
+# eddies.cert.experiments.transfer: each Franka task held out, certificates composed from the other three,
+# few-shot re-identification (Sec. 5.4, transfer_<task>.json)
+mu_cm: [5, 7.5, 10, 15]
+fewshot: [5, 10, 20]            # training episodes of the held-out task
+cal_h: 50                       # calibration episodes of the held-out task
+levels: [1, 2, 3]               # hand-over context: 1 Eddie@predecessor primitive, 2 primitive@predecessor, 3 primitive

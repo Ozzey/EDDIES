@@ -1,0 +1,36 @@
+# Drawer (G1): eddies.envs task g1_drawer_sb (class attributes mirrored here; tests/test_config.py checks they agree)
+name: g1_drawer_sb
+display: Drawer (G1)
+robot: g1
+registry: eddies.envs.tasks.g1_sb:G1DrawerTokens
+kwargs: {}
+legacy: eddies.envs.tasks.g1_drawer:G1DrawerTask
+horizon_s: 75.0
+failure_budget: 3
+rho_step: 0.0075
+rho_game: 3.0
+control_dt: 0.02
+formula: G !bad & F(opened & F(grasped & F(placed & released)))
+tag: sb
+conditions:
+- nominal
+isaac: false
+n_eddies: 16
+n_distinct_eddies: 16
+nominal_plan:
+- reach:handle_pre
+- reach:handle_above
+- reach:handle
+- grasp:handle
+- pull:drawer
+- release:handle
+- retreat:handle
+- reach:caddy_above
+- reach:caddy_preshape
+- reach:caddy_grasp
+- grasp:caddy
+- lift:caddy
+- transport:goal_above
+- place:goal
+- release:caddy
+- retreat:caddy

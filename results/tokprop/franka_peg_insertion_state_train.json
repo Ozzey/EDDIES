@@ -1,0 +1,434 @@
+{
+ "task": "franka_peg_insertion",
+ "features": "state",
+ "n_features": 45,
+ "vocab": [
+  "grasp:peg",
+  "insert:hole",
+  "insert:hole_search",
+  "lift:peg",
+  "reach:peg_above",
+  "reach:peg_grasp",
+  "release:peg",
+  "retreat:peg",
+  "transport:hole_above",
+  "transport:hole_backoff",
+  "<done>"
+ ],
+ "hidden": "64,64",
+ "fit": {
+  "epochs_run": 493,
+  "best_epoch": 412,
+  "best_val_loss": 0.007327070954578741
+ },
+ "train_sets": "sb:nominal:1000-1199,tokprop:perturbed:1000-1199",
+ "val_sets": "sb:nominal:1200-1399,tokprop:perturbed:1200-1399",
+ "test_sets": "tokprop:nominal:2000-2099,tokprop:perturbed:2000-2099",
+ "episodes": {
+  "train": 400,
+  "val": 400,
+  "test": 200
+ },
+ "label_counts_train": {
+  "grasp:peg": 448,
+  "insert:hole": 254,
+  "insert:hole_search": 1,
+  "lift:peg": 448,
+  "reach:peg_above": 454,
+  "reach:peg_grasp": 453,
+  "release:peg": 254,
+  "retreat:peg": 254,
+  "transport:hole_above": 448,
+  "transport:hole_backoff": 1,
+  "<done>": 254
+ },
+ "train": {
+  "n": 3269,
+  "acc": 1.0,
+  "errors": 0,
+  "recovery_n": 55,
+  "recovery_acc": 1.0,
+  "per_label": {
+   "grasp:peg": [
+    448,
+    448
+   ],
+   "insert:hole": [
+    254,
+    254
+   ],
+   "insert:hole_search": [
+    1,
+    1
+   ],
+   "lift:peg": [
+    448,
+    448
+   ],
+   "reach:peg_above": [
+    454,
+    454
+   ],
+   "reach:peg_grasp": [
+    453,
+    453
+   ],
+   "release:peg": [
+    254,
+    254
+   ],
+   "retreat:peg": [
+    254,
+    254
+   ],
+   "transport:hole_above": [
+    448,
+    448
+   ],
+   "transport:hole_backoff": [
+    1,
+    1
+   ],
+   "<done>": [
+    254,
+    254
+   ]
+  },
+  "confusions": {}
+ },
+ "val": {
+  "n": 3256,
+  "acc": 0.9990786240786241,
+  "errors": 3,
+  "recovery_n": 53,
+  "recovery_acc": 1.0,
+  "per_label": {
+   "grasp:peg": [
+    448,
+    448
+   ],
+   "insert:hole": [
+    251,
+    251
+   ],
+   "insert:hole_search": [
+    1,
+    2
+   ],
+   "lift:peg": [
+    447,
+    447
+   ],
+   "reach:peg_above": [
+    452,
+    452
+   ],
+   "reach:peg_grasp": [
+    451,
+    451
+   ],
+   "release:peg": [
+    251,
+    252
+   ],
+   "retreat:peg": [
+    252,
+    252
+   ],
+   "transport:hole_above": [
+    447,
+    447
+   ],
+   "transport:hole_backoff": [
+    1,
+    2
+   ],
+   "<done>": [
+    252,
+    252
+   ]
+  },
+  "confusions": {
+   "transport:hole_backoff -> insert:hole": 1,
+   "insert:hole_search -> insert:hole": 1,
+   "release:peg -> transport:hole_backoff": 1
+  }
+ },
+ "test": {
+  "n": 1699,
+  "acc": 0.9976456739258387,
+  "errors": 4,
+  "recovery_n": 36,
+  "recovery_acc": 0.9722222222222222,
+  "per_label": {
+   "grasp:peg": [
+    232,
+    232
+   ],
+   "insert:hole": [
+    132,
+    132
+   ],
+   "insert:hole_search": [
+    3,
+    4
+   ],
+   "lift:peg": [
+    231,
+    231
+   ],
+   "reach:peg_above": [
+    233,
+    233
+   ],
+   "reach:peg_grasp": [
+    233,
+    233
+   ],
+   "release:peg": [
+    132,
+    133
+   ],
+   "retreat:peg": [
+    133,
+    133
+   ],
+   "transport:hole_above": [
+    231,
+    231
+   ],
+   "transport:hole_backoff": [
+    2,
+    4
+   ],
+   "<done>": [
+    133,
+    133
+   ]
+  },
+  "confusions": {
+   "transport:hole_backoff -> insert:hole_search": 1,
+   "release:peg -> transport:hole_backoff": 1,
+   "transport:hole_backoff -> insert:hole": 1,
+   "insert:hole_search -> insert:hole": 1
+  }
+ },
+ "val_nominal": {
+  "n": 1800,
+  "acc": 1.0,
+  "errors": 0,
+  "recovery_n": 0,
+  "recovery_acc": null,
+  "per_label": {
+   "grasp:peg": [
+    200,
+    200
+   ],
+   "insert:hole": [
+    200,
+    200
+   ],
+   "lift:peg": [
+    200,
+    200
+   ],
+   "reach:peg_above": [
+    200,
+    200
+   ],
+   "reach:peg_grasp": [
+    200,
+    200
+   ],
+   "release:peg": [
+    200,
+    200
+   ],
+   "retreat:peg": [
+    200,
+    200
+   ],
+   "transport:hole_above": [
+    200,
+    200
+   ],
+   "<done>": [
+    200,
+    200
+   ]
+  },
+  "confusions": {}
+ },
+ "val_perturbed": {
+  "n": 1456,
+  "acc": 0.9979395604395604,
+  "errors": 3,
+  "recovery_n": 53,
+  "recovery_acc": 1.0,
+  "per_label": {
+   "grasp:peg": [
+    248,
+    248
+   ],
+   "insert:hole": [
+    51,
+    51
+   ],
+   "insert:hole_search": [
+    1,
+    2
+   ],
+   "lift:peg": [
+    247,
+    247
+   ],
+   "reach:peg_above": [
+    252,
+    252
+   ],
+   "reach:peg_grasp": [
+    251,
+    251
+   ],
+   "release:peg": [
+    51,
+    52
+   ],
+   "retreat:peg": [
+    52,
+    52
+   ],
+   "transport:hole_above": [
+    247,
+    247
+   ],
+   "transport:hole_backoff": [
+    1,
+    2
+   ],
+   "<done>": [
+    52,
+    52
+   ]
+  },
+  "confusions": {
+   "transport:hole_backoff -> insert:hole": 1,
+   "insert:hole_search -> insert:hole": 1,
+   "release:peg -> transport:hole_backoff": 1
+  }
+ },
+ "test_nominal": {
+  "n": 904,
+  "acc": 0.9977876106194691,
+  "errors": 2,
+  "recovery_n": 2,
+  "recovery_acc": 0.5,
+  "per_label": {
+   "grasp:peg": [
+    100,
+    100
+   ],
+   "insert:hole": [
+    100,
+    100
+   ],
+   "insert:hole_search": [
+    2,
+    2
+   ],
+   "lift:peg": [
+    100,
+    100
+   ],
+   "reach:peg_above": [
+    100,
+    100
+   ],
+   "reach:peg_grasp": [
+    100,
+    100
+   ],
+   "release:peg": [
+    99,
+    100
+   ],
+   "retreat:peg": [
+    100,
+    100
+   ],
+   "transport:hole_above": [
+    100,
+    100
+   ],
+   "transport:hole_backoff": [
+    1,
+    2
+   ],
+   "<done>": [
+    100,
+    100
+   ]
+  },
+  "confusions": {
+   "transport:hole_backoff -> insert:hole_search": 1,
+   "release:peg -> transport:hole_backoff": 1
+  }
+ },
+ "test_perturbed": {
+  "n": 795,
+  "acc": 0.9974842767295597,
+  "errors": 2,
+  "recovery_n": 34,
+  "recovery_acc": 1.0,
+  "per_label": {
+   "grasp:peg": [
+    132,
+    132
+   ],
+   "insert:hole": [
+    32,
+    32
+   ],
+   "insert:hole_search": [
+    1,
+    2
+   ],
+   "lift:peg": [
+    131,
+    131
+   ],
+   "reach:peg_above": [
+    133,
+    133
+   ],
+   "reach:peg_grasp": [
+    133,
+    133
+   ],
+   "release:peg": [
+    33,
+    33
+   ],
+   "retreat:peg": [
+    33,
+    33
+   ],
+   "transport:hole_above": [
+    131,
+    131
+   ],
+   "transport:hole_backoff": [
+    1,
+    2
+   ],
+   "<done>": [
+    33,
+    33
+   ]
+  },
+  "confusions": {
+   "transport:hole_backoff -> insert:hole": 1,
+   "insert:hole_search -> insert:hole": 1
+  }
+ }
+}

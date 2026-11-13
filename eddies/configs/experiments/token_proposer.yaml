@@ -1,0 +1,13 @@
+# eddies.cert.proposer.token_proposer / command_proposer + eddies.cert.experiments.token_proposer_eval (Appendix D, learned proposer)
+tag: tokprop
+tasks: [franka_cube_stack, franka_fmb, franka_peg_insertion]
+features: [full, state]
+mlp: {hidden: [64, 64], epochs: 600, lr: 3.0e-3, wd: 1.0e-4, batch: 256, balance: true}
+cmd_mlp: {hidden: [128, 128], epochs: 200, lr: 2.0e-3, wd: 1.0e-5, batch: 512, max_steps: 1500}
+max_decisions: 50               # per logged episode (a few degenerate episodes re-plan thousands of times)
+sets:
+  train: "sb:nominal:1000-1199,tokprop:perturbed:1000-1199"
+  val: "sb:nominal:1200-1399,tokprop:perturbed:1200-1399"
+  test: "tokprop:nominal:2000-2099,tokprop:perturbed:2000-2099"
+methods: [bistl, bistl_learned, bistl_learned_raw, bistl_learned_state, bistl_learned_state_raw]
+mu_cm: [2, 3, 4, 5, 7.5, 10]

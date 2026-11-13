@@ -1,0 +1,6 @@
+# eddies.cert.experiments.pool: per-Eddie vs per-primitive certificates (Table D.3) and vocabulary growth (Prop. E.4)
+#   python -m eddies.cert.experiments.pool --train <4 Franka tasks> --test <same> --pool eddy --calib joint --select --mondrian --name final_indist_eddy
+#   ... --pool primitive ... --name final_indist_primitive
+#   growth: --train <3 Franka tasks> --test franka_fmb --pool primitive --calib per_label --select --mondrian --n-calib 200
+#           --extra franka_fmb:push --name final_grow_v1  (v0 without --extra; scripts/reproduce.sh pool)
+tag: sb

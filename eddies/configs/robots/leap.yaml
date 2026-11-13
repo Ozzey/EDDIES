@@ -1,0 +1,19 @@
+# UR5e arm with the LEAP hand: steering wheel and peg tightening.
+name: leap
+display: UR5e + LEAP hand
+short: LEAP hand
+family: hand                      # LEAP and Aero share the arm, the embedding and the primitive set
+color: violet
+menagerie_xml: universal_robots_ur5e/ur5e.xml
+hand_xml: leap_hand/right_hand.xml
+skillbook: eddies.envs.skillbook.hand:HAND_BOOK
+primitives: [reach, grasp, push, release, turn, retreat]
+tasks: [leap_wheel_sb, leap_peg_tighten_sb]
+n_eddies: 13
+rho_step: 0.009                   # ~0.15 m/s grasp-site speed at 50 Hz
+control_dt: 0.02
+physics_dt: 0.002
+embedding:
+  names: [x, y, z, rx, ry, rz, power, pinch, point]
+  weights: [1.0, 1.0, 1.0, 0.3, 0.3, 0.3, 0.05, 0.05, 0.05]
+block: {pose: [0, 1, 2, 3, 4, 5], position: [0, 1, 2]}

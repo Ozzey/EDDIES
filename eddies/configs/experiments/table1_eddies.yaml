@@ -1,0 +1,5 @@
+# eddies.cert.experiments.table1_eddies: Eddies and the one-reference-model ablation under the same certificate (Table 1)
+# --variant eddie|eddie_refonly [--robot g1|leap|aero] [--episodes] [--swap] [--out DIR]
+mu_cm: [5, 7.5, 10]
+variants: [eddie, eddie_refonly]
+smoke: {per_split: 40, n_test: 20, n_calib: 20, n_test_tok: 10}

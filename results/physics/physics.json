@@ -1,0 +1,1523 @@
+{
+ "alpha": 0.1,
+ "mu_m": [
+  0.05,
+  0.075,
+  0.1,
+  0.15
+ ],
+ "tasks": {
+  "franka_fmb": {
+   "mujoco": {
+    "q": 1.2160365790558048,
+    "n_cal": 200,
+    "n_test": 50,
+    "violation": {
+     "n": 50,
+     "violations": 10,
+     "rate": 0.2,
+     "wilson_upper": 0.3303737210448524
+    },
+    "radius": {
+     "median_cm": 2.997162769144232,
+     "p90_cm": 3.5591110636233276,
+     "uncertified_steps": 0.013502482073910645
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 50,
+      "accepted": 50,
+      "completed": 22,
+      "completed_exceed_mu": 0,
+      "exceed_total": 1,
+      "exceed_caught": 1,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 22,
+       "uncertified": 26,
+       "residual": 2
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 50,
+      "accepted": 50,
+      "completed": 22,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 22,
+       "uncertified": 26,
+       "residual": 2
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 50,
+      "accepted": 50,
+      "completed": 22,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 22,
+       "uncertified": 26,
+       "residual": 2
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 50,
+      "accepted": 50,
+      "completed": 22,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 22,
+       "uncertified": 26,
+       "residual": 2
+      }
+     }
+    ]
+   },
+   "recal10": {
+    "q": 4.153462807245479,
+    "n_cal": 10,
+    "n_test": 50,
+    "violation": {
+     "n": 50,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.07135003417431873
+    },
+    "radius": {
+     "median_cm": 6.678992273745063,
+     "p90_cm": 8.289568205689207,
+     "uncertified_steps": 0.013502482073910645
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 50,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 1,
+      "exceed_caught": 1,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 50
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 50,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 50
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 50,
+      "accepted": 50,
+      "completed": 24,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 24,
+       "uncertified": 26
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 50,
+      "accepted": 50,
+      "completed": 24,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 24,
+       "uncertified": 26
+      }
+     }
+    ]
+   },
+   "recal20": {
+    "q": 4.069884556318007,
+    "n_cal": 20,
+    "n_test": 50,
+    "violation": {
+     "n": 50,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.07135003417431873
+    },
+    "radius": {
+     "median_cm": 6.572182061316445,
+     "p90_cm": 8.15049164578157,
+     "uncertified_steps": 0.013502482073910645
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 50,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 1,
+      "exceed_caught": 1,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 50
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 50,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 50
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 50,
+      "accepted": 50,
+      "completed": 24,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 24,
+       "uncertified": 26
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 50,
+      "accepted": 50,
+      "completed": 24,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 24,
+       "uncertified": 26
+      }
+     }
+    ]
+   },
+   "recal50": {
+    "q": 4.069884556318007,
+    "n_cal": 50,
+    "n_test": 50,
+    "violation": {
+     "n": 50,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.07135003417431873
+    },
+    "radius": {
+     "median_cm": 6.572182061316445,
+     "p90_cm": 8.15049164578157,
+     "uncertified_steps": 0.013502482073910645
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 50,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 1,
+      "exceed_caught": 1,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 50
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 50,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 50
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 50,
+      "accepted": 50,
+      "completed": 24,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 24,
+       "uncertified": 26
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 50,
+      "accepted": 50,
+      "completed": 24,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 24,
+       "uncertified": 26
+      }
+     }
+    ]
+   },
+   "physx": {
+    "q": 1.3758159954783153,
+    "n_cal": 50,
+    "n_test": 50,
+    "violation": {
+     "n": 50,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.07135003417431873
+    },
+    "radius": {
+     "median_cm": 3.153969743405751,
+     "p90_cm": 10.252951754796186,
+     "uncertified_steps": 0.0
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 50,
+      "accepted": 50,
+      "completed": 23,
+      "completed_exceed_mu": 0,
+      "exceed_total": 2,
+      "exceed_caught": 2,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 23,
+       "handover": 24,
+       "residual": 3
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 50,
+      "accepted": 50,
+      "completed": 23,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 23,
+       "handover": 24,
+       "residual": 3
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 50,
+      "accepted": 50,
+      "completed": 23,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 23,
+       "handover": 24,
+       "residual": 3
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 50,
+      "accepted": 50,
+      "completed": 45,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 8,
+      "causes": {
+       "completed": 45,
+       "residual": 5
+      }
+     }
+    ]
+   },
+   "refit10": {
+    "q": 2.0813262739399065,
+    "n_cal": 50,
+    "n_test": 50,
+    "violation": {
+     "n": 50,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.07135003417431873
+    },
+    "radius": {
+     "median_cm": 4.031193458505662,
+     "p90_cm": 9.946658145468156,
+     "uncertified_steps": 0.0
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 50,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 50
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 50,
+      "accepted": 50,
+      "completed": 24,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 24,
+       "handover": 26
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 50,
+      "accepted": 50,
+      "completed": 45,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 7,
+      "causes": {
+       "completed": 45,
+       "residual": 5
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 50,
+      "accepted": 50,
+      "completed": 45,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 7,
+      "causes": {
+       "completed": 45,
+       "residual": 5
+      }
+     }
+    ]
+   },
+   "refit25": {
+    "q": 2.0511384823024663,
+    "n_cal": 50,
+    "n_test": 50,
+    "violation": {
+     "n": 50,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.07135003417431873
+    },
+    "radius": {
+     "median_cm": 3.991706002704281,
+     "p90_cm": 10.896933819736539,
+     "uncertified_steps": 0.0
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 50,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 50
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 50,
+      "accepted": 50,
+      "completed": 24,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 24,
+       "handover": 26
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 50,
+      "accepted": 50,
+      "completed": 24,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 24,
+       "handover": 26
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 50,
+      "accepted": 50,
+      "completed": 46,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 8,
+      "causes": {
+       "completed": 46,
+       "residual": 4
+      }
+     }
+    ]
+   },
+   "refit50": {
+    "q": 1.6982833244626434,
+    "n_cal": 50,
+    "n_test": 50,
+    "violation": {
+     "n": 50,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.07135003417431873
+    },
+    "radius": {
+     "median_cm": 3.655183454098533,
+     "p90_cm": 10.512661216053019,
+     "uncertified_steps": 0.0
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 50,
+      "accepted": 50,
+      "completed": 24,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 24,
+       "handover": 26
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 50,
+      "accepted": 50,
+      "completed": 24,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 24,
+       "handover": 26
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 50,
+      "accepted": 50,
+      "completed": 24,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 24,
+       "handover": 26
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 50,
+      "accepted": 50,
+      "completed": 44,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 8,
+      "causes": {
+       "completed": 44,
+       "residual": 6
+      }
+     }
+    ]
+   }
+  },
+  "franka_peg_insertion": {
+   "mujoco": {
+    "q": 1.09736124445467,
+    "n_cal": 200,
+    "n_test": 50,
+    "violation": {
+     "n": 50,
+     "violations": 5,
+     "rate": 0.1,
+     "wilson_upper": 0.21360490334788393
+    },
+    "radius": {
+     "median_cm": 3.002447600953453,
+     "p90_cm": 3.531306971843759,
+     "uncertified_steps": 0.029466130259867346
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 50,
+      "accepted": 50,
+      "completed": 19,
+      "completed_exceed_mu": 0,
+      "exceed_total": 2,
+      "exceed_caught": 2,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 19,
+       "uncertified": 30,
+       "residual": 1
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 50,
+      "accepted": 50,
+      "completed": 19,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 19,
+       "uncertified": 30,
+       "residual": 1
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 50,
+      "accepted": 50,
+      "completed": 19,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 19,
+       "uncertified": 30,
+       "residual": 1
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 50,
+      "accepted": 50,
+      "completed": 19,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 19,
+       "uncertified": 30,
+       "residual": 1
+      }
+     }
+    ]
+   },
+   "recal10": {
+    "q": 3.515756472156165,
+    "n_cal": 10,
+    "n_test": 50,
+    "violation": {
+     "n": 50,
+     "violations": 1,
+     "rate": 0.02,
+     "wilson_upper": 0.10495686471836953
+    },
+    "radius": {
+     "median_cm": 6.058338073849501,
+     "p90_cm": 7.6676464398856545,
+     "uncertified_steps": 0.029466130259867346
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 50,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 2,
+      "exceed_caught": 2,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 50
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 50,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 50
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 50,
+      "accepted": 50,
+      "completed": 20,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 20,
+       "uncertified": 30
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 50,
+      "accepted": 50,
+      "completed": 20,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 20,
+       "uncertified": 30
+      }
+     }
+    ]
+   },
+   "recal20": {
+    "q": 3.060205754904663,
+    "n_cal": 20,
+    "n_test": 50,
+    "violation": {
+     "n": 50,
+     "violations": 2,
+     "rate": 0.04,
+     "wilson_upper": 0.13460337877954667
+    },
+    "radius": {
+     "median_cm": 5.451950917798487,
+     "p90_cm": 6.852174810191697,
+     "uncertified_steps": 0.029466130259867346
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 50,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 2,
+      "exceed_caught": 2,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 50
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 50,
+      "accepted": 50,
+      "completed": 20,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 20,
+       "uncertified": 30
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 50,
+      "accepted": 50,
+      "completed": 20,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 20,
+       "uncertified": 30
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 50,
+      "accepted": 50,
+      "completed": 20,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 20,
+       "uncertified": 30
+      }
+     }
+    ]
+   },
+   "recal50": {
+    "q": 3.060205754904663,
+    "n_cal": 50,
+    "n_test": 50,
+    "violation": {
+     "n": 50,
+     "violations": 2,
+     "rate": 0.04,
+     "wilson_upper": 0.13460337877954667
+    },
+    "radius": {
+     "median_cm": 5.451950917798487,
+     "p90_cm": 6.852174810191697,
+     "uncertified_steps": 0.029466130259867346
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 50,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 2,
+      "exceed_caught": 2,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 50
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 50,
+      "accepted": 50,
+      "completed": 20,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 20,
+       "uncertified": 30
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 50,
+      "accepted": 50,
+      "completed": 20,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 20,
+       "uncertified": 30
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 50,
+      "accepted": 50,
+      "completed": 20,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 20,
+       "uncertified": 30
+      }
+     }
+    ]
+   },
+   "physx": {
+    "q": 2.305024784355306,
+    "n_cal": 50,
+    "n_test": 50,
+    "violation": {
+     "n": 50,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.07135003417431873
+    },
+    "radius": {
+     "median_cm": 4.631024403936715,
+     "p90_cm": 15.389602441685579,
+     "uncertified_steps": 0.0
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 50,
+      "accepted": 50,
+      "completed": 20,
+      "completed_exceed_mu": 0,
+      "exceed_total": 3,
+      "exceed_caught": 3,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 20,
+       "handover": 30
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 50,
+      "accepted": 50,
+      "completed": 20,
+      "completed_exceed_mu": 0,
+      "exceed_total": 1,
+      "exceed_caught": 1,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 20,
+       "handover": 30
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 50,
+      "accepted": 50,
+      "completed": 20,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 20,
+       "handover": 30
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 50,
+      "accepted": 50,
+      "completed": 20,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 20,
+       "handover": 30
+      }
+     }
+    ]
+   },
+   "refit10": {
+    "q": 2.388286023492335,
+    "n_cal": 50,
+    "n_test": 50,
+    "violation": {
+     "n": 50,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.07135003417431873
+    },
+    "radius": {
+     "median_cm": 5.243623148879874,
+     "p90_cm": 11.211959015971193,
+     "uncertified_steps": 0.0
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 50,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 1,
+      "exceed_caught": 1,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 50
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 50,
+      "accepted": 50,
+      "completed": 20,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 20,
+       "handover": 30
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 50,
+      "accepted": 50,
+      "completed": 20,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 20,
+       "handover": 30
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 50,
+      "accepted": 50,
+      "completed": 46,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 5,
+      "causes": {
+       "completed": 46,
+       "residual": 4
+      }
+     }
+    ]
+   },
+   "refit25": {
+    "q": 1.481873030483078,
+    "n_cal": 50,
+    "n_test": 50,
+    "violation": {
+     "n": 50,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.07135003417431873
+    },
+    "radius": {
+     "median_cm": 3.77776991175501,
+     "p90_cm": 8.253810066673308,
+     "uncertified_steps": 0.0
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 50,
+      "accepted": 50,
+      "completed": 20,
+      "completed_exceed_mu": 0,
+      "exceed_total": 1,
+      "exceed_caught": 1,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 20,
+       "handover": 30
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 50,
+      "accepted": 50,
+      "completed": 20,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 20,
+       "handover": 30
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 50,
+      "accepted": 50,
+      "completed": 46,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 4,
+      "causes": {
+       "completed": 46,
+       "residual": 4
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 50,
+      "accepted": 50,
+      "completed": 46,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 4,
+      "causes": {
+       "completed": 46,
+       "residual": 4
+      }
+     }
+    ]
+   },
+   "refit50": {
+    "q": 1.0826882590747702,
+    "n_cal": 50,
+    "n_test": 50,
+    "violation": {
+     "n": 50,
+     "violations": 2,
+     "rate": 0.04,
+     "wilson_upper": 0.13460337877954667
+    },
+    "radius": {
+     "median_cm": 3.3494138299925362,
+     "p90_cm": 7.2010573536733835,
+     "uncertified_steps": 0.0
+    },
+    "gate": [
+     {
+      "mu_m": 0.05,
+      "n": 50,
+      "accepted": 50,
+      "completed": 19,
+      "completed_exceed_mu": 0,
+      "exceed_total": 1,
+      "exceed_caught": 1,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 19,
+       "handover": 30,
+       "residual": 1
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 50,
+      "accepted": 50,
+      "completed": 44,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 5,
+      "causes": {
+       "completed": 44,
+       "residual": 6
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 50,
+      "accepted": 50,
+      "completed": 44,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 5,
+      "causes": {
+       "completed": 44,
+       "residual": 6
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 50,
+      "accepted": 50,
+      "completed": 44,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 5,
+      "causes": {
+       "completed": 44,
+       "residual": 6
+      }
+     }
+    ]
+   }
+  }
+ },
+ "eddies": {
+  "franka_fmb/reach:peg_above": {
+   "mujoco": {
+    "spectral_radius": 0.8178066752915876,
+    "eps": 0.0010417303844561902,
+    "tube_cm": 3.5591110636233276
+   },
+   "recal50": {
+    "spectral_radius": 0.8178066752915876,
+    "eps": 0.0034865089394246784,
+    "tube_cm": 4.227730632731124
+   },
+   "physx": {
+    "spectral_radius": 0.8181100961485279,
+    "eps": 0.0021108214394905847,
+    "tube_cm": 3.153969743405751
+   }
+  },
+  "franka_fmb/reach:peg_grasp": {
+   "mujoco": {
+    "spectral_radius": 0.820333241698666,
+    "eps": 0.0007810991018739097,
+    "tube_cm": 2.948320704150138
+   },
+   "recal50": {
+    "spectral_radius": 0.820333241698666,
+    "eps": 0.0026142167319825375,
+    "tube_cm": 3.370030248108612
+   },
+   "physx": {
+    "spectral_radius": 0.8186148246220214,
+    "eps": 0.0007770072433573506,
+    "tube_cm": 2.8788327693470213
+   }
+  },
+  "franka_fmb/grasp:peg": {
+   "mujoco": {
+    "spectral_radius": 0.6399398804787146,
+    "eps": 0.003622122122182775,
+    "tube_cm": 1.8031831688563884
+   },
+   "recal50": {
+    "spectral_radius": 0.6399398804787146,
+    "eps": 0.012122677179345752,
+    "tube_cm": 2.8126221540733147
+   },
+   "physx": {
+    "spectral_radius": 0.7820087800575515,
+    "eps": 0.0006530651700951477,
+    "tube_cm": 2.2129157471912384
+   }
+  },
+  "franka_fmb/lift:peg": {
+   "mujoco": {
+    "spectral_radius": 0.821269234496575,
+    "eps": 0.0006644000618953611,
+    "tube_cm": 2.6927241239893576
+   },
+   "recal50": {
+    "spectral_radius": 0.821269234496575,
+    "eps": 0.0022236432667380873,
+    "tube_cm": 3.0257450029153024
+   },
+   "physx": {
+    "spectral_radius": 0.8191732637134046,
+    "eps": 0.0006264797543584047,
+    "tube_cm": 2.6303604751604794
+   }
+  },
+  "franka_fmb/transport:fixture_above": {
+   "mujoco": {
+    "spectral_radius": 0.6365311193677852,
+    "eps": 0.01706653001877092,
+    "tube_cm": 3.401608356498275
+   },
+   "recal50": {
+    "spectral_radius": 0.6365311193677852,
+    "eps": 0.05711901117914144,
+    "tube_cm": 8.15049164578157
+   },
+   "physx": {
+    "spectral_radius": 0.8185499575203123,
+    "eps": 0.0027034268630053066,
+    "tube_cm": 3.316340584298509
+   }
+  },
+  "franka_fmb/place:fixture": {
+   "mujoco": {
+    "spectral_radius": 0.6401897786751767,
+    "eps": 0.007902485628813048,
+    "tube_cm": 2.3114951114034508
+   },
+   "recal50": {
+    "spectral_radius": 0.6401897786751767,
+    "eps": 0.026448385493636758,
+    "tube_cm": 4.514001909568335
+   },
+   "physx": {
+    "spectral_radius": 0.7713263684817069,
+    "eps": 0.0006866308541580386,
+    "tube_cm": 2.213831433849968
+   }
+  },
+  "franka_fmb/release:peg": {
+   "mujoco": {
+    "spectral_radius": 0.6383720633866419,
+    "eps": 0.005424805600875819,
+    "tube_cm": 2.011561325215235
+   },
+   "recal50": {
+    "spectral_radius": 0.6383720633866419,
+    "eps": 0.0181559773088197,
+    "tube_cm": 3.5202648195751514
+   },
+   "physx": {
+    "spectral_radius": 0.8185574431927651,
+    "eps": 0.003583798883594673,
+    "tube_cm": 3.510021021690441
+   }
+  },
+  "franka_fmb/transport:hole_above": {
+   "mujoco": {
+    "spectral_radius": 0.6380845160826375,
+    "eps": 0.018345547733176332,
+    "tube_cm": 3.550966873709464
+   },
+   "recal50": {
+    "spectral_radius": 0.6380845160826375,
+    "eps": 0.06139968376150532,
+    "tube_cm": 8.659579313083558
+   },
+   "physx": {
+    "spectral_radius": 0.8181060288615839,
+    "eps": 0.003382990202806316,
+    "tube_cm": 3.47981460409134
+   }
+  },
+  "franka_fmb/insert:hole": {
+   "mujoco": {
+    "spectral_radius": 0.6413715595711886,
+    "eps": 0.016419270776949654,
+    "tube_cm": 3.338024180573715
+   },
+   "recal50": {
+    "spectral_radius": 0.6413715595711886,
+    "eps": 0.054952735560797904,
+    "tube_cm": 7.929423030597503
+   },
+   "physx": {
+    "spectral_radius": 0.81795097876522,
+    "eps": 0.00516491001376548,
+    "tube_cm": 3.8486192563173307
+   }
+  },
+  "franka_fmb/push:peg_top": {
+   "mujoco": {
+    "spectral_radius": 0.6387415640226635,
+    "eps": 0.013105566744157032,
+    "tube_cm": 2.925059690271861
+   },
+   "recal50": {
+    "spectral_radius": 0.6387415640226635,
+    "eps": 0.04386228556977631,
+    "tube_cm": 6.572182061316445
+   },
+   "physx": {
+    "spectral_radius": 0.818413545040938,
+    "eps": 0.001893107475387597,
+    "tube_cm": 3.1254645678298685
+   }
+  },
+  "franka_fmb/retreat:peg": {
+   "mujoco": {
+    "spectral_radius": 0.6425943524754548,
+    "eps": 0.014998083358270459,
+    "tube_cm": 3.1772195924685573
+   },
+   "recal50": {
+    "spectral_radius": 0.6425943524754548,
+    "eps": 0.050196243176821295,
+    "tube_cm": 7.380053282753337
+   },
+   "physx": {
+    "spectral_radius": 0.8183952834032011,
+    "eps": 0.0010482099613434042,
+    "tube_cm": 2.9342510875271772
+   }
+  },
+  "franka_peg_insertion/reach:peg_above": {
+   "mujoco": {
+    "spectral_radius": 0.8178066752915876,
+    "eps": 0.0009400659246292513,
+    "tube_cm": 3.531306971843759
+   },
+   "recal50": {
+    "spectral_radius": 0.8178066752915876,
+    "eps": 0.0026215570916848095,
+    "tube_cm": 3.9911759842295225
+   },
+   "physx": {
+    "spectral_radius": 0.8181100961485279,
+    "eps": 0.0035364436446189205,
+    "tube_cm": 3.4735797175872647
+   }
+  },
+  "franka_peg_insertion/reach:peg_grasp": {
+   "mujoco": {
+    "spectral_radius": 0.820333241698666,
+    "eps": 0.0007048701471959945,
+    "tube_cm": 2.9307841984804224
+   },
+   "recal50": {
+    "spectral_radius": 0.820333241698666,
+    "eps": 0.001965667816145281,
+    "tube_cm": 3.2208312752547616
+   },
+   "physx": {
+    "spectral_radius": 0.8186148246220214,
+    "eps": 0.0013017881456884957,
+    "tube_cm": 2.996827348402836
+   }
+  },
+  "franka_peg_insertion/grasp:peg": {
+   "mujoco": {
+    "spectral_radius": 0.6399398804787146,
+    "eps": 0.0032686322994095354,
+    "tube_cm": 1.761206332569204
+   },
+   "recal50": {
+    "spectral_radius": 0.6399398804787146,
+    "eps": 0.009115218369399518,
+    "tube_cm": 2.4554871024468112
+   },
+   "physx": {
+    "spectral_radius": 0.7820087800575515,
+    "eps": 0.0010941371577419309,
+    "tube_cm": 2.290397914344666
+   }
+  },
+  "franka_peg_insertion/lift:peg": {
+   "mujoco": {
+    "spectral_radius": 0.821269234496575,
+    "eps": 0.0005995599896372814,
+    "tube_cm": 2.678875676366855
+   },
+   "recal50": {
+    "spectral_radius": 0.821269234496575,
+    "eps": 0.0016719899121372512,
+    "tube_cm": 2.90792368777919
+   },
+   "physx": {
+    "spectral_radius": 0.8191732637134046,
+    "eps": 0.00104959628717713,
+    "tube_cm": 2.7189443713665042
+   }
+  },
+  "franka_peg_insertion/transport:hole_above": {
+   "mujoco": {
+    "spectral_radius": 0.6380845160826375,
+    "eps": 0.016555170656389503,
+    "tube_cm": 3.3385286865948673
+   },
+   "recal50": {
+    "spectral_radius": 0.6380845160826375,
+    "eps": 0.04616732071788118,
+    "tube_cm": 6.852174810191697
+   },
+   "physx": {
+    "spectral_radius": 0.8181060288615839,
+    "eps": 0.00566781916210295,
+    "tube_cm": 3.9937105636950805
+   }
+  },
+  "franka_peg_insertion/insert:hole": {
+   "mujoco": {
+    "spectral_radius": 0.6413715595711886,
+    "eps": 0.014816882751028508,
+    "tube_cm": 3.1470939701507454
+   },
+   "recal50": {
+    "spectral_radius": 0.6413715595711886,
+    "eps": 0.041319766023792816,
+    "tube_cm": 6.305006409726917
+   },
+   "physx": {
+    "spectral_radius": 0.81795097876522,
+    "eps": 0.008653225162246618,
+    "tube_cm": 4.631024403936715
+   }
+  },
+  "franka_peg_insertion/release:peg": {
+   "mujoco": {
+    "spectral_radius": 0.6383720633866419,
+    "eps": 0.004895388450998699,
+    "tube_cm": 1.9488229125760208
+   },
+   "recal50": {
+    "spectral_radius": 0.6383720633866419,
+    "eps": 0.013651745025572457,
+    "tube_cm": 2.9864921911764917
+   },
+   "physx": {
+    "spectral_radius": 0.8185574431927651,
+    "eps": 0.006004251495824973,
+    "tube_cm": 4.054173940615799
+   }
+  },
+  "franka_peg_insertion/retreat:peg": {
+   "mujoco": {
+    "spectral_radius": 0.6425943524754548,
+    "eps": 0.013534391729602128,
+    "tube_cm": 3.002447600953453
+   },
+   "recal50": {
+    "spectral_radius": 0.6425943524754548,
+    "eps": 0.037743289795736365,
+    "tube_cm": 5.8931092980855535
+   },
+   "physx": {
+    "spectral_radius": 0.8183952834032011,
+    "eps": 0.0017561577624082404,
+    "tube_cm": 3.0932857395518356
+   }
+  }
+ }
+}

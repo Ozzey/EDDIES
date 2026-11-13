@@ -1,0 +1,7 @@
+# eddies.collect: the Franka test episodes commanded faster (slew bound x rho_scale), tag gate, label bistl_rho<s>
+tag: gate
+conditions: [nominal]
+seeds: "2000-2099"
+tasks: [franka_fmb, franka_peg_insertion, franka_cube_stack, franka_drawer]
+rho_scales: [1.5, 2, 3, 4]
+label: "bistl_rho{scale:g}"

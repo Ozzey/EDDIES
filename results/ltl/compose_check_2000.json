@@ -1,0 +1,211 @@
+[
+ {
+  "task": "franka_cube_stack_ltl",
+  "spec": "G !bad & F(on_red_blue)",
+  "hand_written": "franka_cube_stack",
+  "plan": [
+   "reach:cube_above",
+   "reach:cube_grasp",
+   "grasp:cube",
+   "lift:cube",
+   "transport:cube_above",
+   "place:cube_top",
+   "release:cube",
+   "retreat:cube"
+  ],
+  "cells": 14,
+  "transitions": 24,
+  "realisable": true,
+  "equals_hand_written": true
+ },
+ {
+  "task": "franka_peg_insertion_ltl",
+  "spec": "G !bad & F(in_peg_hole)",
+  "hand_written": "franka_peg_insertion",
+  "plan": [
+   "reach:peg_above",
+   "reach:peg_grasp",
+   "grasp:peg",
+   "lift:peg",
+   "transport:hole_above",
+   "insert:hole",
+   "release:peg",
+   "retreat:peg"
+  ],
+  "cells": 16,
+  "transitions": 28,
+  "realisable": true,
+  "equals_hand_written": true
+ },
+ {
+  "task": "franka_drawer_ltl",
+  "spec": "G !bad & F(on_box_goal)",
+  "hand_written": "franka_drawer",
+  "plan": [
+   "reach:handle_pre",
+   "reach:handle",
+   "grasp:handle",
+   "pull:drawer",
+   "release:handle",
+   "retreat:handle",
+   "reach:box_above",
+   "reach:box_grasp",
+   "grasp:box",
+   "lift:box",
+   "transport:goal_above",
+   "place:goal",
+   "release:box",
+   "retreat:box"
+  ],
+  "cells": 73,
+  "transitions": 150,
+  "realisable": true,
+  "equals_hand_written": true
+ },
+ {
+  "task": "franka_fmb_ltl",
+  "spec": "G !bad & F(in_peg_fixture & !holding_peg & F(latched_peg))",
+  "hand_written": "franka_fmb",
+  "plan": [
+   "reach:peg_above",
+   "reach:peg_grasp",
+   "grasp:peg",
+   "lift:peg",
+   "transport:fixture_above",
+   "place:fixture",
+   "release:peg",
+   "reach:peg_above",
+   "reach:peg_grasp",
+   "grasp:peg",
+   "lift:peg",
+   "transport:hole_above",
+   "insert:hole",
+   "release:peg",
+   "push:peg_top",
+   "retreat:peg"
+  ],
+  "cells": 50,
+  "transitions": 103,
+  "realisable": true,
+  "equals_hand_written": true
+ },
+ {
+  "task": "franka_drawer_ltl",
+  "spec": "G !bad & F(open_drawer)",
+  "hand_written": null,
+  "plan": [
+   "reach:handle_pre",
+   "reach:handle",
+   "grasp:handle",
+   "pull:drawer",
+   "release:handle",
+   "retreat:handle"
+  ],
+  "cells": 73,
+  "transitions": 150,
+  "realisable": true
+ },
+ {
+  "task": "franka_drawer_ltl",
+  "spec": "G !bad & F(open_drawer & F(holding_box))",
+  "hand_written": null,
+  "plan": [
+   "reach:handle_pre",
+   "reach:handle",
+   "grasp:handle",
+   "pull:drawer",
+   "release:handle",
+   "retreat:handle",
+   "reach:box_above",
+   "reach:box_grasp",
+   "grasp:box",
+   "lift:box",
+   "transport:goal_above",
+   "place:goal",
+   "release:box",
+   "retreat:box"
+  ],
+  "cells": 73,
+  "transitions": 150,
+  "realisable": true
+ },
+ {
+  "task": "franka_fmb_ltl",
+  "spec": "G !bad & F(in_peg_fixture)",
+  "hand_written": null,
+  "plan": [
+   "reach:peg_above",
+   "reach:peg_grasp",
+   "grasp:peg",
+   "lift:peg",
+   "transport:fixture_above",
+   "place:fixture",
+   "release:peg",
+   "retreat:peg"
+  ],
+  "cells": 50,
+  "transitions": 103,
+  "realisable": true
+ },
+ {
+  "task": "franka_fmb_ltl",
+  "spec": "G !bad & F(latched_peg)",
+  "hand_written": null,
+  "plan": [
+   "reach:peg_above",
+   "reach:peg_grasp",
+   "grasp:peg",
+   "lift:peg",
+   "transport:hole_above",
+   "insert:hole",
+   "release:peg",
+   "push:peg_top",
+   "retreat:peg"
+  ],
+  "cells": 50,
+  "transitions": 103,
+  "realisable": true
+ },
+ {
+  "task": "franka_fmb_ltl",
+  "spec": "G !bad & F(in_peg_hole & F(in_peg_fixture))",
+  "hand_written": null,
+  "plan": [
+   "reach:peg_above",
+   "reach:peg_grasp",
+   "grasp:peg",
+   "lift:peg",
+   "transport:hole_above",
+   "insert:hole",
+   "lift:peg",
+   "transport:fixture_above",
+   "place:fixture",
+   "release:peg",
+   "retreat:peg"
+  ],
+  "cells": 50,
+  "transitions": 103,
+  "realisable": true
+ },
+ {
+  "task": "franka_peg_insertion_ltl",
+  "spec": "G !bad & F(in_peg_hole & F(on_peg_table))",
+  "hand_written": null,
+  "realisable": false,
+  "reason": "spec 'G !bad & F(in_peg_hole & F(on_peg_table))' is not realisable from away+on_peg_table: not_in_winning_set"
+ },
+ {
+  "task": "franka_drawer_ltl",
+  "spec": "G !bad & G !open_drawer & F(on_box_goal)",
+  "hand_written": null,
+  "realisable": false,
+  "reason": "spec 'G !bad & G !open_drawer & F(on_box_goal)' is not realisable from away+in_box_drawer: not_in_winning_set"
+ },
+ {
+  "task": "franka_cube_stack_ltl",
+  "spec": "G !bad & G !holding_red & F(on_red_blue)",
+  "hand_written": null,
+  "realisable": false,
+  "reason": "spec 'G !bad & G !holding_red & F(on_red_blue)' is not realisable from away+on_red_table: not_in_winning_set"
+ }
+]

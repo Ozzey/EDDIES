@@ -1,0 +1,1712 @@
+{
+ "dataset": "Ozzey/eddies",
+ "built": "2026-11-13 18:51:15",
+ "layout": "<simulator>/episodes/<tag>/<condition>/<task>/<method>/seed_XXXX/{manifest.json,trajectory.npz}",
+ "totals": {
+  "episode_dirs": 93,
+  "n_episodes": 15450,
+  "bytes": 2436562305,
+  "derived_bytes": 68081906,
+  "extra_bytes": 15242823
+ },
+ "by_tag": {
+  "mujoco/sb": {
+   "n_episodes": 6000,
+   "bytes": 1025331527,
+   "dirs": 10
+  },
+  "mujoco/gate": {
+   "n_episodes": 1600,
+   "bytes": 147350945,
+   "dirs": 16
+  },
+  "mujoco/ltl": {
+   "n_episodes": 2600,
+   "bytes": 288415960,
+   "dirs": 26
+  },
+  "mujoco/tokprop": {
+   "n_episodes": 4600,
+   "bytes": 913629956,
+   "dirs": 34
+  },
+  "isaac/sb": {
+   "n_episodes": 450,
+   "bytes": 53794617,
+   "dirs": 3
+  },
+  "isaac/gate": {
+   "n_episodes": 200,
+   "bytes": 8039300,
+   "dirs": 4
+  }
+ },
+ "episode_dirs": [
+  {
+   "path": "mujoco/episodes/sb/nominal/franka_fmb/bistl",
+   "simulator": "mujoco",
+   "tag": "sb",
+   "condition": "nominal",
+   "task": "franka_fmb",
+   "method": "bistl",
+   "n_episodes": 600,
+   "bytes": 107943533,
+   "seeds": [
+    1000,
+    2199
+   ],
+   "missing_seeds": [],
+   "n_success": 600,
+   "used_by": "Tab. 1, 2, D.1-D.6; Figs. 4, 5, 7, B.1, D.1, E.1; Sec. 4.1/4.2/5.x; eqoff, gain_all, shrink_probe, trace_fmb, dynamics_map, gate_margin"
+  },
+  {
+   "path": "mujoco/episodes/sb/nominal/franka_peg_insertion/bistl",
+   "simulator": "mujoco",
+   "tag": "sb",
+   "condition": "nominal",
+   "task": "franka_peg_insertion",
+   "method": "bistl",
+   "n_episodes": 600,
+   "bytes": 55010016,
+   "seeds": [
+    1000,
+    2199
+   ],
+   "missing_seeds": [],
+   "n_success": 600,
+   "used_by": "Tab. 1, 2, D.1-D.6; Figs. 4, 5, 7, B.1, D.1, E.1; Sec. 4.1/4.2/5.x; eqoff, gain_all, shrink_probe, trace_fmb, dynamics_map, gate_margin"
+  },
+  {
+   "path": "mujoco/episodes/sb/nominal/franka_cube_stack/bistl",
+   "simulator": "mujoco",
+   "tag": "sb",
+   "condition": "nominal",
+   "task": "franka_cube_stack",
+   "method": "bistl",
+   "n_episodes": 600,
+   "bytes": 41153080,
+   "seeds": [
+    1000,
+    2199
+   ],
+   "missing_seeds": [],
+   "n_success": 596,
+   "used_by": "Tab. 1, 2, D.1-D.6; Figs. 4, 5, 7, B.1, D.1, E.1; Sec. 4.1/4.2/5.x; eqoff, gain_all, shrink_probe, trace_fmb, dynamics_map, gate_margin"
+  },
+  {
+   "path": "mujoco/episodes/sb/nominal/franka_drawer/bistl",
+   "simulator": "mujoco",
+   "tag": "sb",
+   "condition": "nominal",
+   "task": "franka_drawer",
+   "method": "bistl",
+   "n_episodes": 600,
+   "bytes": 68085050,
+   "seeds": [
+    1000,
+    2199
+   ],
+   "missing_seeds": [],
+   "n_success": 600,
+   "used_by": "Tab. 1, 2, D.1-D.6; Figs. 4, 5, 7, B.1, D.1, E.1; Sec. 4.1/4.2/5.x; eqoff, gain_all, shrink_probe, trace_fmb, dynamics_map, gate_margin"
+  },
+  {
+   "path": "mujoco/episodes/sb/nominal/g1_peg_insertion_sb/bistl",
+   "simulator": "mujoco",
+   "tag": "sb",
+   "condition": "nominal",
+   "task": "g1_peg_insertion_sb",
+   "method": "bistl",
+   "n_episodes": 600,
+   "bytes": 54775306,
+   "seeds": [
+    1000,
+    2199
+   ],
+   "missing_seeds": [],
+   "n_success": 600,
+   "used_by": "Tab. 1, 2, D.1-D.6; Figs. 4, 5, 7, B.1, D.1, E.1; Sec. 4.1/4.2/5.x; eqoff, gain_all, shrink_probe, trace_fmb, dynamics_map, gate_margin"
+  },
+  {
+   "path": "mujoco/episodes/sb/nominal/g1_drawer_sb/bistl",
+   "simulator": "mujoco",
+   "tag": "sb",
+   "condition": "nominal",
+   "task": "g1_drawer_sb",
+   "method": "bistl",
+   "n_episodes": 600,
+   "bytes": 89020309,
+   "seeds": [
+    1000,
+    2199
+   ],
+   "missing_seeds": [],
+   "n_success": 593,
+   "used_by": "Tab. 1, 2, D.1-D.6; Figs. 4, 5, 7, B.1, D.1, E.1; Sec. 4.1/4.2/5.x; eqoff, gain_all, shrink_probe, trace_fmb, dynamics_map, gate_margin"
+  },
+  {
+   "path": "mujoco/episodes/sb/nominal/leap_wheel_sb/bistl",
+   "simulator": "mujoco",
+   "tag": "sb",
+   "condition": "nominal",
+   "task": "leap_wheel_sb",
+   "method": "bistl",
+   "n_episodes": 600,
+   "bytes": 43358142,
+   "seeds": [
+    1000,
+    2199
+   ],
+   "missing_seeds": [],
+   "n_success": 599,
+   "used_by": "Tab. 1, 2, D.1-D.6; Figs. 4, 5, 7, B.1, D.1, E.1; Sec. 4.1/4.2/5.x; eqoff, gain_all, shrink_probe, trace_fmb, dynamics_map, gate_margin"
+  },
+  {
+   "path": "mujoco/episodes/sb/nominal/leap_peg_tighten_sb/bistl",
+   "simulator": "mujoco",
+   "tag": "sb",
+   "condition": "nominal",
+   "task": "leap_peg_tighten_sb",
+   "method": "bistl",
+   "n_episodes": 600,
+   "bytes": 208736829,
+   "seeds": [
+    1000,
+    2199
+   ],
+   "missing_seeds": [],
+   "n_success": 600,
+   "used_by": "Tab. 1, 2, D.1-D.6; Figs. 4, 5, 7, B.1, D.1, E.1; Sec. 4.1/4.2/5.x; eqoff, gain_all, shrink_probe, trace_fmb, dynamics_map, gate_margin"
+  },
+  {
+   "path": "mujoco/episodes/sb/nominal/aero_wheel_sb/bistl",
+   "simulator": "mujoco",
+   "tag": "sb",
+   "condition": "nominal",
+   "task": "aero_wheel_sb",
+   "method": "bistl",
+   "n_episodes": 600,
+   "bytes": 50189669,
+   "seeds": [
+    1000,
+    2199
+   ],
+   "missing_seeds": [],
+   "n_success": 600,
+   "used_by": "Tab. 1, 2, D.1-D.6; Figs. 4, 5, 7, B.1, D.1, E.1; Sec. 4.1/4.2/5.x; eqoff, gain_all, shrink_probe, trace_fmb, dynamics_map, gate_margin"
+  },
+  {
+   "path": "mujoco/episodes/sb/nominal/aero_peg_tighten_sb/bistl",
+   "simulator": "mujoco",
+   "tag": "sb",
+   "condition": "nominal",
+   "task": "aero_peg_tighten_sb",
+   "method": "bistl",
+   "n_episodes": 600,
+   "bytes": 307059593,
+   "seeds": [
+    1000,
+    2199
+   ],
+   "missing_seeds": [],
+   "n_success": 578,
+   "used_by": "Tab. 1, 2, D.1-D.6; Figs. 4, 5, 7, B.1, D.1, E.1; Sec. 4.1/4.2/5.x; eqoff, gain_all, shrink_probe, trace_fmb, dynamics_map, gate_margin"
+  },
+  {
+   "path": "mujoco/episodes/gate/nominal/franka_fmb/bistl_rho1.5",
+   "simulator": "mujoco",
+   "tag": "gate",
+   "condition": "nominal",
+   "task": "franka_fmb",
+   "method": "bistl_rho1.5",
+   "n_episodes": 100,
+   "bytes": 15859662,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 99,
+   "used_by": "Tab. D.5; Tab. 3 'caught' (cube_stack rho2/3/4); Sec. 5.1 speeds"
+  },
+  {
+   "path": "mujoco/episodes/gate/nominal/franka_fmb/bistl_rho2",
+   "simulator": "mujoco",
+   "tag": "gate",
+   "condition": "nominal",
+   "task": "franka_fmb",
+   "method": "bistl_rho2",
+   "n_episodes": 100,
+   "bytes": 14942930,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "Tab. D.5; Tab. 3 'caught' (cube_stack rho2/3/4); Sec. 5.1 speeds"
+  },
+  {
+   "path": "mujoco/episodes/gate/nominal/franka_fmb/bistl_rho3",
+   "simulator": "mujoco",
+   "tag": "gate",
+   "condition": "nominal",
+   "task": "franka_fmb",
+   "method": "bistl_rho3",
+   "n_episodes": 100,
+   "bytes": 14066583,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "Tab. D.5; Tab. 3 'caught' (cube_stack rho2/3/4); Sec. 5.1 speeds"
+  },
+  {
+   "path": "mujoco/episodes/gate/nominal/franka_fmb/bistl_rho4",
+   "simulator": "mujoco",
+   "tag": "gate",
+   "condition": "nominal",
+   "task": "franka_fmb",
+   "method": "bistl_rho4",
+   "n_episodes": 100,
+   "bytes": 13698477,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "Tab. D.5; Tab. 3 'caught' (cube_stack rho2/3/4); Sec. 5.1 speeds"
+  },
+  {
+   "path": "mujoco/episodes/gate/nominal/franka_peg_insertion/bistl_rho1.5",
+   "simulator": "mujoco",
+   "tag": "gate",
+   "condition": "nominal",
+   "task": "franka_peg_insertion",
+   "method": "bistl_rho1.5",
+   "n_episodes": 100,
+   "bytes": 8190562,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "Tab. D.5; Tab. 3 'caught' (cube_stack rho2/3/4); Sec. 5.1 speeds"
+  },
+  {
+   "path": "mujoco/episodes/gate/nominal/franka_peg_insertion/bistl_rho2",
+   "simulator": "mujoco",
+   "tag": "gate",
+   "condition": "nominal",
+   "task": "franka_peg_insertion",
+   "method": "bistl_rho2",
+   "n_episodes": 100,
+   "bytes": 7775116,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "Tab. D.5; Tab. 3 'caught' (cube_stack rho2/3/4); Sec. 5.1 speeds"
+  },
+  {
+   "path": "mujoco/episodes/gate/nominal/franka_peg_insertion/bistl_rho3",
+   "simulator": "mujoco",
+   "tag": "gate",
+   "condition": "nominal",
+   "task": "franka_peg_insertion",
+   "method": "bistl_rho3",
+   "n_episodes": 100,
+   "bytes": 7353410,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "Tab. D.5; Tab. 3 'caught' (cube_stack rho2/3/4); Sec. 5.1 speeds"
+  },
+  {
+   "path": "mujoco/episodes/gate/nominal/franka_peg_insertion/bistl_rho4",
+   "simulator": "mujoco",
+   "tag": "gate",
+   "condition": "nominal",
+   "task": "franka_peg_insertion",
+   "method": "bistl_rho4",
+   "n_episodes": 100,
+   "bytes": 7170231,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "Tab. D.5; Tab. 3 'caught' (cube_stack rho2/3/4); Sec. 5.1 speeds"
+  },
+  {
+   "path": "mujoco/episodes/gate/nominal/franka_cube_stack/bistl_rho1.5",
+   "simulator": "mujoco",
+   "tag": "gate",
+   "condition": "nominal",
+   "task": "franka_cube_stack",
+   "method": "bistl_rho1.5",
+   "n_episodes": 100,
+   "bytes": 6493449,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 99,
+   "used_by": "Tab. D.5; Tab. 3 'caught' (cube_stack rho2/3/4); Sec. 5.1 speeds"
+  },
+  {
+   "path": "mujoco/episodes/gate/nominal/franka_cube_stack/bistl_rho2",
+   "simulator": "mujoco",
+   "tag": "gate",
+   "condition": "nominal",
+   "task": "franka_cube_stack",
+   "method": "bistl_rho2",
+   "n_episodes": 100,
+   "bytes": 6118441,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 99,
+   "used_by": "Tab. D.5; Tab. 3 'caught' (cube_stack rho2/3/4); Sec. 5.1 speeds"
+  },
+  {
+   "path": "mujoco/episodes/gate/nominal/franka_cube_stack/bistl_rho3",
+   "simulator": "mujoco",
+   "tag": "gate",
+   "condition": "nominal",
+   "task": "franka_cube_stack",
+   "method": "bistl_rho3",
+   "n_episodes": 100,
+   "bytes": 5820938,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 99,
+   "used_by": "Tab. D.5; Tab. 3 'caught' (cube_stack rho2/3/4); Sec. 5.1 speeds"
+  },
+  {
+   "path": "mujoco/episodes/gate/nominal/franka_cube_stack/bistl_rho4",
+   "simulator": "mujoco",
+   "tag": "gate",
+   "condition": "nominal",
+   "task": "franka_cube_stack",
+   "method": "bistl_rho4",
+   "n_episodes": 100,
+   "bytes": 5697103,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 99,
+   "used_by": "Tab. D.5; Tab. 3 'caught' (cube_stack rho2/3/4); Sec. 5.1 speeds"
+  },
+  {
+   "path": "mujoco/episodes/gate/nominal/franka_drawer/bistl_rho1.5",
+   "simulator": "mujoco",
+   "tag": "gate",
+   "condition": "nominal",
+   "task": "franka_drawer",
+   "method": "bistl_rho1.5",
+   "n_episodes": 100,
+   "bytes": 9372655,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "Tab. D.5; Tab. 3 'caught' (cube_stack rho2/3/4); Sec. 5.1 speeds"
+  },
+  {
+   "path": "mujoco/episodes/gate/nominal/franka_drawer/bistl_rho2",
+   "simulator": "mujoco",
+   "tag": "gate",
+   "condition": "nominal",
+   "task": "franka_drawer",
+   "method": "bistl_rho2",
+   "n_episodes": 100,
+   "bytes": 8553205,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "Tab. D.5; Tab. 3 'caught' (cube_stack rho2/3/4); Sec. 5.1 speeds"
+  },
+  {
+   "path": "mujoco/episodes/gate/nominal/franka_drawer/bistl_rho3",
+   "simulator": "mujoco",
+   "tag": "gate",
+   "condition": "nominal",
+   "task": "franka_drawer",
+   "method": "bistl_rho3",
+   "n_episodes": 100,
+   "bytes": 8113255,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 99,
+   "used_by": "Tab. D.5; Tab. 3 'caught' (cube_stack rho2/3/4); Sec. 5.1 speeds"
+  },
+  {
+   "path": "mujoco/episodes/gate/nominal/franka_drawer/bistl_rho4",
+   "simulator": "mujoco",
+   "tag": "gate",
+   "condition": "nominal",
+   "task": "franka_drawer",
+   "method": "bistl_rho4",
+   "n_episodes": 100,
+   "bytes": 8124928,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "Tab. D.5; Tab. 3 'caught' (cube_stack rho2/3/4); Sec. 5.1 speeds"
+  },
+  {
+   "path": "mujoco/episodes/ltl/nominal/franka_cube_stack/bistl",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "nominal",
+   "task": "franka_cube_stack",
+   "method": "bistl",
+   "n_episodes": 100,
+   "bytes": 7375902,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 99,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/nominal/franka_cube_stack_ltl/bistl",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "nominal",
+   "task": "franka_cube_stack_ltl",
+   "method": "bistl",
+   "n_episodes": 100,
+   "bytes": 7466712,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 99,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/nominal/franka_peg_insertion/bistl",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "nominal",
+   "task": "franka_peg_insertion",
+   "method": "bistl",
+   "n_episodes": 100,
+   "bytes": 9242140,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/nominal/franka_peg_insertion_ltl/bistl",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "nominal",
+   "task": "franka_peg_insertion_ltl",
+   "method": "bistl",
+   "n_episodes": 100,
+   "bytes": 9298498,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/nominal/franka_drawer/bistl",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "nominal",
+   "task": "franka_drawer",
+   "method": "bistl",
+   "n_episodes": 100,
+   "bytes": 11353220,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/nominal/franka_drawer_ltl/bistl",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "nominal",
+   "task": "franka_drawer_ltl",
+   "method": "bistl",
+   "n_episodes": 100,
+   "bytes": 11556633,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/nominal/franka_drawer_ltl/drawer_open",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "nominal",
+   "task": "franka_drawer_ltl",
+   "method": "drawer_open",
+   "n_episodes": 100,
+   "bytes": 4898876,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/nominal/franka_drawer_ltl/drawer_hold",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "nominal",
+   "task": "franka_drawer_ltl",
+   "method": "drawer_hold",
+   "n_episodes": 100,
+   "bytes": 11566046,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/nominal/franka_fmb/bistl",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "nominal",
+   "task": "franka_fmb",
+   "method": "bistl",
+   "n_episodes": 100,
+   "bytes": 18118342,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/nominal/franka_fmb_ltl/bistl",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "nominal",
+   "task": "franka_fmb_ltl",
+   "method": "bistl",
+   "n_episodes": 100,
+   "bytes": 18245583,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/nominal/franka_fmb_ltl/fmb_stage",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "nominal",
+   "task": "franka_fmb_ltl",
+   "method": "fmb_stage",
+   "n_episodes": 100,
+   "bytes": 7611186,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/nominal/franka_fmb_ltl/fmb_direct",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "nominal",
+   "task": "franka_fmb_ltl",
+   "method": "fmb_direct",
+   "n_episodes": 100,
+   "bytes": 13084261,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 99,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/nominal/franka_fmb_ltl/fmb_hole_fixture",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "nominal",
+   "task": "franka_fmb_ltl",
+   "method": "fmb_hole_fixture",
+   "n_episodes": 100,
+   "bytes": 12642834,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 99,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/perturbed/franka_cube_stack/bistl",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "perturbed",
+   "task": "franka_cube_stack",
+   "method": "bistl",
+   "n_episodes": 100,
+   "bytes": 8314149,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 86,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/perturbed/franka_cube_stack_ltl/bistl",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "perturbed",
+   "task": "franka_cube_stack_ltl",
+   "method": "bistl",
+   "n_episodes": 100,
+   "bytes": 8637395,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 97,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/perturbed/franka_peg_insertion/bistl",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "perturbed",
+   "task": "franka_peg_insertion",
+   "method": "bistl",
+   "n_episodes": 100,
+   "bytes": 7302398,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 33,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/perturbed/franka_peg_insertion_ltl/bistl",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "perturbed",
+   "task": "franka_peg_insertion_ltl",
+   "method": "bistl",
+   "n_episodes": 100,
+   "bytes": 7369144,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 33,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/perturbed/franka_drawer/bistl",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "perturbed",
+   "task": "franka_drawer",
+   "method": "bistl",
+   "n_episodes": 100,
+   "bytes": 16489140,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/perturbed/franka_drawer_ltl/bistl",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "perturbed",
+   "task": "franka_drawer_ltl",
+   "method": "bistl",
+   "n_episodes": 100,
+   "bytes": 16789513,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/perturbed/franka_drawer_ltl/drawer_open",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "perturbed",
+   "task": "franka_drawer_ltl",
+   "method": "drawer_open",
+   "n_episodes": 100,
+   "bytes": 4996355,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/perturbed/franka_drawer_ltl/drawer_hold",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "perturbed",
+   "task": "franka_drawer_ltl",
+   "method": "drawer_hold",
+   "n_episodes": 100,
+   "bytes": 11089791,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/perturbed/franka_fmb/bistl",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "perturbed",
+   "task": "franka_fmb",
+   "method": "bistl",
+   "n_episodes": 100,
+   "bytes": 15683361,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 55,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/perturbed/franka_fmb_ltl/bistl",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "perturbed",
+   "task": "franka_fmb_ltl",
+   "method": "bistl",
+   "n_episodes": 100,
+   "bytes": 15615236,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 55,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/perturbed/franka_fmb_ltl/fmb_stage",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "perturbed",
+   "task": "franka_fmb_ltl",
+   "method": "fmb_stage",
+   "n_episodes": 100,
+   "bytes": 7781082,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 99,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/perturbed/franka_fmb_ltl/fmb_direct",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "perturbed",
+   "task": "franka_fmb_ltl",
+   "method": "fmb_direct",
+   "n_episodes": 100,
+   "bytes": 13159493,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 98,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/ltl/perturbed/franka_fmb_ltl/fmb_hole_fixture",
+   "simulator": "mujoco",
+   "tag": "ltl",
+   "condition": "perturbed",
+   "task": "franka_fmb_ltl",
+   "method": "fmb_hole_fixture",
+   "n_episodes": 100,
+   "bytes": 12728670,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 98,
+   "used_by": "gate/ltl.json (Sec. 5.4, App. A)"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/perturbed/franka_cube_stack/bistl",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "perturbed",
+   "task": "franka_cube_stack",
+   "method": "bistl",
+   "n_episodes": 500,
+   "bytes": 40860767,
+   "seeds": [
+    1000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 439,
+   "used_by": "tokprop/*_train.json, eval_*.json (Sec. 5.4, App. D learned proposer)"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/nominal/franka_cube_stack/bistl",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "nominal",
+   "task": "franka_cube_stack",
+   "method": "bistl",
+   "n_episodes": 100,
+   "bytes": 7376537,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 99,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/nominal/franka_cube_stack/bistl_learned",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "nominal",
+   "task": "franka_cube_stack",
+   "method": "bistl_learned",
+   "n_episodes": 100,
+   "bytes": 8206238,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 99,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/nominal/franka_cube_stack/bistl_learned_raw",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "nominal",
+   "task": "franka_cube_stack",
+   "method": "bistl_learned_raw",
+   "n_episodes": 100,
+   "bytes": 6114459,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/nominal/franka_cube_stack/bistl_learned_state",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "nominal",
+   "task": "franka_cube_stack",
+   "method": "bistl_learned_state",
+   "n_episodes": 100,
+   "bytes": 8206967,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 99,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/nominal/franka_cube_stack/bistl_learned_state_raw",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "nominal",
+   "task": "franka_cube_stack",
+   "method": "bistl_learned_state_raw",
+   "n_episodes": 100,
+   "bytes": 6911886,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/perturbed/franka_cube_stack/bistl_learned",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "perturbed",
+   "task": "franka_cube_stack",
+   "method": "bistl_learned",
+   "n_episodes": 100,
+   "bytes": 9130532,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 86,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/perturbed/franka_cube_stack/bistl_learned_raw",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "perturbed",
+   "task": "franka_cube_stack",
+   "method": "bistl_learned_raw",
+   "n_episodes": 100,
+   "bytes": 7300943,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 98,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/perturbed/franka_cube_stack/bistl_learned_state",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "perturbed",
+   "task": "franka_cube_stack",
+   "method": "bistl_learned_state",
+   "n_episodes": 100,
+   "bytes": 9131262,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 86,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/perturbed/franka_cube_stack/bistl_learned_state_raw",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "perturbed",
+   "task": "franka_cube_stack",
+   "method": "bistl_learned_state_raw",
+   "n_episodes": 100,
+   "bytes": 7762465,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 97,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/perturbed/franka_fmb/bistl",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "perturbed",
+   "task": "franka_fmb",
+   "method": "bistl",
+   "n_episodes": 500,
+   "bytes": 76857657,
+   "seeds": [
+    1000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 274,
+   "used_by": "tokprop/*_train.json, eval_*.json (Sec. 5.4, App. D learned proposer)"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/nominal/franka_fmb/bistl",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "nominal",
+   "task": "franka_fmb",
+   "method": "bistl",
+   "n_episodes": 100,
+   "bytes": 18118763,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/nominal/franka_fmb/bistl_learned",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "nominal",
+   "task": "franka_fmb",
+   "method": "bistl_learned",
+   "n_episodes": 100,
+   "bytes": 18579703,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/nominal/franka_fmb/bistl_learned_raw",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "nominal",
+   "task": "franka_fmb",
+   "method": "bistl_learned_raw",
+   "n_episodes": 100,
+   "bytes": 18435871,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/nominal/franka_fmb/bistl_learned_state",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "nominal",
+   "task": "franka_fmb",
+   "method": "bistl_learned_state",
+   "n_episodes": 100,
+   "bytes": 18580310,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/nominal/franka_fmb/bistl_learned_state_raw",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "nominal",
+   "task": "franka_fmb",
+   "method": "bistl_learned_state_raw",
+   "n_episodes": 100,
+   "bytes": 18444367,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/perturbed/franka_fmb/bistl_learned",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "perturbed",
+   "task": "franka_fmb",
+   "method": "bistl_learned",
+   "n_episodes": 100,
+   "bytes": 16128308,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 55,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/perturbed/franka_fmb/bistl_learned_raw",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "perturbed",
+   "task": "franka_fmb",
+   "method": "bistl_learned_raw",
+   "n_episodes": 100,
+   "bytes": 95881027,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 72,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/perturbed/franka_fmb/bistl_learned_state",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "perturbed",
+   "task": "franka_fmb",
+   "method": "bistl_learned_state",
+   "n_episodes": 100,
+   "bytes": 16128947,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 55,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/perturbed/franka_fmb/bistl_learned_state_raw",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "perturbed",
+   "task": "franka_fmb",
+   "method": "bistl_learned_state_raw",
+   "n_episodes": 100,
+   "bytes": 62978501,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 69,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/perturbed/franka_peg_insertion/bistl",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "perturbed",
+   "task": "franka_peg_insertion",
+   "method": "bistl",
+   "n_episodes": 500,
+   "bytes": 34359727,
+   "seeds": [
+    1000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 139,
+   "used_by": "tokprop/*_train.json, eval_*.json (Sec. 5.4, App. D learned proposer)"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/nominal/franka_peg_insertion/bistl",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "nominal",
+   "task": "franka_peg_insertion",
+   "method": "bistl",
+   "n_episodes": 100,
+   "bytes": 9242521,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/nominal/franka_peg_insertion/bistl_learned",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "nominal",
+   "task": "franka_peg_insertion",
+   "method": "bistl_learned",
+   "n_episodes": 100,
+   "bytes": 9499735,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/nominal/franka_peg_insertion/bistl_learned_raw",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "nominal",
+   "task": "franka_peg_insertion",
+   "method": "bistl_learned_raw",
+   "n_episodes": 100,
+   "bytes": 9484266,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 99,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/nominal/franka_peg_insertion/bistl_learned_state",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "nominal",
+   "task": "franka_peg_insertion",
+   "method": "bistl_learned_state",
+   "n_episodes": 100,
+   "bytes": 9500453,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 100,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/nominal/franka_peg_insertion/bistl_learned_state_raw",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "nominal",
+   "task": "franka_peg_insertion",
+   "method": "bistl_learned_state_raw",
+   "n_episodes": 100,
+   "bytes": 9478665,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 99,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/perturbed/franka_peg_insertion/bistl_learned",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "perturbed",
+   "task": "franka_peg_insertion",
+   "method": "bistl_learned",
+   "n_episodes": 100,
+   "bytes": 7550910,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 33,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/perturbed/franka_peg_insertion/bistl_learned_raw",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "perturbed",
+   "task": "franka_peg_insertion",
+   "method": "bistl_learned_raw",
+   "n_episodes": 100,
+   "bytes": 127121586,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 33,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/perturbed/franka_peg_insertion/bistl_learned_state",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "perturbed",
+   "task": "franka_peg_insertion",
+   "method": "bistl_learned_state",
+   "n_episodes": 100,
+   "bytes": 7551648,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 33,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/perturbed/franka_peg_insertion/bistl_learned_state_raw",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "perturbed",
+   "task": "franka_peg_insertion",
+   "method": "bistl_learned_state_raw",
+   "n_episodes": 100,
+   "bytes": 94077447,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 33,
+   "used_by": "tokprop/eval_*.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/nominal/franka_cube_stack/bistl_cmd",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "nominal",
+   "task": "franka_cube_stack",
+   "method": "bistl_cmd",
+   "n_episodes": 100,
+   "bytes": 32991698,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 16,
+   "used_by": "tokprop/eval_franka_cube_stack.json, franka_cube_stack_cmd_train.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/nominal/franka_cube_stack/bistl_learned_cmd",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "nominal",
+   "task": "franka_cube_stack",
+   "method": "bistl_learned_cmd",
+   "n_episodes": 100,
+   "bytes": 33286864,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 16,
+   "used_by": "tokprop/eval_franka_cube_stack.json, franka_cube_stack_cmd_train.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/perturbed/franka_cube_stack/bistl_cmd",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "perturbed",
+   "task": "franka_cube_stack",
+   "method": "bistl_cmd",
+   "n_episodes": 100,
+   "bytes": 29038910,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 8,
+   "used_by": "tokprop/eval_franka_cube_stack.json, franka_cube_stack_cmd_train.json"
+  },
+  {
+   "path": "mujoco/episodes/tokprop/perturbed/franka_cube_stack/bistl_learned_cmd",
+   "simulator": "mujoco",
+   "tag": "tokprop",
+   "condition": "perturbed",
+   "task": "franka_cube_stack",
+   "method": "bistl_learned_cmd",
+   "n_episodes": 100,
+   "bytes": 29310016,
+   "seeds": [
+    2000,
+    2099
+   ],
+   "missing_seeds": [],
+   "n_success": 8,
+   "used_by": "tokprop/eval_franka_cube_stack.json, franka_cube_stack_cmd_train.json"
+  },
+  {
+   "path": "isaac/episodes/sb/nominal/franka_fmb/bistl",
+   "simulator": "isaac",
+   "tag": "sb",
+   "condition": "nominal",
+   "task": "franka_fmb",
+   "method": "bistl",
+   "n_episodes": 150,
+   "bytes": 28289580,
+   "seeds": [
+    1000,
+    2049
+   ],
+   "missing_seeds": [],
+   "n_success": 125,
+   "used_by": "Tab. 2 PhysX rows (physics.json); Tab. 3 PhysX rows (compare/stack_physx_*.json); Fig. D.1"
+  },
+  {
+   "path": "isaac/episodes/sb/nominal/franka_peg_insertion/bistl",
+   "simulator": "isaac",
+   "tag": "sb",
+   "condition": "nominal",
+   "task": "franka_peg_insertion",
+   "method": "bistl",
+   "n_episodes": 150,
+   "bytes": 17342523,
+   "seeds": [
+    1000,
+    2049
+   ],
+   "missing_seeds": [],
+   "n_success": 128,
+   "used_by": "Tab. 2 PhysX rows (physics.json); Tab. 3 PhysX rows (compare/stack_physx_*.json); Fig. D.1"
+  },
+  {
+   "path": "isaac/episodes/sb/nominal/franka_cube_stack/bistl",
+   "simulator": "isaac",
+   "tag": "sb",
+   "condition": "nominal",
+   "task": "franka_cube_stack",
+   "method": "bistl",
+   "n_episodes": 150,
+   "bytes": 8162514,
+   "seeds": [
+    1000,
+    2049
+   ],
+   "missing_seeds": [],
+   "n_success": 150,
+   "used_by": "Tab. 2 PhysX rows (physics.json); Tab. 3 PhysX rows (compare/stack_physx_*.json); Fig. D.1"
+  },
+  {
+   "path": "isaac/episodes/gate/nominal/franka_cube_stack/bistl_rho1.5",
+   "simulator": "isaac",
+   "tag": "gate",
+   "condition": "nominal",
+   "task": "franka_cube_stack",
+   "method": "bistl_rho1.5",
+   "n_episodes": 50,
+   "bytes": 2202236,
+   "seeds": [
+    2000,
+    2049
+   ],
+   "missing_seeds": [],
+   "n_success": 50,
+   "used_by": "Isaac Sim stacking at 1.5x (Table 3 reports 2-4x)"
+  },
+  {
+   "path": "isaac/episodes/gate/nominal/franka_cube_stack/bistl_rho2",
+   "simulator": "isaac",
+   "tag": "gate",
+   "condition": "nominal",
+   "task": "franka_cube_stack",
+   "method": "bistl_rho2",
+   "n_episodes": 50,
+   "bytes": 2054803,
+   "seeds": [
+    2000,
+    2049
+   ],
+   "missing_seeds": [],
+   "n_success": 50,
+   "used_by": "Tab. 3 Isaac Sim 'caught' (2-4x)"
+  },
+  {
+   "path": "isaac/episodes/gate/nominal/franka_cube_stack/bistl_rho3",
+   "simulator": "isaac",
+   "tag": "gate",
+   "condition": "nominal",
+   "task": "franka_cube_stack",
+   "method": "bistl_rho3",
+   "n_episodes": 50,
+   "bytes": 1917260,
+   "seeds": [
+    2000,
+    2049
+   ],
+   "missing_seeds": [],
+   "n_success": 50,
+   "used_by": "Tab. 3 Isaac Sim 'caught' (2-4x)"
+  },
+  {
+   "path": "isaac/episodes/gate/nominal/franka_cube_stack/bistl_rho4",
+   "simulator": "isaac",
+   "tag": "gate",
+   "condition": "nominal",
+   "task": "franka_cube_stack",
+   "method": "bistl_rho4",
+   "n_episodes": 50,
+   "bytes": 1865001,
+   "seeds": [
+    2000,
+    2049
+   ],
+   "missing_seeds": [],
+   "n_success": 50,
+   "used_by": "Tab. 3 Isaac Sim 'caught' (2-4x)"
+  }
+ ],
+ "derived": [
+  {
+   "path": "derived/gate_margin/aero_peg_tighten_sb.npz",
+   "bytes": 22156454
+  },
+  {
+   "path": "derived/gate_margin/aero_peg_tighten_sb_a.json",
+   "bytes": 113885
+  },
+  {
+   "path": "derived/gate_margin/aero_wheel_sb.npz",
+   "bytes": 3171826
+  },
+  {
+   "path": "derived/gate_margin/aero_wheel_sb_a.json",
+   "bytes": 117614
+  },
+  {
+   "path": "derived/gate_margin/franka_cube_stack.npz",
+   "bytes": 2259643
+  },
+  {
+   "path": "derived/gate_margin/franka_cube_stack_a.json",
+   "bytes": 119639
+  },
+  {
+   "path": "derived/gate_margin/franka_drawer.npz",
+   "bytes": 4431349
+  },
+  {
+   "path": "derived/gate_margin/franka_drawer_a.json",
+   "bytes": 118300
+  },
+  {
+   "path": "derived/gate_margin/franka_fmb.npz",
+   "bytes": 6516776
+  },
+  {
+   "path": "derived/gate_margin/franka_fmb_a.json",
+   "bytes": 117430
+  },
+  {
+   "path": "derived/gate_margin/franka_peg_insertion.npz",
+   "bytes": 3132674
+  },
+  {
+   "path": "derived/gate_margin/franka_peg_insertion_a.json",
+   "bytes": 117117
+  },
+  {
+   "path": "derived/gate_margin/g1_drawer_sb.npz",
+   "bytes": 4794733
+  },
+  {
+   "path": "derived/gate_margin/g1_drawer_sb_a.json",
+   "bytes": 122671
+  },
+  {
+   "path": "derived/gate_margin/g1_peg_insertion_sb.npz",
+   "bytes": 2880518
+  },
+  {
+   "path": "derived/gate_margin/g1_peg_insertion_sb_a.json",
+   "bytes": 114069
+  },
+  {
+   "path": "derived/gate_margin/leap_peg_tighten_sb.npz",
+   "bytes": 14777394
+  },
+  {
+   "path": "derived/gate_margin/leap_peg_tighten_sb_a.json",
+   "bytes": 117156
+  },
+  {
+   "path": "derived/gate_margin/leap_wheel_sb.npz",
+   "bytes": 2782129
+  },
+  {
+   "path": "derived/gate_margin/leap_wheel_sb_a.json",
+   "bytes": 120529
+  }
+ ],
+ "extras_bytes": {
+  "stills": 15242823
+ }
+}

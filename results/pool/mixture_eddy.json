@@ -1,0 +1,556 @@
+{
+ "train": [
+  "franka_fmb",
+  "franka_peg_insertion",
+  "franka_cube_stack",
+  "franka_drawer"
+ ],
+ "test": [
+  "franka_fmb",
+  "franka_peg_insertion",
+  "franka_cube_stack",
+  "franka_drawer"
+ ],
+ "pool": "eddy",
+ "calib": "joint",
+ "alpha": 0.1,
+ "extra": null,
+ "exclude": [],
+ "shrink": 0.0,
+ "select": true,
+ "mondrian": false,
+ "transfer_max": false,
+ "renorm": false,
+ "n_calib": null,
+ "block": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "uncertified": {},
+ "tasks": {
+  "franka_fmb": {
+   "n_test": 200,
+   "n_calib": 800,
+   "eddies_per_episode": 16.0,
+   "coverage": 0.91,
+   "D_violations": 1,
+   "D_wilson_upper": 0.02777439986977148,
+   "D_tightness_median": 0.8618316495731918,
+   "compose_violations": 1,
+   "compose_wilson_upper": 0.02777439986977148,
+   "compose_tightness_median": 0.8580022365664493,
+   "compose_bound_median_m": 0.0513139821326196,
+   "chained_median": 16.0,
+   "restarts_median": 0.0,
+   "uncertified_labels": [
+    "transport:hole_backoff"
+   ]
+  },
+  "franka_peg_insertion": {
+   "n_test": 200,
+   "n_calib": 800,
+   "eddies_per_episode": 8.0,
+   "coverage": 0.965,
+   "D_violations": 1,
+   "D_wilson_upper": 0.02777439986977148,
+   "D_tightness_median": 0.8619573112749821,
+   "compose_violations": 1,
+   "compose_wilson_upper": 0.02777439986977148,
+   "compose_tightness_median": 0.8582110238408369,
+   "compose_bound_median_m": 0.0469469461748855,
+   "chained_median": 8.0,
+   "restarts_median": 0.0,
+   "uncertified_labels": [
+    "transport:hole_backoff"
+   ]
+  },
+  "franka_cube_stack": {
+   "n_test": 200,
+   "n_calib": 800,
+   "eddies_per_episode": 8.0,
+   "coverage": 0.87,
+   "D_violations": 0,
+   "D_wilson_upper": 0.018846005918320894,
+   "D_tightness_median": 0.8607511550860927,
+   "compose_violations": 0,
+   "compose_wilson_upper": 0.018846005918320894,
+   "compose_tightness_median": 0.8589940332067358,
+   "compose_bound_median_m": 0.06718685570113286,
+   "chained_median": 8.0,
+   "restarts_median": 0.0,
+   "uncertified_labels": []
+  },
+  "franka_drawer": {
+   "n_test": 200,
+   "n_calib": 800,
+   "eddies_per_episode": 14.0,
+   "coverage": 0.825,
+   "D_violations": 0,
+   "D_wilson_upper": 0.018846005918320894,
+   "D_tightness_median": 0.8964046638057491,
+   "compose_violations": 0,
+   "compose_wilson_upper": 0.018846005918320894,
+   "compose_tightness_median": 0.8955523071009553,
+   "compose_bound_median_m": 0.08535620646656793,
+   "chained_median": 14.0,
+   "restarts_median": 0.0,
+   "uncertified_labels": []
+  }
+ },
+ "labels": {
+  "reach:peg_above": {
+   "n_train": 32683,
+   "shrink_selected": 0.0,
+   "tasks": [
+    "franka_fmb",
+    "franka_peg_insertion"
+   ],
+   "spectral_radius": 0.8178066752915876,
+   "eps": 0.0010040785550641906,
+   "alpha": 0.1,
+   "slew_tube_m": 0.03548813709741097,
+   "noise_tube_m": 0.0027460424563731105,
+   "rho_star_5cm": 0.01731860764377622
+  },
+  "reach:peg_grasp": {
+   "n_train": 20467,
+   "shrink_selected": 0.0,
+   "tasks": [
+    "franka_fmb",
+    "franka_peg_insertion"
+   ],
+   "spectral_radius": 0.820333241698666,
+   "eps": 0.0007528674110632848,
+   "alpha": 0.1,
+   "slew_tube_m": 0.029418259908478496,
+   "noise_tube_m": 0.0017319749009335591,
+   "rho_star_5cm": 0.02092069416431103
+  },
+  "grasp:peg": {
+   "n_train": 15599,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_fmb",
+    "franka_peg_insertion"
+   ],
+   "spectral_radius": 0.6399398804787146,
+   "eps": 0.003491205787000129,
+   "alpha": 0.1,
+   "slew_tube_m": 0.017876368837436617,
+   "noise_tube_m": 0.004145798954437974,
+   "rho_star_5cm": 0.04007484155687312
+  },
+  "lift:peg": {
+   "n_train": 15561,
+   "shrink_selected": 0.0,
+   "tasks": [
+    "franka_fmb",
+    "franka_peg_insertion"
+   ],
+   "spectral_radius": 0.821269234496575,
+   "eps": 0.000640386288128383,
+   "alpha": 0.1,
+   "slew_tube_m": 0.026875952973756705,
+   "noise_tube_m": 0.0013677276505825668,
+   "rho_star_5cm": 0.022878395529257856
+  },
+  "transport:fixture_above": {
+   "n_train": 9382,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_fmb"
+   ],
+   "spectral_radius": 0.6365311193677852,
+   "eps": 0.016449685117087793,
+   "alpha": 0.1,
+   "slew_tube_m": 0.033284712034227004,
+   "noise_tube_m": 0.019503819115157077,
+   "rho_star_5cm": 0.026555185702931458
+  },
+  "place:fixture": {
+   "n_train": 15169,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_fmb"
+   ],
+   "spectral_radius": 0.6401897786751767,
+   "eps": 0.007616861781118403,
+   "alpha": 0.1,
+   "slew_tube_m": 0.022775744890097826,
+   "noise_tube_m": 0.0090457675151235,
+   "rho_star_5cm": 0.0357939985184744
+  },
+  "release:peg": {
+   "n_train": 9000,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_fmb",
+    "franka_peg_insertion"
+   ],
+   "spectral_radius": 0.6383720633866419,
+   "eps": 0.00522873389363118,
+   "alpha": 0.1,
+   "slew_tube_m": 0.019883259092887875,
+   "noise_tube_m": 0.006196294636005284,
+   "rho_star_5cm": 0.03840475117940505
+  },
+  "transport:hole_above": {
+   "n_train": 22074,
+   "shrink_selected": 0.3,
+   "tasks": [
+    "franka_fmb",
+    "franka_peg_insertion"
+   ],
+   "spectral_radius": 0.6380845160826375,
+   "eps": 0.017682474596730453,
+   "alpha": 0.1,
+   "slew_tube_m": 0.03472289562176993,
+   "noise_tube_m": 0.020981238509660462,
+   "rho_star_5cm": 0.025340840267161838
+  },
+  "insert:hole": {
+   "n_train": 62906,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_fmb",
+    "franka_peg_insertion"
+   ],
+   "spectral_radius": 0.6413715595711886,
+   "eps": 0.01582582011902584,
+   "alpha": 0.1,
+   "slew_tube_m": 0.03267312432133192,
+   "noise_tube_m": 0.018857025368151155,
+   "rho_star_5cm": 0.02704929205042708
+  },
+  "push:peg_top": {
+   "n_train": 37119,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_fmb"
+   ],
+   "spectral_radius": 0.6387415640226635,
+   "eps": 0.012631885098215547,
+   "alpha": 0.1,
+   "slew_tube_m": 0.02868890664653062,
+   "noise_tube_m": 0.014978850959807812,
+   "rho_star_5cm": 0.030652959994122524
+  },
+  "retreat:peg": {
+   "n_train": 13536,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_fmb",
+    "franka_peg_insertion"
+   ],
+   "spectral_radius": 0.6425943524754548,
+   "eps": 0.014455999452263073,
+   "alpha": 0.1,
+   "slew_tube_m": 0.03112492103449991,
+   "noise_tube_m": 0.017261175538128178,
+   "rho_star_5cm": 0.02833764466069278
+  },
+  "insert:hole_search": {
+   "n_train": 148,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_peg_insertion"
+   ],
+   "spectral_radius": 0.6408969790256839,
+   "eps": 0.013113168517592144,
+   "alpha": 0.1,
+   "slew_tube_m": 0.02938658083697579,
+   "noise_tube_m": 0.015601712048616344,
+   "rho_star_5cm": 0.029944387701765666
+  },
+  "reach:cube_above": {
+   "n_train": 14973,
+   "shrink_selected": 0.0,
+   "tasks": [
+    "franka_cube_stack"
+   ],
+   "spectral_radius": 0.8387745711602247,
+   "eps": 0.0010633073290095781,
+   "alpha": 0.1,
+   "slew_tube_m": 0.03547498170651066,
+   "noise_tube_m": 0.002900604227763792,
+   "rho_star_5cm": 0.0173508380823423
+  },
+  "reach:cube_grasp": {
+   "n_train": 7294,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_cube_stack"
+   ],
+   "spectral_radius": 0.6465484063765276,
+   "eps": 0.023016419013622877,
+   "alpha": 0.1,
+   "slew_tube_m": 0.04155877068028149,
+   "noise_tube_m": 0.02765005220543199,
+   "rho_star_5cm": 0.01928282422422948
+  },
+  "grasp:cube": {
+   "n_train": 5200,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_cube_stack"
+   ],
+   "spectral_radius": 0.6403648264161151,
+   "eps": 0.002975806775708971,
+   "alpha": 0.1,
+   "slew_tube_m": 0.01726383568147979,
+   "noise_tube_m": 0.003536915297404132,
+   "rho_star_5cm": 0.04061777884848533
+  },
+  "lift:cube": {
+   "n_train": 5800,
+   "shrink_selected": 0.0,
+   "tasks": [
+    "franka_cube_stack"
+   ],
+   "spectral_radius": 0.7977679110868227,
+   "eps": 0.0004937083076982579,
+   "alpha": 0.1,
+   "slew_tube_m": 0.026195579220006274,
+   "noise_tube_m": 0.0011787741985942234,
+   "rho_star_5cm": 0.023418446484890155
+  },
+  "transport:cube_above": {
+   "n_train": 11934,
+   "shrink_selected": 0.3,
+   "tasks": [
+    "franka_cube_stack"
+   ],
+   "spectral_radius": 0.6376198732351976,
+   "eps": 0.016327182378691782,
+   "alpha": 0.1,
+   "slew_tube_m": 0.03312255604418099,
+   "noise_tube_m": 0.019379810660308684,
+   "rho_star_5cm": 0.02673718109538032
+  },
+  "place:cube_top": {
+   "n_train": 3629,
+   "shrink_selected": 0.3,
+   "tasks": [
+    "franka_cube_stack"
+   ],
+   "spectral_radius": 0.6380820149656703,
+   "eps": 0.012050684598645637,
+   "alpha": 0.1,
+   "slew_tube_m": 0.027944016464535468,
+   "noise_tube_m": 0.014272556146672345,
+   "rho_star_5cm": 0.03135943902640411
+  },
+  "release:cube": {
+   "n_train": 5378,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_cube_stack"
+   ],
+   "spectral_radius": 0.638634755167195,
+   "eps": 0.003388899598768952,
+   "alpha": 0.1,
+   "slew_tube_m": 0.017697978382882833,
+   "noise_tube_m": 0.004016633201805945,
+   "rho_star_5cm": 0.04033232070933652
+  },
+  "retreat:cube": {
+   "n_train": 5570,
+   "shrink_selected": 0.0,
+   "tasks": [
+    "franka_cube_stack"
+   ],
+   "spectral_radius": 0.8050288611544095,
+   "eps": 0.0005238147682626601,
+   "alpha": 0.1,
+   "slew_tube_m": 0.02471849722679788,
+   "noise_tube_m": 0.0010533807172710625,
+   "rho_star_5cm": 0.024819629819117738
+  },
+  "reach:handle_pre": {
+   "n_train": 11455,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_drawer"
+   ],
+   "spectral_radius": 0.6461353103471559,
+   "eps": 0.03191171815134059,
+   "alpha": 0.1,
+   "slew_tube_m": 0.05203311872567708,
+   "noise_tube_m": 0.03817841476434461,
+   "rho_star_5cm": 0.010239051171629765
+  },
+  "reach:handle": {
+   "n_train": 5007,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_drawer"
+   ],
+   "spectral_radius": 0.6431914510977241,
+   "eps": 0.014667184405779632,
+   "alpha": 0.1,
+   "slew_tube_m": 0.03141990356643393,
+   "noise_tube_m": 0.017528252471868094,
+   "rho_star_5cm": 0.02805001131147121
+  },
+  "grasp:handle": {
+   "n_train": 4131,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_drawer"
+   ],
+   "spectral_radius": 0.6346826998337927,
+   "eps": 0.005967519529891773,
+   "alpha": 0.1,
+   "slew_tube_m": 0.020604790763906315,
+   "noise_tube_m": 0.007027648229902224,
+   "rho_star_5cm": 0.037980614842164105
+  },
+  "pull:drawer": {
+   "n_train": 10586,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_drawer"
+   ],
+   "spectral_radius": 0.6375658078288091,
+   "eps": 0.013369256658246913,
+   "alpha": 0.1,
+   "slew_tube_m": 0.02944612501847336,
+   "noise_tube_m": 0.015804869005743474,
+   "rho_star_5cm": 0.030080923013845042
+  },
+  "release:handle": {
+   "n_train": 3800,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_drawer"
+   ],
+   "spectral_radius": 0.6412658809579402,
+   "eps": 0.0143254464429578,
+   "alpha": 0.1,
+   "slew_tube_m": 0.030855252388849147,
+   "noise_tube_m": 0.017046379457860146,
+   "rho_star_5cm": 0.028636909650913586
+  },
+  "retreat:handle": {
+   "n_train": 5973,
+   "shrink_selected": 0.0,
+   "tasks": [
+    "franka_drawer"
+   ],
+   "spectral_radius": 0.8204584292191514,
+   "eps": 0.0006800016277635293,
+   "alpha": 0.1,
+   "slew_tube_m": 0.028602871109481294,
+   "noise_tube_m": 0.0015312680159043444,
+   "rho_star_5cm": 0.021484682004190032
+  },
+  "reach:box_above": {
+   "n_train": 11117,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_drawer"
+   ],
+   "spectral_radius": 0.6445869370325723,
+   "eps": 0.02286667339221913,
+   "alpha": 0.1,
+   "slew_tube_m": 0.041322256468425765,
+   "noise_tube_m": 0.02740713834667796,
+   "rho_star_5cm": 0.019483437903135187
+  },
+  "reach:box_grasp": {
+   "n_train": 6688,
+   "shrink_selected": 0.0,
+   "tasks": [
+    "franka_drawer"
+   ],
+   "spectral_radius": 0.8160280938544356,
+   "eps": 0.0007245010618609544,
+   "alpha": 0.1,
+   "slew_tube_m": 0.03200466005606593,
+   "noise_tube_m": 0.0018271307194237965,
+   "rho_star_5cm": 0.01915579055257534
+  },
+  "grasp:box": {
+   "n_train": 5200,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_drawer"
+   ],
+   "spectral_radius": 0.6349045716384539,
+   "eps": 0.0048396388140298525,
+   "alpha": 0.1,
+   "slew_tube_m": 0.019263979002993748,
+   "noise_tube_m": 0.005702718187462378,
+   "rho_star_5cm": 0.03919748974532374
+  },
+  "lift:box": {
+   "n_train": 6800,
+   "shrink_selected": 0.0,
+   "tasks": [
+    "franka_drawer"
+   ],
+   "spectral_radius": 0.8052631913745174,
+   "eps": 0.00028450669867081143,
+   "alpha": 0.1,
+   "slew_tube_m": 0.023699519388581752,
+   "noise_tube_m": 0.0005547744343451268,
+   "rho_star_5cm": 0.025636173911661436
+  },
+  "transport:goal_above": {
+   "n_train": 18012,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_drawer"
+   ],
+   "spectral_radius": 0.6412909399327402,
+   "eps": 0.01967214367141121,
+   "alpha": 0.1,
+   "slew_tube_m": 0.03710312000020699,
+   "noise_tube_m": 0.023432855916524508,
+   "rho_star_5cm": 0.023321109749609638
+  },
+  "place:goal": {
+   "n_train": 15810,
+   "shrink_selected": 0.0,
+   "tasks": [
+    "franka_drawer"
+   ],
+   "spectral_radius": 0.8241354285907374,
+   "eps": 0.0008886526576291618,
+   "alpha": 0.1,
+   "slew_tube_m": 0.030295900290254883,
+   "noise_tube_m": 0.002090533503406607,
+   "rho_star_5cm": 0.020383127874344608
+  },
+  "release:box": {
+   "n_train": 5800,
+   "shrink_selected": 0.0,
+   "tasks": [
+    "franka_drawer"
+   ],
+   "spectral_radius": 0.639690733710249,
+   "eps": 0.0005039045198320084,
+   "alpha": 0.1,
+   "slew_tube_m": 0.014303810519600089,
+   "noise_tube_m": 0.0005982601202198124,
+   "rho_star_5cm": 0.043254073078609664
+  },
+  "retreat:box": {
+   "n_train": 7000,
+   "shrink_selected": 0.0,
+   "tasks": [
+    "franka_drawer"
+   ],
+   "spectral_radius": 0.8136866056907152,
+   "eps": 0.0008033796365361101,
+   "alpha": 0.1,
+   "slew_tube_m": 0.02630989681282659,
+   "noise_tube_m": 0.0016311986061816825,
+   "rho_star_5cm": 0.023519296352898237
+  }
+ }
+}

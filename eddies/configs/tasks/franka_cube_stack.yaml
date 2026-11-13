@@ -1,0 +1,29 @@
+# Cube stacking: eddies.envs task franka_cube_stack (class attributes mirrored here; tests/test_config.py checks they agree)
+name: franka_cube_stack
+display: Cube stacking
+robot: franka
+registry: eddies.envs.tasks.franka_sb:FrankaStackTokens
+kwargs: {}
+legacy: eddies.envs.tasks.franka_stack:FrankaCubeStackTask
+horizon_s: 45.0
+failure_budget: 2
+rho_step: 0.012
+rho_game: 1.2
+control_dt: 0.02
+formula: G !bad & F(grasped & F(stacked & released))
+tag: sb
+conditions:
+- nominal
+isaac: true
+ltl_variant: eddies.envs.tasks.franka_ltl:FrankaStackLTL
+n_eddies: 8
+n_distinct_eddies: 8
+nominal_plan:
+- reach:cube_above
+- reach:cube_grasp
+- grasp:cube
+- lift:cube
+- transport:cube_above
+- place:cube_top
+- release:cube
+- retreat:cube

@@ -1,0 +1,7 @@
+# eddies.cert.experiments.gate_adaptive: the self-calibrating gate (Fig. 5, Fig. 7, Tables D.1, D.2, Fig. E.1)
+# Franka held-out task: --task <t> [--known]                       -> adaptive_<t>[_known].json
+# every task of every robot:  --group <r> --task <t> --known       -> adaptive_<t>_known_<r>.json
+mu_cm: [1, 2, 3, 5, 7.5, 10, 15]          # held-out Franka tasks
+mu_cm_group: [2, 3, 5, 7.5, 10, 15]       # --group runs (the same list as embodiments.yaml)
+n_test: 100                               # test episodes of a held-out Franka task (first 100 of 200)
+n_test_group: 200                         # test episodes with --group

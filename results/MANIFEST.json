@@ -1,0 +1,762 @@
+{
+ "repo": "EDDIES",
+ "paper": "Eddies: Dynamical Action Tokens with Certified Composition (L4DC 2027)",
+ "layout": "results/<experiment>/<file>. scripts/reproduce.sh regenerates every file listed here from the dataset episodes, except results/real (the Table 3 robot rows reported in the paper and the camera calibration). results/facts and results/eqoff are written by scripts/facts/; results/gate_margin holds summary.json, the per-step logs are in the dataset under derived/gate_margin/. Not listed: results/README.md",
+ "artefact_ids": {
+  "fig1": "Fig. 1: Streamer chains certified Eddies into an Eddie stream (schematic)",
+  "fig2": "Fig. 2: projection of the proposed command onto trust radius and slew bound (schematic)",
+  "fig3": "Fig. 3: how an Eddie is built (model from rollouts + conformal envelope -> tube) (schematic)",
+  "fig4": "Fig. 4 res_cert.pdf: (a) episode scores and conformal quantile q on staged insertion (95% of first 100 test episodes covered); (b) chained bound of Theorem 1 vs measured error on one test episode",
+  "fig5": "Fig. 5 res_gate.pdf: finished runs vs tolerance for the fixed-calibration and the self-calibrating gate, per robot (mean over its tasks, 200 test episodes per task)",
+  "fig6": "Fig. 6 envs_strip.pdf: the ten tasks in MuJoCo (top) and Isaac Sim (bottom)",
+  "fig7": "Fig. 7 res_heldout.pdf: four Franka tasks held out of training: finished runs vs tolerance from no calibration vs own calibration as prior, and running envelope-miss rate",
+  "fig8": "Fig. 8 real_setup.pdf: real Franka cube stacking: setup photo with inset, robot-camera RGB with cube boxes, depth heights, and six frames of a perturbed run with certified stop",
+  "tab1": "Table 1: Eddies, 'Eddies, one reference model', 'Eddies, per-step bound'; tube p90 and runs finished at 5/7.5 cm (7.5/10 cm on G1) of 400 test runs per robot; bootstrap CIs",
+  "tab2": "Table 2: certificates moved between systems (LEAP<->Aero hands, MuJoCo->PhysX), borrowed vs re-identified: violations and runs finished at mu=15 cm",
+  "tab3": "Table 3: cube stacking in MuJoCo (first 100 test episodes), PhysX and on the real Franka at mu=5 cm, both gates, caught at 2-4x speed",
+  "text-1-contrib": "Intro contribution numbers on the Eddies side: 4.3 cm tube, 275 of 400 finished at 5 cm; 77-100% vs 69-86% hand-overs at 5 cm",
+  "text-4.1-eqoff": "Sec. 4.1: equilibrium a median 0.2 cm from the command on the Franka; error to the command within the tube on 99.9% of test steps",
+  "text-4.2-gains": "After Theorem 1: 81 of the 85 certified Eddies of the ten tasks have a_i < 1 (also Fig. B.1 caption, Appendix B gains paragraph: ranges 0.64-0.85 / 0.86-0.92 / 0.84, four G1 Eddies up to 1.41, run factors <= 0.011 / 0.21 / 0.34 / 0.23)",
+  "text-5.1-cert": "Sec. 5.1 headline: tubes violated in 5 of 2,000 test episodes, 3-5 cm wide; envelopes missed in 6-16.5% (Franka) and 8.5-10.5% under the self-calibrating gate; 1,955 vs 890 of 2,000 finish at 5 cm; one-step check with fixed calibration finishes 1,968; at 2 cm 1,627 would leave mu and 97% are stopped first; at 3 cm 387 of 395 stopped and 1,328 finish; faster Eddies: 35-100% leave mu, gate refuses every plan",
+  "text-5.2-tokens": "Sec. 5.2: per-step envelope certifies no plan at these tolerances; with the reference model for every Eddie the tube is 1.5-7.6x wider",
+  "text-5.3-transfer": "Sec. 5.3: borrowed certificates violated or too wide; re-identified finish >80% (PhysX after ten training episodes); pulling the drawer 3.0 cm (Franka) vs 8.3 cm (G1), reaching for the peg 2.9-4.9 cm on all four",
+  "text-5.4-newtasks": "Sec. 5.4: new task finishes nearly every run with 1-5 false stops; conformal certificate finishes none without calibration and needs about 55 episodes to finish 83-93; push primitive certifies every staged-insertion Eddie and leaves nine primitives unchanged; LTLf product game recovers the four plans, runs five new goals (99-100%) and refuses three impossible ones; learned proposer 92-100% of hand-overs right, 99-100% nominal success",
+  "text-5.5-real": "Sec. 5.5: fixed-calibration gate stops 19 of 50 runs in Isaac Sim and 20 on the robot (9 and 7 once re-identified), self-calibrating 2-5; at 2-4x speed fixed-calibration gate catches every run, self-calibrating 95-99%; cube pushed out of the safe set -> certified stop holds 15 s",
+  "text-A-ltl": "Appendix A: product game recovers the four hand-written plans, solves five new goals (99-100% of 100 episodes each), refuses three impossible goals",
+  "figB1": "Fig. B.1 supp_gains.pdf: one-step gain a_i vs spectral radius, and the per-run factor, for every certified Eddie of the four robots",
+  "tabB1": "Table B.1: identification per robot: m, n, weights of M, S, reference Eddie",
+  "text-B-ident": "Appendix B identification text: 200/200/200 episodes; lambda from {0,0.03,0.3,3}; searching for the hole (148 transitions) 193 cm -> 2.7 cm; Franka 34 of 35 Eddies certified (backing off: 16 transitions); G1 25, hands 13 each; largest certified spectral radius 0.913",
+  "tabC1": "Table C.1: the eleven primitives and the taxonomies listing them",
+  "tabC2": "Table C.2: the ten tasks, Eddies per nominal plan, LTLf formula, horizon",
+  "figC1": "Fig. C.1: peg insertion in Isaac Sim (PhysX), close-up",
+  "text-C-physx-real": "Appendix C text: PhysX re-identification (10 PhysX episodes + 50 calibration; stacking 50 + 50); real Franka protocol (CRISP 1 kHz, RealSense, 50 test runs half perturbed, 50 each at 2/3/4x)",
+  "tabD1": "Table D.1: per-task certificates, 200 test episodes: Eddies, viol., tube median/p90, finished at 5 cm (fixed / self-calibrating), caught at 2 cm; totals 96 Eddies (85 certified), 5 viol., 890 / 1955, 1581 / 1627",
+  "text-D-pooled": "Appendix D pooled text: fixed calibration with only the next command checked finishes 1,968 of 2,000 (vs 890 / 1,955); at 3 cm 395 would leave mu, 387 stopped first, 1,328 finish",
+  "tabD2": "Table D.2: each Franka task held out, self-calibrating gate from no calibration vs own calibration as prior, first 100 test episodes: caught at 2 cm, false stops, finished at 5 cm",
+  "tabD3": "Table D.3: Franka certificates per Eddie vs per primitive: viol. (tube/chain), coverage, median chained bound, tightness",
+  "text-D-certres": "Appendix D coverage note: drawer coverage 0.835 (167/200) is within Beta(181,20) sampling (P=0.026 / 0.10); one quantile over the mixture of the four tasks (no per-task calibration; pool/mixture_{eddy,primitive}.json, printed by eddies.evaluate tableD3) is not valid per task: per-primitive coverage 0.965 / 0.970 / 0.960 / 0.680 (FMB / peg / stack / drawer), per-Eddie 0.910 / 0.965 / 0.870 / 0.825",
+  "text-D-eqoff": "Appendix D 'Equilibrium and command': offsets per robot, exceedance rates, O_i 0.10-1.91 cm",
+  "text-D-learned": "Appendix D 'A learned Eddie proposer': MLP (64,64) predicts 91.7% / 99.9% / 99.97% of held-out hand-overs on stacking / peg / staged; with the contract guard reproduces the supervisor on all 100 seeds; unguarded 99-100% nominal; behaviour-cloned commands: 16 of 100 successes, fixed-calibration gate catches all 27 that would leave mu",
+  "text-D-tokens": "Appendix D text on Table 1: per-step bound needs 4,769-22,499 calibration steps per task; Aero wheel certified at 10 cm (192 runs); splits; bootstrap +-10 runs; Eddies at 10 cm 359/174/340; the reference-model one-step error and the second Franka split are quoted from the paper",
+  "tabD4": "Table D.4: hand-overs and episodes certified by funnel containment vs the recursion, Franka, 100 test episodes per task, mu = 3-10 cm",
+  "tabD5": "Table D.5: certify-or-stop under faster commands (1x-4x), % refused / stopped / completed, calibrated at nominal speed (400 executions) or at the commanded speed (200)",
+  "tabD6": "Table D.6: ultimate tube radius of the Eddies that run on more than one robot",
+  "figD1": "Fig. D.1 supp_dynmap.pdf: PCA of dynamics descriptors and descriptor distances (same Eddie on two robots 4.31 (43 pairs) vs two Eddies on one robot 4.91 (831), p=0.33; MuJoCo vs PhysX 0.74 (10)); 87 of 98 fits kept",
+  "figE1": "Fig. E.1 supp_qtrace.pdf: coverage level q_t of the self-calibrating gate on each held-out Franka task (mu = 5 cm)",
+  "text-E-growth": "Proposition E.4 remark: push registered after the nine other primitives certifies every staged-insertion Eddie and leaves them unchanged"
+ },
+ "files": [
+  {
+   "path": "results/adaptive/adaptive_aero_peg_tighten_sb_known_aero.json",
+   "bytes": 152581,
+   "sha256": "00b406bc02e3c0ccadb0ac0b18521af3576d96c15f3362e74165b5af302cdf87",
+   "used_by": [
+    "fig5",
+    "text-5.1-cert",
+    "tabD1"
+   ],
+   "source": "scripts/reproduce.sh adaptive-groups"
+  },
+  {
+   "path": "results/adaptive/adaptive_aero_wheel_sb_known_aero.json",
+   "bytes": 154175,
+   "sha256": "35ba2003a58e4abe377cc21b41e40058c4096b08db8d18bf5bb3b1fc389ca24b",
+   "used_by": [
+    "fig5",
+    "text-5.1-cert",
+    "tabD1"
+   ],
+   "source": "scripts/reproduce.sh adaptive-groups"
+  },
+  {
+   "path": "results/adaptive/adaptive_franka_cube_stack.json",
+   "bytes": 94813,
+   "sha256": "2d4541bfda9db6484ab10e832c0ad120ac63e8b28d95f9f13ca8755d1a38151a",
+   "used_by": [
+    "fig7",
+    "text-5.4-newtasks",
+    "tabD2",
+    "figE1"
+   ],
+   "source": "scripts/reproduce.sh adaptive"
+  },
+  {
+   "path": "results/adaptive/adaptive_franka_cube_stack_known.json",
+   "bytes": 93741,
+   "sha256": "4fe06cd38b1709b8ed975b5533ea3028ef9d502b4db216e95117fcd3efe33e7f",
+   "used_by": [
+    "fig7",
+    "tabD2"
+   ],
+   "source": "scripts/reproduce.sh adaptive"
+  },
+  {
+   "path": "results/adaptive/adaptive_franka_cube_stack_known_franka.json",
+   "bytes": 155737,
+   "sha256": "0975936d1540e86fb6d7b30612dbdecad0f287282aa0c0696434a77113676690",
+   "used_by": [
+    "fig5",
+    "text-5.1-cert",
+    "tabD1"
+   ],
+   "source": "scripts/reproduce.sh adaptive-groups"
+  },
+  {
+   "path": "results/adaptive/adaptive_franka_drawer.json",
+   "bytes": 94814,
+   "sha256": "6d2db20df0d695812ab2ec38ee1dc60755e95e5f8da4fc34fc092e952fb3fdbe",
+   "used_by": [
+    "fig7",
+    "text-5.4-newtasks",
+    "tabD2",
+    "figE1"
+   ],
+   "source": "scripts/reproduce.sh adaptive"
+  },
+  {
+   "path": "results/adaptive/adaptive_franka_drawer_known.json",
+   "bytes": 93661,
+   "sha256": "e7855aabddfc5868a6c735cec5e1cd932687dff04090a0dcd6ff1ef4e55a4122",
+   "used_by": [
+    "fig7",
+    "tabD2"
+   ],
+   "source": "scripts/reproduce.sh adaptive"
+  },
+  {
+   "path": "results/adaptive/adaptive_franka_drawer_known_franka.json",
+   "bytes": 154799,
+   "sha256": "b113a90ad8d510078a7a852fdf2d6b0479c2efa8b3ed09d40aeb20e22ef7f4f3",
+   "used_by": [
+    "fig5",
+    "text-5.1-cert",
+    "tabD1"
+   ],
+   "source": "scripts/reproduce.sh adaptive-groups"
+  },
+  {
+   "path": "results/adaptive/adaptive_franka_fmb.json",
+   "bytes": 94171,
+   "sha256": "b36c6cfd0ef24a18404340dcd92d7d9a8fc1646fb73cccc3eacb53a6b63a2cf2",
+   "used_by": [
+    "fig7",
+    "text-5.4-newtasks",
+    "tabD2",
+    "figE1"
+   ],
+   "source": "scripts/reproduce.sh adaptive"
+  },
+  {
+   "path": "results/adaptive/adaptive_franka_fmb_known.json",
+   "bytes": 93198,
+   "sha256": "a0398a12671f66786feae3e4b6924f5be50434872a9e791f9c68a075c89c1ac4",
+   "used_by": [
+    "fig7",
+    "tabD2"
+   ],
+   "source": "scripts/reproduce.sh adaptive"
+  },
+  {
+   "path": "results/adaptive/adaptive_franka_fmb_known_franka.json",
+   "bytes": 153939,
+   "sha256": "91e5e51519f2b3e7ebf2f83d9caf871251b6fc436a424cf6388f2b4c46f2e82f",
+   "used_by": [
+    "fig5",
+    "text-5.1-cert",
+    "tabD1"
+   ],
+   "source": "scripts/reproduce.sh adaptive-groups"
+  },
+  {
+   "path": "results/adaptive/adaptive_franka_peg_insertion.json",
+   "bytes": 93399,
+   "sha256": "064cc51a7d07dd43694b75bd8b6c81e8aba3b016a471d27f5208928c851557dd",
+   "used_by": [
+    "fig7",
+    "text-5.4-newtasks",
+    "tabD2",
+    "figE1"
+   ],
+   "source": "scripts/reproduce.sh adaptive"
+  },
+  {
+   "path": "results/adaptive/adaptive_franka_peg_insertion_known.json",
+   "bytes": 93073,
+   "sha256": "f236f32225a93a8c679cd6e04fe008c953a7aa8633980beba652e140e9bae90a",
+   "used_by": [
+    "fig7",
+    "tabD2"
+   ],
+   "source": "scripts/reproduce.sh adaptive"
+  },
+  {
+   "path": "results/adaptive/adaptive_franka_peg_insertion_known_franka.json",
+   "bytes": 153893,
+   "sha256": "f7c4f9de76cfea9ff09694e8483e930c2b68ec54c9922a6d09c9e4109be90126",
+   "used_by": [
+    "fig5",
+    "text-5.1-cert",
+    "tabD1"
+   ],
+   "source": "scripts/reproduce.sh adaptive-groups"
+  },
+  {
+   "path": "results/adaptive/adaptive_g1_drawer_sb_known_g1.json",
+   "bytes": 155997,
+   "sha256": "61a2c4b60bd032bb3d4a3b465cb612cff79a76a87156c2f7aa8a3469cfc4bfc6",
+   "used_by": [
+    "fig5",
+    "text-5.1-cert",
+    "tabD1"
+   ],
+   "source": "scripts/reproduce.sh adaptive-groups"
+  },
+  {
+   "path": "results/adaptive/adaptive_g1_peg_insertion_sb_known_g1.json",
+   "bytes": 152178,
+   "sha256": "7b4c1598ac4d9ec43b97567addf06feb6700818741967a2e4b8de87d6abeb10e",
+   "used_by": [
+    "fig5",
+    "text-5.1-cert",
+    "tabD1"
+   ],
+   "source": "scripts/reproduce.sh adaptive-groups"
+  },
+  {
+   "path": "results/adaptive/adaptive_leap_peg_tighten_sb_known_leap.json",
+   "bytes": 153678,
+   "sha256": "d09dcbec48c6ac1b4cb6bfc7e03046ddb52d82a152e3d78bf3d0e59d47537966",
+   "used_by": [
+    "fig5",
+    "text-5.1-cert",
+    "tabD1"
+   ],
+   "source": "scripts/reproduce.sh adaptive-groups"
+  },
+  {
+   "path": "results/adaptive/adaptive_leap_wheel_sb_known_leap.json",
+   "bytes": 155586,
+   "sha256": "d6e087012eb50b54820415e8b055a619380267ec84dccc4d9e9298774f8852b1",
+   "used_by": [
+    "fig5",
+    "text-5.1-cert",
+    "tabD1"
+   ],
+   "source": "scripts/reproduce.sh adaptive-groups"
+  },
+  {
+   "path": "results/compare/stack_mujoco.json",
+   "bytes": 9569,
+   "sha256": "fcc44ab332b1d57fab9e1d54ec7f8b7b6e8bbc292819c97202cfc3e49faab38a",
+   "used_by": [
+    "tab3"
+   ],
+   "source": "scripts/reproduce.sh stack"
+  },
+  {
+   "path": "results/compare/stack_physx_own.json",
+   "bytes": 9424,
+   "sha256": "8f029cf32206f32afda4e754240f9336fb994e780c683ba80541990669c0dcbe",
+   "used_by": [
+    "tab3"
+   ],
+   "source": "scripts/reproduce.sh stack"
+  },
+  {
+   "path": "results/compare/stack_physx_sim.json",
+   "bytes": 9425,
+   "sha256": "c1e2546296287081349be86a3f4f045e69ecc015a4439ce4084b1abd43115319",
+   "used_by": [
+    "tab3"
+   ],
+   "source": "scripts/reproduce.sh stack"
+  },
+  {
+   "path": "results/dynamics_map/dynamics_map.json",
+   "bytes": 112646,
+   "sha256": "4a3b20937071835c671e37cef58a792bbc101c9b34999ce09c00b38ec0ad272f",
+   "used_by": [
+    "figD1"
+   ],
+   "source": "scripts/reproduce.sh dynmap"
+  },
+  {
+   "path": "results/dynamics_map/dynamics_map_stats_own.json",
+   "bytes": 2290,
+   "sha256": "74bed29c1510b400e9453ce15be7b0a2e75e7043d78263927aa2b5a4b4dba77d",
+   "used_by": [
+    "figD1"
+   ],
+   "source": "scripts/reproduce.sh dynmap"
+  },
+  {
+   "path": "results/embodiments/embodiments.json",
+   "bytes": 51209,
+   "sha256": "d1a96c6d9413eb8e58e4bb314808c8827a323e7f8f39bcb604a03423f9f939d6",
+   "used_by": [
+    "fig5",
+    "tab2",
+    "text-5.1-cert",
+    "text-5.3-transfer",
+    "tabB1",
+    "text-B-ident",
+    "tabC2",
+    "tabD1",
+    "tabD6"
+   ],
+   "source": "scripts/reproduce.sh certify"
+  },
+  {
+   "path": "results/eqoff/eqoff.json",
+   "bytes": 80196,
+   "sha256": "6a82df21d46d54abcb88f8b62cceb64997abff09ae77570dcfbc8467d81c6f4b",
+   "used_by": [
+    "text-4.1-eqoff",
+    "text-D-eqoff"
+   ],
+   "source": "scripts/reproduce.sh facts (scripts/facts/eq_offset.py)"
+  },
+  {
+   "path": "results/facts/gain_all.json",
+   "bytes": 46036,
+   "sha256": "1ad5952b9aeeb43948154b6c55a9ac7fd021b146781d3a4b4a3e85769414045b",
+   "used_by": [
+    "text-4.2-gains",
+    "figB1",
+    "text-B-ident"
+   ],
+   "source": "scripts/reproduce.sh facts (scripts/facts/gain_check.py)"
+  },
+  {
+   "path": "results/facts/shrink_probe.json",
+   "bytes": 10112,
+   "sha256": "f7855249b44df1c6caea958aab17d59ed66ebb3aa3b83264e031314aa32e4d65",
+   "used_by": [
+    "text-B-ident"
+   ],
+   "source": "scripts/reproduce.sh facts (scripts/facts/shrink_probe.py)"
+  },
+  {
+   "path": "results/figs_data/trace_fmb.json",
+   "bytes": 285947,
+   "sha256": "bc1c02971579fe000d689b67c756163b093ce7ad48886256f9e5a40698dd8938",
+   "used_by": [
+    "fig4"
+   ],
+   "source": "scripts/reproduce.sh trace"
+  },
+  {
+   "path": "results/gate/containment.json",
+   "bytes": 4596,
+   "sha256": "81325e5277f5919b35fc2d055e2067f22276553a90cc44824c7bce98621e93e4",
+   "used_by": [
+    "text-1-contrib",
+    "tabD4"
+   ],
+   "source": "scripts/reproduce.sh containment"
+  },
+  {
+   "path": "results/gate/gate_eddy.json",
+   "bytes": 80811,
+   "sha256": "3da1906ab8ae0e8d680bd4b3c8eb47e42ea4b95deadb2740b8f43144b53a7a2a",
+   "used_by": [
+    "text-5.1-cert",
+    "tabD5"
+   ],
+   "source": "scripts/reproduce.sh fixed"
+  },
+  {
+   "path": "results/gate/gate_eddy_recal.json",
+   "bytes": 80591,
+   "sha256": "6e2c18335a6656a105699e7518cf7e5808c627447dead57f423b1be1fbf17aec",
+   "used_by": [
+    "tabD5"
+   ],
+   "source": "scripts/reproduce.sh fixed"
+  },
+  {
+   "path": "results/gate/ltl.json",
+   "bytes": 33560,
+   "sha256": "e2a547cd1f6944e6f35b17d91cc8bac8514e7bb1bae5865166293b5eb6b10164",
+   "used_by": [
+    "text-5.4-newtasks",
+    "text-A-ltl"
+   ],
+   "source": "scripts/reproduce.sh ltl"
+  },
+  {
+   "path": "results/gate_margin/summary.json",
+   "bytes": 163658,
+   "sha256": "ded72028e28445e9bf2e3faa3151758f79a0a563a821e5c69dd60b07ebff4e12",
+   "used_by": [
+    "text-5.1-cert",
+    "text-D-pooled"
+   ],
+   "source": "python -m eddies.cert.tables.gate_margin --out results/gate_margin/summary.json (scripts/reproduce.sh gate-margin)",
+   "note": "counts per tolerance, method and task, and the margin monitor at equal rates, of the per-step gate margins <task>.npz / <task>_a.json (in the dataset under derived/gate_margin/)"
+  },
+  {
+   "path": "results/ltl/compose_check_2000.json",
+   "bytes": 4476,
+   "sha256": "45450c21197cf1037b0a0bc3451c060c55194e2a19dc209cca34347868437bca",
+   "used_by": [
+    "text-5.4-newtasks",
+    "text-A-ltl",
+    "tabC2"
+   ],
+   "source": "scripts/reproduce.sh ltl"
+  },
+  {
+   "path": "results/physics/physics.json",
+   "bytes": 31863,
+   "sha256": "46f7e027f0ab291c40e3297a0561505017b50c1bb54075717d0b587af79e6684",
+   "used_by": [
+    "tab2",
+    "text-5.3-transfer"
+   ],
+   "source": "scripts/reproduce.sh physics"
+  },
+  {
+   "path": "results/pool/final_grow_v0.json",
+   "bytes": 4274,
+   "sha256": "018c6572153f31a00b764f97a422f4513321970701397968bbcb9f8ea074e021",
+   "used_by": [
+    "text-E-growth"
+   ],
+   "source": "scripts/reproduce.sh pool"
+  },
+  {
+   "path": "results/pool/final_grow_v1.json",
+   "bytes": 4602,
+   "sha256": "cebdf329bf3950661e19677264be4edbec9fad6e7a8badd04ff8a0df422d5f60",
+   "used_by": [
+    "text-5.4-newtasks",
+    "text-E-growth"
+   ],
+   "source": "scripts/reproduce.sh pool"
+  },
+  {
+   "path": "results/pool/final_indist_eddy.json",
+   "bytes": 13780,
+   "sha256": "134d80c4593b83fdf2bfb65425d94b6db6316d82f8f8da80ae8a4e229b4492ec",
+   "used_by": [
+    "text-5.1-cert",
+    "tabD3",
+    "text-D-certres"
+   ],
+   "source": "scripts/reproduce.sh pool"
+  },
+  {
+   "path": "results/pool/final_indist_primitive.json",
+   "bytes": 6111,
+   "sha256": "1e4324f9a6527beb28741e47afd10b09cab9a25207e4cc28fdbac8cabe012219",
+   "used_by": [
+    "tabD3"
+   ],
+   "source": "scripts/reproduce.sh pool"
+  },
+  {
+   "path": "results/pool/mixture_eddy.json",
+   "bytes": 13794,
+   "sha256": "78949073501a358a6f39f362ec54109e43f07f53d1fc4c08a592f62baf3c150a",
+   "used_by": [
+    "text-D-certres"
+   ],
+   "source": "eddies.gate pool ... (no --mondrian) (scripts/reproduce.sh pool)"
+  },
+  {
+   "path": "results/pool/mixture_primitive.json",
+   "bytes": 6115,
+   "sha256": "a7124f473f7d8da14808f30ac05a2fd5dd8ee4169b0fe7e66131a640298fe908",
+   "used_by": [
+    "text-D-certres"
+   ],
+   "source": "eddies.gate pool ... (no --mondrian) (scripts/reproduce.sh pool)"
+  },
+  {
+   "path": "results/real/calib/T_base_cam.yaml",
+   "bytes": 1172,
+   "sha256": "ce71c44da2d0d0c8288ede339efc3856c779b297262798be758d2346612a936b",
+   "used_by": [
+    "fig8"
+   ],
+   "source": "hand-to-eye camera calibration of the robot session"
+  },
+  {
+   "path": "results/real/table3_robot_rows.json",
+   "bytes": 3489,
+   "sha256": "3defdc435ce2d259472e1c24e31dc21965075cf192801c586b2ba672c5d5d6e8",
+   "used_by": [
+    "tab3",
+    "text-5.5-real"
+   ],
+   "source": "Table 3 of the paper, robot rows (values reported in the paper; robot logs not released)"
+  },
+  {
+   "path": "results/table1/calibration.json",
+   "bytes": 7363770,
+   "sha256": "cfd190db299caa4b7ff81dbe3a29100809dba353764e1f6c4a824d20c7b71a19",
+   "used_by": [
+    "tab1",
+    "text-5.2-tokens",
+    "text-D-tokens"
+   ],
+   "source": "scripts/reproduce.sh table1"
+  },
+  {
+   "path": "results/table1/eddie.json",
+   "bytes": 295897,
+   "sha256": "b2aa01ea3ccdc0ca04edcaf305400e13ba3d8e61f68a532d8dfe3b2edca259f2",
+   "used_by": [
+    "tab1",
+    "text-1-contrib"
+   ],
+   "source": "scripts/reproduce.sh table1"
+  },
+  {
+   "path": "results/table1/eddie_refonly.json",
+   "bytes": 289762,
+   "sha256": "ac7c17f1023a6b283e11e80c311903ffaa1d5317f25d9eb78bab91c373b3190f",
+   "used_by": [
+    "tab1",
+    "text-5.2-tokens"
+   ],
+   "source": "scripts/reproduce.sh table1"
+  },
+  {
+   "path": "results/table1/table1_ci_final.json",
+   "bytes": 548876,
+   "sha256": "2fb75c7e11e15d53b4b712aade3f93053fcf3a81f88db8589ee51cf5661b9389",
+   "used_by": [
+    "tab1"
+   ],
+   "source": "python -m eddies.cert.tables.table1_ci --dir table1 --B 2000 --json results/table1/table1_ci_final.json (scripts/reproduce.sh table1)"
+  },
+  {
+   "path": "results/table1_robots/aero/calibration.json",
+   "bytes": 2429340,
+   "sha256": "c5b50c60afe2ff1ab6a914a176e1f273ad708a382e22f7d1efea5161cc07928d",
+   "used_by": [
+    "tab1"
+   ],
+   "source": "scripts/reproduce.sh table1-robots"
+  },
+  {
+   "path": "results/table1_robots/aero/eddie.json",
+   "bytes": 222877,
+   "sha256": "97cc34c3b62c3ecf7a1b635c27454ebb04d9d5224e5fc085366ac52b631e463c",
+   "used_by": [
+    "tab1"
+   ],
+   "source": "scripts/reproduce.sh table1-robots"
+  },
+  {
+   "path": "results/table1_robots/aero/eddie_refonly.json",
+   "bytes": 223770,
+   "sha256": "7656dc6a28ef4c4ff19b1d774852e479bffc914571fad11b93dcac9e108a0c2e",
+   "used_by": [
+    "tab1"
+   ],
+   "source": "scripts/reproduce.sh table1-robots"
+  },
+  {
+   "path": "results/table1_robots/g1/calibration.json",
+   "bytes": 4221511,
+   "sha256": "0f2f7e78bcb732163376f01b0715af546dc1a314f6e6af2def723b955684292f",
+   "used_by": [
+    "tab1"
+   ],
+   "source": "scripts/reproduce.sh table1-robots"
+  },
+  {
+   "path": "results/table1_robots/g1/eddie.json",
+   "bytes": 297812,
+   "sha256": "dc6f4a87be64f196151804902b96fe81a49f14bc4c8da0d617c3fc9c5c296fd1",
+   "used_by": [
+    "tab1"
+   ],
+   "source": "scripts/reproduce.sh table1-robots"
+  },
+  {
+   "path": "results/table1_robots/g1/eddie_refonly.json",
+   "bytes": 298496,
+   "sha256": "c707b8a2c2ea1cd92a551e1b7582d2bded3772f1057621715311d960435fe890",
+   "used_by": [
+    "tab1"
+   ],
+   "source": "scripts/reproduce.sh table1-robots"
+  },
+  {
+   "path": "results/table1_robots/leap/calibration.json",
+   "bytes": 2350835,
+   "sha256": "26b42f0a388e18cb2371ed1ea06d38b26b74a4112412acbfea73dc9c2a42e656",
+   "used_by": [
+    "tab1"
+   ],
+   "source": "scripts/reproduce.sh table1-robots"
+  },
+  {
+   "path": "results/table1_robots/leap/eddie.json",
+   "bytes": 222518,
+   "sha256": "e3ba7585a9c1448bebfa03b4fd220ad45dd08d0ec226a9cff923237aad467688",
+   "used_by": [
+    "tab1"
+   ],
+   "source": "scripts/reproduce.sh table1-robots"
+  },
+  {
+   "path": "results/table1_robots/leap/eddie_refonly.json",
+   "bytes": 223979,
+   "sha256": "ef6b3c46f52db5c76e80bed3757b4af7a8e65a589eb31f9a827def6169b97c7c",
+   "used_by": [
+    "tab1"
+   ],
+   "source": "scripts/reproduce.sh table1-robots"
+  },
+  {
+   "path": "results/tokprop/eval_franka_cube_stack.json",
+   "bytes": 58892,
+   "sha256": "a7eddada7925167fa5041a3645fda2f82dbccbf8c75ad296d84983bfec31fc5d",
+   "used_by": [
+    "text-5.4-newtasks",
+    "text-D-learned"
+   ],
+   "source": "scripts/reproduce.sh tokprop-eval"
+  },
+  {
+   "path": "results/tokprop/eval_franka_fmb.json",
+   "bytes": 41162,
+   "sha256": "d99bf7f5a5a0e72b33434b358c1aa3e1b7429d785ee50f714eafa3a901ac96c6",
+   "used_by": [
+    "text-5.4-newtasks",
+    "text-D-learned"
+   ],
+   "source": "scripts/reproduce.sh tokprop-eval"
+  },
+  {
+   "path": "results/tokprop/eval_franka_peg_insertion.json",
+   "bytes": 40800,
+   "sha256": "af7c0d0e2ea7bec869bc1d36e9d93bf4e9a5ecee19b28c875877bce3f1b24ff9",
+   "used_by": [
+    "text-5.4-newtasks",
+    "text-D-learned"
+   ],
+   "source": "scripts/reproduce.sh tokprop-eval"
+  },
+  {
+   "path": "results/tokprop/franka_cube_stack_cmd_train.json",
+   "bytes": 749,
+   "sha256": "6a350274e0a65df88a990151c86688d44106048de5dd2143c0102c2e09123dc2",
+   "used_by": [
+    "text-5.4-newtasks",
+    "text-D-learned"
+   ],
+   "source": "scripts/reproduce.sh tokprop-train"
+  },
+  {
+   "path": "results/tokprop/franka_cube_stack_full_train.json",
+   "bytes": 6339,
+   "sha256": "e5be10d5ead0bbc2da715afbd3f6a410db9e7640de0a756e0dd057705ffe5099",
+   "used_by": [
+    "text-5.4-newtasks",
+    "text-D-learned"
+   ],
+   "source": "scripts/reproduce.sh tokprop-train"
+  },
+  {
+   "path": "results/tokprop/franka_cube_stack_state_train.json",
+   "bytes": 6734,
+   "sha256": "d48cf9027876d3804d7e0985380cb31787d9d8be2592ee1cb19b3595b2881acf",
+   "used_by": [
+    "text-5.4-newtasks",
+    "text-D-learned"
+   ],
+   "source": "scripts/reproduce.sh tokprop-train"
+  },
+  {
+   "path": "results/tokprop/franka_fmb_full_train.json",
+   "bytes": 6506,
+   "sha256": "515db11f74b64a24334cf35d53b43a5b86932a4b660dcb908ffae7e0981934bd",
+   "used_by": [
+    "text-5.4-newtasks",
+    "text-D-learned"
+   ],
+   "source": "scripts/reproduce.sh tokprop-train"
+  },
+  {
+   "path": "results/tokprop/franka_fmb_state_train.json",
+   "bytes": 6696,
+   "sha256": "958c7dd42da2c86177e9d14ed8a765ba878d08de9e6b45c4efe41fd0b591ceab",
+   "used_by": [
+    "text-5.4-newtasks",
+    "text-D-learned"
+   ],
+   "source": "scripts/reproduce.sh tokprop-train"
+  },
+  {
+   "path": "results/tokprop/franka_peg_insertion_full_train.json",
+   "bytes": 5751,
+   "sha256": "d8cc3796582df80e2944058e917a7203dbc4f68cfc094cb2ea00db3e56a3d628",
+   "used_by": [
+    "text-5.4-newtasks",
+    "text-D-learned"
+   ],
+   "source": "scripts/reproduce.sh tokprop-train"
+  },
+  {
+   "path": "results/tokprop/franka_peg_insertion_state_train.json",
+   "bytes": 6060,
+   "sha256": "b6b2b446b26d26db065e0bd0439bbb90c2689f00e79ef919c940deae5f9c4ed4",
+   "used_by": [
+    "text-5.4-newtasks",
+    "text-D-learned"
+   ],
+   "source": "scripts/reproduce.sh tokprop-train"
+  },
+  {
+   "path": "results/transfer/transfer_franka_cube_stack.json",
+   "bytes": 30477,
+   "sha256": "6e7fc44d0ac5d4ceec90b2a161d2e015aadde31e0e92eb83a2d2236579216f8b",
+   "used_by": [
+    "text-5.4-newtasks"
+   ],
+   "source": "scripts/reproduce.sh transfer"
+  },
+  {
+   "path": "results/transfer/transfer_franka_drawer.json",
+   "bytes": 30688,
+   "sha256": "50bea0f85213d139b057f8308b63d9ad907b06e225a151955e2cefcfdb9caf00",
+   "used_by": [
+    "text-5.4-newtasks"
+   ],
+   "source": "scripts/reproduce.sh transfer"
+  },
+  {
+   "path": "results/transfer/transfer_franka_fmb.json",
+   "bytes": 33903,
+   "sha256": "c62540a049f131e74f19efa7dcd3ac967685133a765d4d4bc2819c6325680f51",
+   "used_by": [
+    "text-5.4-newtasks"
+   ],
+   "source": "scripts/reproduce.sh transfer"
+  },
+  {
+   "path": "results/transfer/transfer_franka_peg_insertion.json",
+   "bytes": 33027,
+   "sha256": "0f027436388695431f687dfc0706d6a99194711d3161009735d5e27e8e2698e6",
+   "used_by": [
+    "text-5.4-newtasks"
+   ],
+   "source": "scripts/reproduce.sh transfer"
+  },
+  {
+   "path": "results/transfer/transfer_indist.json",
+   "bytes": 33408,
+   "sha256": "af846c11621e2077097ed50998c72568b2b56fdf57603abcaf885be0f3873ef5",
+   "used_by": [
+    "text-5.4-newtasks"
+   ],
+   "source": "scripts/reproduce.sh transfer"
+  }
+ ]
+}

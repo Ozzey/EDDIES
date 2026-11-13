@@ -1,0 +1,21 @@
+# Franka Emika Panda (7 DoF + parallel gripper): the four Franka tasks of the paper.
+name: franka
+display: Franka Emika Panda
+short: Franka
+family: franka                    # key of the certified coordinate block
+color: blue                       # plots.colors key
+menagerie_xml: franka_emika_panda/panda.xml
+skillbook: eddies.envs.skillbook.primitives:BOOK
+primitives: [reach, grasp, lift, transport, place, release, insert, push, pull, turn, retreat]
+tasks: [franka_fmb, franka_peg_insertion, franka_cube_stack, franka_drawer]
+n_eddies: 35                      # distinct Eddies certified over the four tasks (Table 1)
+rho_step: 0.012                   # metric step per 50 Hz control step (about 0.2 m/s TCP)
+control_dt: 0.02
+physics_dt: 0.002
+home: [0.0, -0.3, 0.0, -2.2, 0.0, 1.95, 0.7853981633974483]
+embedding:
+  names: [x, y, z, rx, ry, rz, aperture, force]
+  weights: [1.0, 1.0, 1.0, 0.3, 0.3, 0.3, 0.15, 0.05]
+  max_aperture: 0.08
+  force_max: 40.0
+block: {pose: [0, 1, 2, 3, 4, 5], position: [0, 1, 2]}

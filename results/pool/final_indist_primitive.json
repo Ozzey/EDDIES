@@ -1,0 +1,253 @@
+{
+ "train": [
+  "franka_fmb",
+  "franka_peg_insertion",
+  "franka_cube_stack",
+  "franka_drawer"
+ ],
+ "test": [
+  "franka_fmb",
+  "franka_peg_insertion",
+  "franka_cube_stack",
+  "franka_drawer"
+ ],
+ "pool": "primitive",
+ "calib": "joint",
+ "alpha": 0.1,
+ "extra": null,
+ "exclude": [],
+ "shrink": 0.0,
+ "select": true,
+ "mondrian": true,
+ "transfer_max": false,
+ "renorm": false,
+ "n_calib": null,
+ "block": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "uncertified": {},
+ "tasks": {
+  "franka_fmb": {
+   "n_test": 200,
+   "n_calib": 200,
+   "eddies_per_episode": 16.0,
+   "coverage": 0.9,
+   "D_violations": 1,
+   "D_wilson_upper": 0.02777439986977148,
+   "D_tightness_median": 0.8115199025913884,
+   "compose_violations": 1,
+   "compose_wilson_upper": 0.02777439986977148,
+   "compose_tightness_median": 0.8249191983042825,
+   "compose_bound_median_m": 0.10809779613107984,
+   "chained_median": 14.0,
+   "restarts_median": 0.0,
+   "uncertified_labels": []
+  },
+  "franka_peg_insertion": {
+   "n_test": 200,
+   "n_calib": 200,
+   "eddies_per_episode": 8.0,
+   "coverage": 0.91,
+   "D_violations": 1,
+   "D_wilson_upper": 0.02777439986977148,
+   "D_tightness_median": 0.9107156025347674,
+   "compose_violations": 1,
+   "compose_wilson_upper": 0.02777439986977148,
+   "compose_tightness_median": 0.9105106939889858,
+   "compose_bound_median_m": 0.10311835353543133,
+   "chained_median": 7.0,
+   "restarts_median": 0.0,
+   "uncertified_labels": []
+  },
+  "franka_cube_stack": {
+   "n_test": 200,
+   "n_calib": 200,
+   "eddies_per_episode": 8.0,
+   "coverage": 0.9,
+   "D_violations": 0,
+   "D_wilson_upper": 0.018846005918320894,
+   "D_tightness_median": 0.8905556413313025,
+   "compose_violations": 0,
+   "compose_wilson_upper": 0.018846005918320894,
+   "compose_tightness_median": 0.8900677201919003,
+   "compose_bound_median_m": 0.11130403492217894,
+   "chained_median": 7.0,
+   "restarts_median": 0.0,
+   "uncertified_labels": []
+  },
+  "franka_drawer": {
+   "n_test": 200,
+   "n_calib": 200,
+   "eddies_per_episode": 14.0,
+   "coverage": 0.9,
+   "D_violations": 0,
+   "D_wilson_upper": 0.018846005918320894,
+   "D_tightness_median": 0.8012233189223701,
+   "compose_violations": 0,
+   "compose_wilson_upper": 0.018846005918320894,
+   "compose_tightness_median": 0.8140863999423982,
+   "compose_bound_median_m": 0.15693447955686501,
+   "chained_median": 12.0,
+   "restarts_median": 0.0,
+   "uncertified_labels": []
+  }
+ },
+ "labels": {
+  "reach": {
+   "n_train": 109684,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_cube_stack",
+    "franka_drawer",
+    "franka_fmb",
+    "franka_peg_insertion"
+   ],
+   "spectral_radius": 0.8579602953081796,
+   "eps": 0.02229423801132036,
+   "alpha": 0.1,
+   "slew_tube_m": 0.06317769297367666,
+   "noise_tube_m": 0.041147637257162265,
+   "rho_star_5cm": 0.0048219738652054735
+  },
+  "grasp": {
+   "n_train": 30130,
+   "shrink_selected": 0.0,
+   "tasks": [
+    "franka_cube_stack",
+    "franka_drawer",
+    "franka_fmb",
+    "franka_peg_insertion"
+   ],
+   "spectral_radius": 0.8576884403250531,
+   "eps": 0.0010019454679699794,
+   "alpha": 0.1,
+   "slew_tube_m": 0.023942162061809547,
+   "noise_tube_m": 0.0018470766851262509,
+   "rho_star_5cm": 0.026152199456457775
+  },
+  "lift": {
+   "n_train": 28161,
+   "shrink_selected": 0.3,
+   "tasks": [
+    "franka_cube_stack",
+    "franka_drawer",
+    "franka_fmb",
+    "franka_peg_insertion"
+   ],
+   "spectral_radius": 0.8576818975747623,
+   "eps": 0.0016573256482343317,
+   "alpha": 0.1,
+   "slew_tube_m": 0.025208687364372796,
+   "noise_tube_m": 0.003058767954752464,
+   "rho_star_5cm": 0.025431008308694603
+  },
+  "transport": {
+   "n_train": 61418,
+   "shrink_selected": 0.0,
+   "tasks": [
+    "franka_cube_stack",
+    "franka_drawer",
+    "franka_fmb",
+    "franka_peg_insertion"
+   ],
+   "spectral_radius": 0.8217244576395554,
+   "eps": 0.001221490671476592,
+   "alpha": 0.1,
+   "slew_tube_m": 0.03704657759455473,
+   "noise_tube_m": 0.0034375798394389767,
+   "rho_star_5cm": 0.01662498376172741
+  },
+  "place": {
+   "n_train": 34608,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_cube_stack",
+    "franka_drawer",
+    "franka_fmb"
+   ],
+   "spectral_radius": 0.8577046230005613,
+   "eps": 0.004017164167769118,
+   "alpha": 0.1,
+   "slew_tube_m": 0.029528194252551203,
+   "noise_tube_m": 0.0074109241469077995,
+   "rho_star_5cm": 0.023107232845463285
+  },
+  "release": {
+   "n_train": 23978,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_cube_stack",
+    "franka_drawer",
+    "franka_fmb",
+    "franka_peg_insertion"
+   ],
+   "spectral_radius": 0.8576885499118199,
+   "eps": 0.006751587199289863,
+   "alpha": 0.1,
+   "slew_tube_m": 0.03455888087714768,
+   "noise_tube_m": 0.012449059334084675,
+   "rho_star_5cm": 0.02038059362502471
+  },
+  "insert": {
+   "n_train": 63054,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_fmb",
+    "franka_peg_insertion"
+   ],
+   "spectral_radius": 0.8576866496136945,
+   "eps": 0.0033495570920283923,
+   "alpha": 0.1,
+   "slew_tube_m": 0.028238686480899746,
+   "noise_tube_m": 0.006171689881639437,
+   "rho_star_5cm": 0.02383376999468774
+  },
+  "push": {
+   "n_train": 37119,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_fmb"
+   ],
+   "spectral_radius": 0.8576838489493065,
+   "eps": 0.002116783214396038,
+   "alpha": 0.1,
+   "slew_tube_m": 0.025965457885832557,
+   "noise_tube_m": 0.003900187884881575,
+   "rho_star_5cm": 0.025070971048964233
+  },
+  "retreat": {
+   "n_train": 32079,
+   "shrink_selected": 0.03,
+   "tasks": [
+    "franka_cube_stack",
+    "franka_drawer",
+    "franka_fmb",
+    "franka_peg_insertion"
+   ],
+   "spectral_radius": 0.8576648050029518,
+   "eps": 0.0024186848008650994,
+   "alpha": 0.1,
+   "slew_tube_m": 0.02655231259825612,
+   "noise_tube_m": 0.004458884144614787,
+   "rho_star_5cm": 0.0247355629485632
+  },
+  "pull": {
+   "n_train": 10586,
+   "shrink_selected": 0.3,
+   "tasks": [
+    "franka_drawer"
+   ],
+   "spectral_radius": 0.8577254360413615,
+   "eps": 0.005875050157771254,
+   "alpha": 0.1,
+   "slew_tube_m": 0.03294524309426067,
+   "noise_tube_m": 0.01083451434538101,
+   "rho_star_5cm": 0.02125600803090861
+  }
+ }
+}

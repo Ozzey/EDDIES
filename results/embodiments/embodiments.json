@@ -1,0 +1,2382 @@
+{
+ "alpha": 0.1,
+ "mu_m": [
+  0.02,
+  0.03,
+  0.05,
+  0.075,
+  0.1,
+  0.15
+ ],
+ "groups": {
+  "franka": {
+   "tasks": {
+    "franka_fmb": {
+     "q": 1.2160365790558048,
+     "n_test": 200,
+     "eddies": 11,
+     "plan_certified": 11,
+     "plan_tube_cm": {
+      "reach:peg_above": 3.5591110636233276,
+      "reach:peg_grasp": 2.948320704150138,
+      "grasp:peg": 1.8031831688563884,
+      "lift:peg": 2.6927241239893576,
+      "transport:fixture_above": 3.401608356498275,
+      "place:fixture": 2.3114951114034508,
+      "release:peg": 2.011561325215235,
+      "transport:hole_above": 3.550966873709464,
+      "insert:hole": 3.338024180573715,
+      "push:peg_top": 2.925059690271861,
+      "retreat:peg": 3.1772195924685573
+     },
+     "violation": {
+      "n": 200,
+      "violations": 1,
+      "rate": 0.005,
+      "wilson_upper": 0.02777439986977148
+     },
+     "radius": {
+      "median_cm": 2.948320704150138,
+      "p90_cm": 3.5591110636233276,
+      "uncertified_steps": 0.0006032272658724174
+     },
+     "gate": [
+      {
+       "mu_m": 0.02,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 200,
+       "exceed_caught": 200,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.03,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 1,
+       "exceed_caught": 1,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.05,
+       "n": 200,
+       "accepted": 200,
+       "completed": 188,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 188,
+        "residual": 10,
+        "uncertified": 2
+       }
+      },
+      {
+       "mu_m": 0.075,
+       "n": 200,
+       "accepted": 200,
+       "completed": 188,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 188,
+        "residual": 10,
+        "uncertified": 2
+       }
+      },
+      {
+       "mu_m": 0.1,
+       "n": 200,
+       "accepted": 200,
+       "completed": 188,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 188,
+        "residual": 10,
+        "uncertified": 2
+       }
+      },
+      {
+       "mu_m": 0.15,
+       "n": 200,
+       "accepted": 200,
+       "completed": 188,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 188,
+        "residual": 10,
+        "uncertified": 2
+       }
+      }
+     ]
+    },
+    "franka_peg_insertion": {
+     "q": 1.09736124445467,
+     "n_test": 200,
+     "eddies": 8,
+     "plan_certified": 8,
+     "plan_tube_cm": {
+      "reach:peg_above": 3.531306971843759,
+      "reach:peg_grasp": 2.9307841984804224,
+      "grasp:peg": 1.761206332569204,
+      "lift:peg": 2.678875676366855,
+      "transport:hole_above": 3.3385286865948673,
+      "insert:hole": 3.1470939701507454,
+      "release:peg": 1.9488229125760208,
+      "retreat:peg": 3.002447600953453
+     },
+     "violation": {
+      "n": 200,
+      "violations": 1,
+      "rate": 0.005,
+      "wilson_upper": 0.02777439986977148
+     },
+     "radius": {
+      "median_cm": 3.1470939701507454,
+      "p90_cm": 3.531306971843759,
+      "uncertified_steps": 0.0007594753592439
+     },
+     "gate": [
+      {
+       "mu_m": 0.02,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 200,
+       "exceed_caught": 200,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.03,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 1,
+       "exceed_caught": 1,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.05,
+       "n": 200,
+       "accepted": 200,
+       "completed": 184,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 184,
+        "residual": 14,
+        "uncertified": 2
+       }
+      },
+      {
+       "mu_m": 0.075,
+       "n": 200,
+       "accepted": 200,
+       "completed": 184,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 184,
+        "residual": 14,
+        "uncertified": 2
+       }
+      },
+      {
+       "mu_m": 0.1,
+       "n": 200,
+       "accepted": 200,
+       "completed": 184,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 184,
+        "residual": 14,
+        "uncertified": 2
+       }
+      },
+      {
+       "mu_m": 0.15,
+       "n": 200,
+       "accepted": 200,
+       "completed": 184,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 184,
+        "residual": 14,
+        "uncertified": 2
+       }
+      }
+     ]
+    },
+    "franka_cube_stack": {
+     "q": 1.232630073015472,
+     "n_test": 200,
+     "eddies": 8,
+     "plan_certified": 8,
+     "plan_tube_cm": {
+      "reach:cube_above": 3.562481571356055,
+      "reach:cube_grasp": 4.298706554292553,
+      "grasp:cube": 1.7446539059808204,
+      "lift:cube": 2.625647014055718,
+      "transport:cube_above": 3.412364218316829,
+      "place:cube_top": 2.8681281568761414,
+      "release:cube": 1.7905462134618313,
+      "retreat:cube": 2.477291080459905
+     },
+     "violation": {
+      "n": 200,
+      "violations": 0,
+      "rate": 0.0,
+      "wilson_upper": 0.018846005918320894
+     },
+     "radius": {
+      "median_cm": 3.412364218316829,
+      "p90_cm": 4.298706554292553,
+      "uncertified_steps": 0.0
+     },
+     "gate": [
+      {
+       "mu_m": 0.02,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 200,
+       "exceed_caught": 200,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.03,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 2,
+       "exceed_caught": 2,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.05,
+       "n": 200,
+       "accepted": 200,
+       "completed": 180,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 1,
+       "causes": {
+        "completed": 180,
+        "residual": 20
+       }
+      },
+      {
+       "mu_m": 0.075,
+       "n": 200,
+       "accepted": 200,
+       "completed": 180,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 1,
+       "causes": {
+        "completed": 180,
+        "residual": 20
+       }
+      },
+      {
+       "mu_m": 0.1,
+       "n": 200,
+       "accepted": 200,
+       "completed": 180,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 1,
+       "causes": {
+        "completed": 180,
+        "residual": 20
+       }
+      },
+      {
+       "mu_m": 0.15,
+       "n": 200,
+       "accepted": 200,
+       "completed": 180,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 1,
+       "causes": {
+        "completed": 180,
+        "residual": 20
+       }
+      }
+     ]
+    },
+    "franka_drawer": {
+     "q": 1.1835817945620253,
+     "n_test": 200,
+     "eddies": 14,
+     "plan_certified": 14,
+     "plan_tube_cm": {
+      "reach:handle_pre": 5.240761437484033,
+      "reach:handle": 3.159183983798074,
+      "grasp:handle": 2.0673725624145876,
+      "pull:drawer": 2.9601156460055726,
+      "release:handle": 3.102246192283211,
+      "retreat:handle": 2.8617891460986162,
+      "reach:box_above": 4.159109565753824,
+      "reach:box_grasp": 3.2022582552562975,
+      "grasp:box": 1.9319917500251713,
+      "lift:box": 2.3704961223011276,
+      "transport:goal_above": 3.7332975080423756,
+      "place:goal": 3.0316406529350672,
+      "release:box": 1.4309678909198587,
+      "retreat:box": 2.6325897392858706
+     },
+     "violation": {
+      "n": 200,
+      "violations": 0,
+      "rate": 0.0,
+      "wilson_upper": 0.018846005918320894
+     },
+     "radius": {
+      "median_cm": 3.0316406529350672,
+      "p90_cm": 4.159109565753824,
+      "uncertified_steps": 0.0
+     },
+     "gate": [
+      {
+       "mu_m": 0.02,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 200,
+       "exceed_caught": 200,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.03,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.05,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.075,
+       "n": 200,
+       "accepted": 200,
+       "completed": 169,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 169,
+        "residual": 31
+       }
+      },
+      {
+       "mu_m": 0.1,
+       "n": 200,
+       "accepted": 200,
+       "completed": 169,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 169,
+        "residual": 31
+       }
+      },
+      {
+       "mu_m": 0.15,
+       "n": 200,
+       "accepted": 200,
+       "completed": 169,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 169,
+        "residual": 31
+       }
+      }
+     ]
+    }
+   },
+   "certified": 34,
+   "rho": 0.012,
+   "J": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "reference": "release:box"
+  },
+  "g1": {
+   "tasks": {
+    "g1_peg_insertion_sb": {
+     "q": 2.7952242347425456,
+     "n_test": 200,
+     "eddies": 8,
+     "plan_certified": 8,
+     "plan_tube_cm": {
+      "reach:peg_above": 4.573303963300194,
+      "reach:peg_grasp": 4.861117669620615,
+      "grasp:peg": 2.0590491567048694,
+      "lift:peg": 4.548434402751952,
+      "transport:hole_above": 4.7952424624364625,
+      "insert:hole": 6.572653078308986,
+      "release:peg": 2.8504574364357977,
+      "retreat:peg": 5.397791781511016
+     },
+     "violation": {
+      "n": 200,
+      "violations": 0,
+      "rate": 0.0,
+      "wilson_upper": 0.018846005918320894
+     },
+     "radius": {
+      "median_cm": 4.7952424624364625,
+      "p90_cm": 6.572653078308986,
+      "uncertified_steps": 0.0
+     },
+     "gate": [
+      {
+       "mu_m": 0.02,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 26,
+       "exceed_caught": 26,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.03,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 22,
+       "exceed_caught": 22,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.05,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.075,
+       "n": 200,
+       "accepted": 200,
+       "completed": 172,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 172,
+        "residual": 17,
+        "handover": 11
+       }
+      },
+      {
+       "mu_m": 0.1,
+       "n": 200,
+       "accepted": 200,
+       "completed": 172,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 172,
+        "residual": 17,
+        "handover": 11
+       }
+      },
+      {
+       "mu_m": 0.15,
+       "n": 200,
+       "accepted": 200,
+       "completed": 172,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 172,
+        "residual": 17,
+        "handover": 11
+       }
+      }
+     ]
+    },
+    "g1_drawer_sb": {
+     "q": 1.3192434792393948,
+     "n_test": 200,
+     "eddies": 16,
+     "plan_certified": 16,
+     "plan_tube_cm": {
+      "reach:handle_pre": 4.83858444779229,
+      "reach:handle_above": 4.363963373766408,
+      "reach:handle": 4.398201756274603,
+      "grasp:handle": 7.865988719599787,
+      "pull:drawer": 8.250141989311281,
+      "release:handle": 6.725025086950554,
+      "retreat:handle": 4.76208284798757,
+      "reach:caddy_above": 5.666971296559504,
+      "reach:caddy_preshape": 2.738446404855876,
+      "reach:caddy_grasp": 3.6133117287925023,
+      "grasp:caddy": 7.896551284448641,
+      "lift:caddy": 3.7834322182611637,
+      "transport:goal_above": 4.411305209164673,
+      "place:goal": 4.203252325370107,
+      "release:caddy": 7.8118576918318405,
+      "retreat:caddy": 7.457374406221592
+     },
+     "violation": {
+      "n": 200,
+      "violations": 2,
+      "rate": 0.01,
+      "wilson_upper": 0.03572248519617954
+     },
+     "radius": {
+      "median_cm": 4.76208284798757,
+      "p90_cm": 7.896551284448641,
+      "uncertified_steps": 0.0
+     },
+     "gate": [
+      {
+       "mu_m": 0.02,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 200,
+       "exceed_caught": 200,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.03,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 150,
+       "exceed_caught": 150,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.05,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 2,
+       "exceed_caught": 2,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.075,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.1,
+       "n": 200,
+       "accepted": 200,
+       "completed": 190,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 1,
+       "causes": {
+        "completed": 190,
+        "residual": 10
+       }
+      },
+      {
+       "mu_m": 0.15,
+       "n": 200,
+       "accepted": 200,
+       "completed": 190,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 1,
+       "causes": {
+        "completed": 190,
+        "residual": 10
+       }
+      }
+     ]
+    }
+   },
+   "certified": 25,
+   "rho": 0.0075,
+   "J": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "reference": "grasp:peg"
+  },
+  "leap": {
+   "tasks": {
+    "leap_wheel_sb": {
+     "q": 1.4536536282609978,
+     "n_test": 200,
+     "eddies": 6,
+     "plan_certified": 6,
+     "plan_tube_cm": {
+      "reach:rim_pre": 5.613868539389725,
+      "reach:rim": 5.043088897567752,
+      "grasp:rim": 6.152464620310305,
+      "turn:wheel": 11.865920329552376,
+      "release:rim": 7.429176887008874,
+      "retreat:rim": 3.8991801019773766
+     },
+     "violation": {
+      "n": 200,
+      "violations": 1,
+      "rate": 0.005,
+      "wilson_upper": 0.02777439986977148
+     },
+     "radius": {
+      "median_cm": 7.429176887008874,
+      "p90_cm": 11.865920329552376,
+      "uncertified_steps": 0.0
+     },
+     "gate": [
+      {
+       "mu_m": 0.02,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 200,
+       "exceed_caught": 200,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.03,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 200,
+       "exceed_caught": 200,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.05,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 2,
+       "exceed_caught": 2,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.075,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.1,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.15,
+       "n": 200,
+       "accepted": 200,
+       "completed": 180,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 180,
+        "residual": 20
+       }
+      }
+     ]
+    },
+    "leap_peg_tighten_sb": {
+     "q": 1.1230773335876865,
+     "n_test": 200,
+     "eddies": 7,
+     "plan_certified": 7,
+     "plan_tube_cm": {
+      "reach:peg_above": 4.452666747258338,
+      "reach:peg_grasp": 3.748848850124954,
+      "grasp:peg": 2.883258111190247,
+      "turn:peg": 4.57237344139719,
+      "release:peg": 2.845099364827061,
+      "turn:unwind": 3.9029783131046596,
+      "retreat:peg": 3.189615111035296
+     },
+     "violation": {
+      "n": 200,
+      "violations": 0,
+      "rate": 0.0,
+      "wilson_upper": 0.018846005918320894
+     },
+     "radius": {
+      "median_cm": 3.9029783131046596,
+      "p90_cm": 4.57237344139719,
+      "uncertified_steps": 0.0
+     },
+     "gate": [
+      {
+       "mu_m": 0.02,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 200,
+       "exceed_caught": 200,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.03,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.05,
+       "n": 200,
+       "accepted": 200,
+       "completed": 174,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 174,
+        "residual": 26
+       }
+      },
+      {
+       "mu_m": 0.075,
+       "n": 200,
+       "accepted": 200,
+       "completed": 174,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 174,
+        "residual": 26
+       }
+      },
+      {
+       "mu_m": 0.1,
+       "n": 200,
+       "accepted": 200,
+       "completed": 174,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 174,
+        "residual": 26
+       }
+      },
+      {
+       "mu_m": 0.15,
+       "n": 200,
+       "accepted": 200,
+       "completed": 174,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 174,
+        "residual": 26
+       }
+      }
+     ]
+    }
+   },
+   "certified": 13,
+   "rho": 0.009,
+   "J": [
+    0,
+    1,
+    2,
+    3,
+    5
+   ],
+   "reference": "release:peg"
+  },
+  "aero": {
+   "tasks": {
+    "aero_wheel_sb": {
+     "q": 1.199058222164434,
+     "n_test": 200,
+     "eddies": 6,
+     "plan_certified": 6,
+     "plan_tube_cm": {
+      "reach:rim_pre": 6.2694825838726445,
+      "reach:rim": 4.715641203769221,
+      "grasp:rim": 3.69259735949765,
+      "turn:wheel": 6.536095295719884,
+      "release:rim": 3.8203948871821733,
+      "retreat:rim": 5.512568595859805
+     },
+     "violation": {
+      "n": 200,
+      "violations": 0,
+      "rate": 0.0,
+      "wilson_upper": 0.018846005918320894
+     },
+     "radius": {
+      "median_cm": 6.2694825838726445,
+      "p90_cm": 6.536095295719884,
+      "uncertified_steps": 0.0
+     },
+     "gate": [
+      {
+       "mu_m": 0.02,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 200,
+       "exceed_caught": 200,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.03,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 19,
+       "exceed_caught": 19,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.05,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.075,
+       "n": 200,
+       "accepted": 200,
+       "completed": 176,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 176,
+        "residual": 24
+       }
+      },
+      {
+       "mu_m": 0.1,
+       "n": 200,
+       "accepted": 200,
+       "completed": 176,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 176,
+        "residual": 24
+       }
+      },
+      {
+       "mu_m": 0.15,
+       "n": 200,
+       "accepted": 200,
+       "completed": 176,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 176,
+        "residual": 24
+       }
+      }
+     ]
+    },
+    "aero_peg_tighten_sb": {
+     "q": 1.093021928560556,
+     "n_test": 200,
+     "eddies": 7,
+     "plan_certified": 7,
+     "plan_tube_cm": {
+      "reach:peg_above": 4.1254376608262815,
+      "reach:peg_grasp": 4.475284092720292,
+      "grasp:peg": 2.695279717466101,
+      "turn:peg": 2.9405523357208843,
+      "release:peg": 2.2110249582993036,
+      "turn:unwind": 4.112042640994054,
+      "retreat:peg": 4.50269815564895
+     },
+     "violation": {
+      "n": 200,
+      "violations": 0,
+      "rate": 0.0,
+      "wilson_upper": 0.018846005918320894
+     },
+     "radius": {
+      "median_cm": 2.9405523357208843,
+      "p90_cm": 4.112042640994054,
+      "uncertified_steps": 0.0
+     },
+     "gate": [
+      {
+       "mu_m": 0.02,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 1,
+       "exceed_caught": 1,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.03,
+       "n": 200,
+       "accepted": 0,
+       "completed": 0,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "plan": 200
+       }
+      },
+      {
+       "mu_m": 0.05,
+       "n": 200,
+       "accepted": 200,
+       "completed": 164,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 164,
+        "residual": 36
+       }
+      },
+      {
+       "mu_m": 0.075,
+       "n": 200,
+       "accepted": 200,
+       "completed": 164,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 164,
+        "residual": 36
+       }
+      },
+      {
+       "mu_m": 0.1,
+       "n": 200,
+       "accepted": 200,
+       "completed": 164,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 164,
+        "residual": 36
+       }
+      },
+      {
+       "mu_m": 0.15,
+       "n": 200,
+       "accepted": 200,
+       "completed": 164,
+       "completed_exceed_mu": 0,
+       "exceed_total": 0,
+       "exceed_caught": 0,
+       "completed_failed": 0,
+       "causes": {
+        "completed": 164,
+        "residual": 36
+       }
+      }
+     ]
+    }
+   },
+   "certified": 13,
+   "rho": 0.009,
+   "J": [
+    0,
+    1,
+    2,
+    3,
+    5
+   ],
+   "reference": "release:peg"
+  }
+ },
+ "shared": {
+  "grasp:handle": {
+   "franka": {
+    "spectral_radius": 0.6346826998337927,
+    "n_train": 4131,
+    "eps": 0.006108675182694336,
+    "tube_cm": 2.0771022691357857
+   },
+   "g1": {
+    "spectral_radius": 0.7343229546822062,
+    "n_train": 5200,
+    "eps": 0.052342641732228315,
+    "tube_cm": 11.507916029727856
+   }
+  },
+  "grasp:peg": {
+   "franka": {
+    "spectral_radius": 0.6399398804787146,
+    "n_train": 15599,
+    "eps": 0.003573786737001817,
+    "tube_cm": 1.7974433528280196
+   },
+   "g1": {
+    "spectral_radius": 0.7344432366653,
+    "n_train": 7200,
+    "eps": 0.0026302581998134296,
+    "tube_cm": 1.8759729928063476
+   },
+   "leap": {
+    "spectral_radius": 0.83375182087414,
+    "n_train": 27516,
+    "eps": 0.0007012714586058512,
+    "tube_cm": 2.905954581406723
+   },
+   "aero": {
+    "spectral_radius": 0.8171236779199259,
+    "n_train": 30921,
+    "eps": 0.003060226447998074,
+    "tube_cm": 2.7273531128137196
+   }
+  },
+  "grasp:rim": {
+   "leap": {
+    "spectral_radius": 0.8997960029504085,
+    "n_train": 7664,
+    "eps": 0.011477930470937082,
+    "tube_cm": 5.741097733068109
+   },
+   "aero": {
+    "spectral_radius": 0.8170641371852054,
+    "n_train": 7681,
+    "eps": 0.007084757878389374,
+    "tube_cm": 3.618428916661906
+   }
+  },
+  "insert:hole": {
+   "franka": {
+    "spectral_radius": 0.6413715595711886,
+    "n_train": 62906,
+    "eps": 0.016200163924495976,
+    "tube_cm": 3.311916822825553
+   },
+   "g1": {
+    "spectral_radius": 0.7346624025749837,
+    "n_train": 18090,
+    "eps": 0.019738356870363568,
+    "tube_cm": 5.1982729898961475
+   }
+  },
+  "lift:peg": {
+   "franka": {
+    "spectral_radius": 0.821269234496575,
+    "n_train": 15561,
+    "eps": 0.0006555339795760241,
+    "tube_cm": 2.690830519119094
+   },
+   "g1": {
+    "spectral_radius": 0.734588920346634,
+    "n_train": 6690,
+    "eps": 0.01206236197802656,
+    "tube_cm": 3.708293208966925
+   }
+  },
+  "place:goal": {
+   "franka": {
+    "spectral_radius": 0.8241354285907374,
+    "n_train": 15810,
+    "eps": 0.0009096728395278631,
+    "tube_cm": 3.034534975077208
+   },
+   "g1": {
+    "spectral_radius": 0.7361500230068787,
+    "n_train": 10046,
+    "eps": 0.02275060133459822,
+    "tube_cm": 5.784892272845158
+   }
+  },
+  "pull:drawer": {
+   "franka": {
+    "spectral_radius": 0.6375658078288091,
+    "n_train": 10586,
+    "eps": 0.013685492933910026,
+    "tube_cm": 2.981997324650005
+   },
+   "g1": {
+    "spectral_radius": 0.7360006040068393,
+    "n_train": 11246,
+    "eps": 0.05470606120019583,
+    "tube_cm": 12.088404448875256
+   }
+  },
+  "reach:handle": {
+   "franka": {
+    "spectral_radius": 0.6431914510977241,
+    "n_train": 5007,
+    "eps": 0.015014121852603698,
+    "tube_cm": 3.1834516691327974
+   },
+   "g1": {
+    "spectral_radius": 0.7353787872767173,
+    "n_train": 6996,
+    "eps": 0.02428563498975314,
+    "tube_cm": 6.093519110982964
+   }
+  },
+  "reach:handle_pre": {
+   "franka": {
+    "spectral_radius": 0.6461353103471559,
+    "n_train": 11455,
+    "eps": 0.0326665576428815,
+    "tube_cm": 5.293619060202934
+   },
+   "g1": {
+    "spectral_radius": 0.7351042588027132,
+    "n_train": 5591,
+    "eps": 0.02767510130291949,
+    "tube_cm": 6.772714506786705
+   }
+  },
+  "reach:peg_above": {
+   "franka": {
+    "spectral_radius": 0.8178066752915876,
+    "n_train": 32683,
+    "eps": 0.0010278290200932865,
+    "tube_cm": 3.5553091960752647
+   },
+   "g1": {
+    "spectral_radius": 0.7347202704482121,
+    "n_train": 6579,
+    "eps": 0.012140825767358013,
+    "tube_cm": 3.727834198640059
+   },
+   "leap": {
+    "spectral_radius": 0.9030883341661591,
+    "n_train": 8450,
+    "eps": 0.00034622644862965777,
+    "tube_cm": 4.473933909726808
+   },
+   "aero": {
+    "spectral_radius": 0.8171593816471399,
+    "n_train": 8068,
+    "eps": 0.00966433898302533,
+    "tube_cm": 4.226768780854854
+   }
+  },
+  "reach:peg_grasp": {
+   "franka": {
+    "spectral_radius": 0.820333241698666,
+    "n_train": 20467,
+    "eps": 0.0007706757299720193,
+    "tube_cm": 2.9459228027066855
+   },
+   "g1": {
+    "spectral_radius": 0.7341179061838101,
+    "n_train": 8723,
+    "eps": 0.0133094898899144,
+    "tube_cm": 3.9371734296131957
+   },
+   "leap": {
+    "spectral_radius": 0.9034467968152589,
+    "n_train": 7374,
+    "eps": 0.000455726790789207,
+    "tube_cm": 3.7718638386824503
+   },
+   "aero": {
+    "spectral_radius": 0.8171842410023687,
+    "n_train": 7485,
+    "eps": 0.011274565934920294,
+    "tube_cm": 4.593504222636912
+   }
+  },
+  "reach:rim": {
+   "leap": {
+    "spectral_radius": 0.9056870754455483,
+    "n_train": 9421,
+    "eps": 0.00029894421217868715,
+    "tube_cm": 5.0224030423045045
+   },
+   "aero": {
+    "spectral_radius": 0.8183856643304379,
+    "n_train": 9067,
+    "eps": 0.011103568448590569,
+    "tube_cm": 4.598111540527385
+   }
+  },
+  "reach:rim_pre": {
+   "leap": {
+    "spectral_radius": 0.9130318526146773,
+    "n_train": 12327,
+    "eps": 0.0006394354462380094,
+    "tube_cm": 5.566718320161167
+   },
+   "aero": {
+    "spectral_radius": 0.817438081277276,
+    "n_train": 12025,
+    "eps": 0.017810844950552105,
+    "tube_cm": 6.081783773506262
+   }
+  },
+  "release:handle": {
+   "franka": {
+    "spectral_radius": 0.6412658809579402,
+    "n_train": 3800,
+    "eps": 0.01466430042311068,
+    "tube_cm": 3.1258467293843033
+   },
+   "g1": {
+    "spectral_radius": 0.735290995062351,
+    "n_train": 3989,
+    "eps": 0.04288840859645842,
+    "tube_cm": 9.715640500058104
+   }
+  },
+  "release:peg": {
+   "franka": {
+    "spectral_radius": 0.6383720633866419,
+    "n_train": 9000,
+    "eps": 0.005352414317698393,
+    "tube_cm": 2.0029826189974225
+   },
+   "g1": {
+    "spectral_radius": 0.734552098641584,
+    "n_train": 5893,
+    "eps": 0.005622106930878872,
+    "tube_cm": 2.4589572261747477
+   },
+   "leap": {
+    "spectral_radius": 0.8991957943200735,
+    "n_train": 12901,
+    "eps": 0.0013153303292815096,
+    "tube_cm": 2.8922517518445705
+   },
+   "aero": {
+    "spectral_radius": 0.8171240359647429,
+    "n_train": 17718,
+    "eps": 0.0008178985172046353,
+    "tube_cm": 2.2195974390421167
+   }
+  },
+  "release:rim": {
+   "leap": {
+    "spectral_radius": 0.8994700518072981,
+    "n_train": 4433,
+    "eps": 0.015496050766639433,
+    "tube_cm": 6.87278303361065
+   },
+   "aero": {
+    "spectral_radius": 0.8163322686464564,
+    "n_train": 10159,
+    "eps": 0.007701911092448774,
+    "tube_cm": 3.739977248462317
+   }
+  },
+  "retreat:handle": {
+   "franka": {
+    "spectral_radius": 0.8204584292191514,
+    "n_train": 5973,
+    "eps": 0.0006960863800953758,
+    "tube_cm": 2.8639091709232662
+   },
+   "g1": {
+    "spectral_radius": 0.7351410557313476,
+    "n_train": 6614,
+    "eps": 0.027096830956485747,
+    "tube_cm": 6.654941519608433
+   }
+  },
+  "retreat:peg": {
+   "franka": {
+    "spectral_radius": 0.6425943524754548,
+    "n_train": 13536,
+    "eps": 0.01479794153211324,
+    "tube_cm": 3.153321672402709
+   },
+   "g1": {
+    "spectral_radius": 0.7348834504711323,
+    "n_train": 7678,
+    "eps": 0.015265175126460355,
+    "tube_cm": 4.334480144720591
+   },
+   "leap": {
+    "spectral_radius": 0.8927623129090431,
+    "n_train": 3005,
+    "eps": 0.00037387506941431427,
+    "tube_cm": 3.205994978917795
+   },
+   "aero": {
+    "spectral_radius": 0.8170323294453594,
+    "n_train": 5551,
+    "eps": 0.011433099669959076,
+    "tube_cm": 4.622490505039939
+   }
+  },
+  "retreat:rim": {
+   "leap": {
+    "spectral_radius": 0.8957988373993577,
+    "n_train": 5888,
+    "eps": 0.0004108245826468696,
+    "tube_cm": 3.877505626929525
+   },
+   "aero": {
+    "spectral_radius": 0.815055863506811,
+    "n_train": 5491,
+    "eps": 0.015096141066086057,
+    "tube_cm": 5.356052689640338
+   }
+  },
+  "transport:goal_above": {
+   "franka": {
+    "spectral_radius": 0.6412909399327402,
+    "n_train": 18012,
+    "eps": 0.020137468379282628,
+    "tube_cm": 3.7657400561394425
+   },
+   "g1": {
+    "spectral_radius": 0.7349403317613115,
+    "n_train": 20089,
+    "eps": 0.024139544073332096,
+    "tube_cm": 6.101849698172359
+   }
+  },
+  "transport:hole_above": {
+   "franka": {
+    "spectral_radius": 0.6380845160826375,
+    "n_train": 22074,
+    "eps": 0.018100735690366368,
+    "tube_cm": 3.521918564706476
+   },
+   "g1": {
+    "spectral_radius": 0.7344600334931152,
+    "n_train": 13279,
+    "eps": 0.01300265547846237,
+    "tube_cm": 3.8900050317670027
+   }
+  },
+  "turn:peg": {
+   "leap": {
+    "spectral_radius": 0.899900516386184,
+    "n_train": 178165,
+    "eps": 0.008330002441292266,
+    "tube_cm": 4.871486427349255
+   },
+   "aero": {
+    "spectral_radius": 0.8168676079851387,
+    "n_train": 308685,
+    "eps": 0.004265709199498641,
+    "tube_cm": 2.985125442825829
+   }
+  },
+  "turn:unwind": {
+   "leap": {
+    "spectral_radius": 0.8997860723227795,
+    "n_train": 152945,
+    "eps": 0.005554036371665218,
+    "tube_cm": 4.102839073759719
+   },
+   "aero": {
+    "spectral_radius": 0.8172840383463558,
+    "n_train": 200941,
+    "eps": 0.009616518171867972,
+    "tube_cm": 4.212811737551674
+   }
+  },
+  "turn:wheel": {
+   "leap": {
+    "spectral_radius": 0.9003598406649378,
+    "n_train": 36063,
+    "eps": 0.030850348709282147,
+    "tube_cm": 10.794498036673232
+   },
+   "aero": {
+    "spectral_radius": 0.8155510259239702,
+    "n_train": 40079,
+    "eps": 0.019555134494787053,
+    "tube_cm": 6.333214985844679
+   }
+  }
+ },
+ "cross": {
+  "leap->aero_wheel_sb": {
+   "unchanged": {
+    "violation": {
+     "n": 200,
+     "violations": 20,
+     "rate": 0.1,
+     "wilson_upper": 0.14940686356308555
+    },
+    "gate": [
+     {
+      "mu_m": 0.02,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 200,
+      "exceed_caught": 200,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.03,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 199,
+      "exceed_caught": 199,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.05,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 5,
+      "exceed_caught": 5,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 200,
+      "accepted": 200,
+      "completed": 78,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "residual": 122,
+       "completed": 78
+      }
+     }
+    ]
+   },
+   "recalibrated": {
+    "q": 16.2747984390846,
+    "n_test": 200,
+    "eddies": 6,
+    "plan_certified": 6,
+    "plan_tube_cm": {
+     "reach:rim_pre": 9.84175927631715,
+     "reach:rim": 6.897959082347979,
+     "grasp:rim": 43.03912772614221,
+     "turn:wheel": 107.93877983086284,
+     "release:rim": 57.32019451860666,
+     "retreat:rim": 5.842698367255602
+    },
+    "violation": {
+     "n": 200,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.018846005918320894
+    },
+    "radius": {
+     "median_cm": 57.32019451860666,
+     "p90_cm": 107.93877983086284,
+     "uncertified_steps": 0.0
+    },
+    "gate": [
+     {
+      "mu_m": 0.02,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 200,
+      "exceed_caught": 200,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.03,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 199,
+      "exceed_caught": 199,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.05,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 5,
+      "exceed_caught": 5,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     }
+    ]
+   }
+  },
+  "leap->aero_peg_tighten_sb": {
+   "unchanged": {
+    "violation": {
+     "n": 200,
+     "violations": 5,
+     "rate": 0.025,
+     "wilson_upper": 0.057179144151617144
+    },
+    "gate": [
+     {
+      "mu_m": 0.02,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 200,
+      "exceed_caught": 200,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.03,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 15,
+      "exceed_caught": 15,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.05,
+      "n": 200,
+      "accepted": 200,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "residual": 200
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 200,
+      "accepted": 200,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "residual": 200
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 200,
+      "accepted": 200,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "residual": 200
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 200,
+      "accepted": 200,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "residual": 200
+      }
+     }
+    ]
+   },
+   "recalibrated": {
+    "q": 50.79238328701991,
+    "n_test": 200,
+    "eddies": 7,
+    "plan_certified": 7,
+    "plan_tube_cm": {
+     "reach:peg_above": 10.843477077150125,
+     "reach:peg_grasp": 10.664883221595552,
+     "grasp:peg": 9.703577301706732,
+     "turn:peg": 94.45621964143898,
+     "release:peg": 17.01445376164981,
+     "turn:unwind": 63.96140009965171,
+     "retreat:peg": 8.111786981445029
+    },
+    "violation": {
+     "n": 200,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.018846005918320894
+    },
+    "radius": {
+     "median_cm": 94.45621964143898,
+     "p90_cm": 94.45621964143898,
+     "uncertified_steps": 0.0
+    },
+    "gate": [
+     {
+      "mu_m": 0.02,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 200,
+      "exceed_caught": 200,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.03,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 15,
+      "exceed_caught": 15,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.05,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     }
+    ]
+   }
+  },
+  "aero->leap_wheel_sb": {
+   "unchanged": {
+    "violation": {
+     "n": 200,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.018846005918320894
+    },
+    "gate": [
+     {
+      "mu_m": 0.02,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 200,
+      "exceed_caught": 200,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.03,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 5,
+      "exceed_caught": 5,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.05,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 200,
+      "accepted": 200,
+      "completed": 22,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "residual": 178,
+       "completed": 22
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 200,
+      "accepted": 200,
+      "completed": 22,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "residual": 178,
+       "completed": 22
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 200,
+      "accepted": 200,
+      "completed": 22,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "residual": 178,
+       "completed": 22
+      }
+     }
+    ]
+   },
+   "recalibrated": {
+    "q": 2.107266542832305,
+    "n_test": 200,
+    "eddies": 6,
+    "plan_certified": 6,
+    "plan_tube_cm": {
+     "reach:rim_pre": 9.484789636965926,
+     "reach:rim": 6.728940885485449,
+     "grasp:rim": 4.963113229583441,
+     "turn:wheel": 10.011463573239501,
+     "release:rim": 5.197960362766948,
+     "retreat:rim": 8.193708109777967
+    },
+    "violation": {
+     "n": 200,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.018846005918320894
+    },
+    "radius": {
+     "median_cm": 9.484789636965926,
+     "p90_cm": 10.011463573239501,
+     "uncertified_steps": 0.0
+    },
+    "gate": [
+     {
+      "mu_m": 0.02,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 200,
+      "exceed_caught": 200,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.03,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 5,
+      "exceed_caught": 5,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.05,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 200,
+      "accepted": 200,
+      "completed": 175,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "completed": 175,
+       "residual": 25
+      }
+     }
+    ]
+   }
+  },
+  "aero->leap_peg_tighten_sb": {
+   "unchanged": {
+    "violation": {
+     "n": 200,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.018846005918320894
+    },
+    "gate": [
+     {
+      "mu_m": 0.02,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.03,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.05,
+      "n": 200,
+      "accepted": 200,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "residual": 200
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 200,
+      "accepted": 200,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "residual": 200
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 200,
+      "accepted": 200,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "residual": 200
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 200,
+      "accepted": 200,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "residual": 200
+      }
+     }
+    ]
+   },
+   "recalibrated": {
+    "q": 5.872872639656793,
+    "n_test": 200,
+    "eddies": 7,
+    "plan_certified": 7,
+    "plan_tube_cm": {
+     "reach:peg_above": 13.260944187188658,
+     "reach:peg_grasp": 15.133419205567728,
+     "grasp:peg": 5.586856485177252,
+     "turn:peg": 6.959040542923669,
+     "release:peg": 2.9838769089242136,
+     "turn:unwind": 13.196879944659514,
+     "retreat:peg": 15.302576705901608
+    },
+    "violation": {
+     "n": 200,
+     "violations": 0,
+     "rate": 0.0,
+     "wilson_upper": 0.018846005918320894
+    },
+    "radius": {
+     "median_cm": 6.959040542923669,
+     "p90_cm": 13.196879944659514,
+     "uncertified_steps": 0.0
+    },
+    "gate": [
+     {
+      "mu_m": 0.02,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.03,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.05,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.075,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.1,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     },
+     {
+      "mu_m": 0.15,
+      "n": 200,
+      "accepted": 0,
+      "completed": 0,
+      "completed_exceed_mu": 0,
+      "exceed_total": 0,
+      "exceed_caught": 0,
+      "completed_failed": 0,
+      "causes": {
+       "plan": 200
+      }
+     }
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv*/
+datasets/episodes/
+datasets/*.tar*
+*.npz
+# per-step gate-margin logs (dataset derived/gate_margin); results/gate_margin/summary.json is committed
+results/gate_margin/*_a.json
+*.log
+MUJOCO_LOG.TXT
+external/mujoco_menagerie
+results/cache/
+.cache/
+assets/results/generated/

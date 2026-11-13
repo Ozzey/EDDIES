@@ -1,0 +1,89 @@
+{
+ "model": "own",
+ "n": 87,
+ "dropped": [
+  "franka/mujoco/insert:hole_search",
+  "g1/mujoco/release:peg",
+  "g1/mujoco/transport:hole_backoff",
+  "g1/mujoco/pull:drawer",
+  "g1/mujoco/retreat:handle",
+  "g1/mujoco/release:caddy",
+  "g1/mujoco/retreat:caddy",
+  "leap/mujoco/turn:unwind",
+  "aero/mujoco/turn:unwind",
+  "franka/physx/insert:hole",
+  "franka/physx/insert:hole_search"
+ ],
+ "pca_var": [
+  0.6866119609491858,
+  0.1547791077491849
+ ],
+ "ari_kmeans_embodiment": 0.011296569895272298,
+ "ari_kmeans_primitive": -0.008323427972997613,
+ "nn_same_embodiment": 0.5921052631578947,
+ "nn_same_embodiment_chance": 0.2969078947368421,
+ "nn_same_primitive": 0.40789473684210525,
+ "nn_same_primitive_chance": 0.15138157894736842,
+ "ari_kmeans_k=primitives_vs_primitive": 0.03198011438584772,
+ "ari_kmeans_k=primitives_vs_embodiment": 0.16319446456615344,
+ "d_same_eddie_other_embodiment": {
+  "n": 43,
+  "median": 4.314807214010857,
+  "q25": 2.399399071013096,
+  "q75": 8.091893115497946
+ },
+ "d_other_eddie_same_embodiment": {
+  "n": 831,
+  "median": 4.90599808601063,
+  "q25": 2.9477346281379324,
+  "q75": 10.346663933808369
+ },
+ "d_same_eddie_mujoco_physx": {
+  "n": 10,
+  "median": 0.7382563146926364,
+  "q25": 0.5722686659184737,
+  "q75": 0.9123425273787541
+ },
+ "spectral_radius": {
+  "aero/mujoco": {
+   "own_median": 0.9394714081856719,
+   "own_iqr": 0.05336609878014986,
+   "cert_median": 0.8170939075525656,
+   "cert_iqr": 0.0004318233354789758,
+   "shrunk": 11,
+   "n": 12
+  },
+  "franka/mujoco": {
+   "own_median": 0.8210336486696631,
+   "own_iqr": 0.06355576009463793,
+   "cert_median": 0.6413715595711886,
+   "cert_iqr": 0.16662843620732237,
+   "shrunk": 21,
+   "n": 33
+  },
+  "franka/physx": {
+   "own_median": 0.8191732637134046,
+   "own_iqr": 0.08706591468302549,
+   "cert_median": 0.8183952834032011,
+   "cert_iqr": 0.0006095896595958994,
+   "shrunk": 7,
+   "n": 11
+  },
+  "g1/mujoco": {
+   "own_median": 0.8724444007318579,
+   "own_iqr": 0.0663664760709608,
+   "cert_median": 0.7349403317613115,
+   "cert_iqr": 0.0012399282219233143,
+   "shrunk": 14,
+   "n": 19
+  },
+  "leap/mujoco": {
+   "own_median": 0.9045669361304036,
+   "own_iqr": 0.033809188176022076,
+   "cert_median": 0.8998482596682962,
+   "cert_iqr": 0.004831394738539441,
+   "shrunk": 4,
+   "n": 12
+  }
+ }
+}

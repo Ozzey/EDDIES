@@ -1,0 +1,19 @@
+# UR5e arm with the Tetheria Aero Hand Open: the same two tasks as the LEAP hand (only the hand differs).
+name: aero
+display: UR5e + Tetheria Aero Hand Open
+short: Aero hand
+family: hand
+color: arrow
+menagerie_xml: universal_robots_ur5e/ur5e.xml
+hand_xml: tetheria_aero_hand_open/right_hand.xml
+skillbook: eddies.envs.skillbook.hand:HAND_BOOK
+primitives: [reach, grasp, push, release, turn, retreat]
+tasks: [aero_wheel_sb, aero_peg_tighten_sb]
+n_eddies: 13
+rho_step: 0.009
+control_dt: 0.02
+physics_dt: 0.002
+embedding:
+  names: [x, y, z, rx, ry, rz, power, pinch, point]
+  weights: [1.0, 1.0, 1.0, 0.3, 0.3, 0.3, 0.05, 0.05, 0.05]
+block: {pose: [0, 1, 2, 3, 4, 5], position: [0, 1, 2]}

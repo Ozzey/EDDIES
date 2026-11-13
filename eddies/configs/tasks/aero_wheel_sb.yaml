@@ -1,0 +1,27 @@
+# Steering wheel (Aero): eddies.envs task aero_wheel_sb (class attributes mirrored here; tests/test_config.py checks they agree)
+name: aero_wheel_sb
+display: Steering wheel (Aero)
+robot: aero
+registry: eddies.envs.tasks.hand_sb:HandWheelTokens
+kwargs:
+  hand: aero
+legacy: eddies.envs.tasks.hand_wheel:HandWheelTask
+horizon_s: 45.0
+failure_budget: 3
+rho_step: 0.009
+rho_game: 1.0
+control_dt: 0.02
+formula: G !bad & F(grasped_rim & F(turned & F released))
+tag: sb
+conditions:
+- nominal
+isaac: false
+n_eddies: 6
+n_distinct_eddies: 6
+nominal_plan:
+- reach:rim_pre
+- reach:rim
+- grasp:rim
+- turn:wheel
+- release:rim
+- retreat:rim

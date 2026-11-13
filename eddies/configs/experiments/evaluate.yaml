@@ -1,0 +1,10 @@
+# eddies.evaluate: presentation settings of the paper's tables (which tolerance each table reports)
+table1: {dirs: {franka: table1, g1: table1_robots/g1, leap: table1_robots/leap, aero: table1_robots/aero},
+         finished_cm: {franka: [5, 7.5], leap: [5, 7.5], aero: [5, 7.5], g1: [7.5, 10]}, B: 2000}   # bootstrap draws for the 95 % CI of the first finished count (0 = none)
+table2: {mu_cm: 15, hand_pairs: [[leap, aero], [aero, leap]], hand_tasks: [wheel_sb, peg_tighten_sb],
+         physx_tasks: [franka_fmb, franka_peg_insertion], physx_refit: refit10}
+table3: {mu_cm: [2, 3, 4, 5, 7.5, 10]}
+tableD1: {finished_cm: 5, caught_cm: 2}
+tableD2: {mu_cm: [2, 5]}
+tableD4: {mu_cm: [3, 4, 5, 7.5, 10]}
+tableD5: {mu_cm: [5, 10, 15], files: [gate_eddy, gate_eddy_recal]}

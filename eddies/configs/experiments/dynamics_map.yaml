@@ -1,0 +1,3 @@
+# eddies.cert.experiments.dynamics_map + eddies.cert.plots.dynamics_map: per-Eddie dynamics descriptors (Fig. D.1)
+physx_tasks: [franka_fmb, franka_peg_insertion]
+rise: [2, 5, 10, 20]            # rise-time descriptors [steps]

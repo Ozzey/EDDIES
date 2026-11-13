@@ -1,0 +1,4 @@
+# eddies.cert.experiments.physics: MuJoCo certificates applied to PhysX episodes, borrowed vs re-identified (Table 2)
+tasks: [franka_fmb, franka_peg_insertion]
+mu_cm: [5, 7.5, 10, 15]
+refit: [10, 25, 50]             # PhysX training episodes for re-identification

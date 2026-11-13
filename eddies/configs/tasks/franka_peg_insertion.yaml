@@ -1,0 +1,29 @@
+# Peg insertion: eddies.envs task franka_peg_insertion (class attributes mirrored here; tests/test_config.py checks they agree)
+name: franka_peg_insertion
+display: Peg insertion
+robot: franka
+registry: eddies.envs.tasks.franka_sb:FrankaPegTokens
+kwargs: {}
+legacy: eddies.envs.tasks.franka_peg:FrankaPegInsertionTask
+horizon_s: 60.0
+failure_budget: 2
+rho_step: 0.012
+rho_game: 1.2
+control_dt: 0.02
+formula: G !bad & F(grasped & F(inserted & released))
+tag: sb
+conditions:
+- nominal
+isaac: true
+ltl_variant: eddies.envs.tasks.franka_ltl:FrankaPegLTL
+n_eddies: 8
+n_distinct_eddies: 8
+nominal_plan:
+- reach:peg_above
+- reach:peg_grasp
+- grasp:peg
+- lift:peg
+- transport:hole_above
+- insert:hole
+- release:peg
+- retreat:peg

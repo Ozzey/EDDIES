@@ -1,0 +1,3 @@
+# eddies.cert.experiments.embodiments: certificates per embodiment, fixed-calibration gate, shared Eddies,
+# LEAP <-> Aero cross-hand certificates (Fig. 5, Table 2, Tables D.1, D.6, embodiments.json)
+mu_cm: [2, 3, 5, 7.5, 10, 15]

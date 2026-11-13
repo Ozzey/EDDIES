@@ -1,0 +1,503 @@
+{
+ "ref": "release:box",
+ "J": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5
+ ],
+ "info": {
+  "reach:peg_above": {
+   "n": 32683,
+   "sr_own": 0.8178066752906035,
+   "cond_gram": 2.8995164556564955e+22,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 3.508,
+    "0.03": 3.678,
+    "0.3": 5.946,
+    "3.0": 10.944
+   },
+   "chosen_lam": 0.0,
+   "sr_chosen": 0.8178066752906035
+  },
+  "reach:peg_grasp": {
+   "n": 20467,
+   "sr_own": 0.8203332416962237,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 2.916,
+    "0.03": 3.714,
+    "0.3": 3.876,
+    "3.0": 5.351
+   },
+   "chosen_lam": 0.0,
+   "sr_chosen": 0.8203332416962237
+  },
+  "grasp:peg": {
+   "n": 15599,
+   "sr_own": 0.7849527295422272,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 2.216,
+    "0.03": 1.727,
+    "0.3": 2.005,
+    "3.0": 2.625
+   },
+   "chosen_lam": 0.03,
+   "sr_chosen": 0.639939879938088
+  },
+  "lift:peg": {
+   "n": 15561,
+   "sr_own": 0.8212692344964869,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 2.668,
+    "0.03": 3.227,
+    "0.3": 3.593,
+    "3.0": 4.151
+   },
+   "chosen_lam": 0.0,
+   "sr_chosen": 0.8212692344964869
+  },
+  "transport:fixture_above": {
+   "n": 9382,
+   "sr_own": 0.8195275935635941,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 3.452,
+    "0.03": 3.042,
+    "0.3": 3.084,
+    "3.0": 5.29
+   },
+   "chosen_lam": 0.03,
+   "sr_chosen": 0.6365311188454663
+  },
+  "place:fixture": {
+   "n": 15169,
+   "sr_own": 0.789429261230231,
+   "cond_gram": 1.5935625069238605e+43,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 2.341,
+    "0.03": 2.145,
+    "0.3": 2.457,
+    "3.0": 3.572
+   },
+   "chosen_lam": 0.03,
+   "sr_chosen": 0.6401897781241723
+  },
+  "release:peg": {
+   "n": 9000,
+   "sr_own": 0.9699647168778918,
+   "cond_gram": 2.4916327411904987e+24,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 15.281,
+    "0.03": 1.897,
+    "0.3": 2.166,
+    "3.0": 2.978
+   },
+   "chosen_lam": 0.03,
+   "sr_chosen": 0.6383720628549732
+  },
+  "transport:hole_above": {
+   "n": 22074,
+   "sr_own": 0.8210336486697316,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 3.591,
+    "0.03": 3.278,
+    "0.3": 3.164,
+    "3.0": 5.253
+   },
+   "chosen_lam": 0.3,
+   "sr_chosen": 0.6380845155330992
+  },
+  "insert:hole": {
+   "n": 62906,
+   "sr_own": 0.9206077211443526,
+   "cond_gram": 2.1916908722028633e+39,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 7.761,
+    "0.03": 2.99,
+    "0.3": 3.59,
+    "3.0": 5.08
+   },
+   "chosen_lam": 0.03,
+   "sr_chosen": 0.6413715590226424
+  },
+  "push:peg_top": {
+   "n": 37119,
+   "sr_own": 0.875738798311517,
+   "cond_gram": 3.491289106774122e+24,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 4.543,
+    "0.03": 2.649,
+    "0.3": 2.661,
+    "3.0": 3.907
+   },
+   "chosen_lam": 0.03,
+   "sr_chosen": 0.638741563492969
+  },
+  "retreat:peg": {
+   "n": 13536,
+   "sr_own": 0.9267525164528141,
+   "cond_gram": 2.1583236763886315e+25,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 6.17,
+    "0.03": 2.859,
+    "0.3": 3.564,
+    "3.0": 4.759
+   },
+   "chosen_lam": 0.03,
+   "sr_chosen": 0.642594351918401
+  },
+  "transport:hole_backoff": {
+   "n": 16,
+   "sr_own": 0.7019690724943094,
+   "cond_gram": 1.7231939168140272e+42,
+   "own_certified": false,
+   "tube_cm_by_lam": {
+    "0.0": null,
+    "0.03": null,
+    "0.3": null,
+    "3.0": null
+   },
+   "chosen_lam": null,
+   "sr_chosen": null
+  },
+  "insert:hole_search": {
+   "n": 148,
+   "sr_own": 0.9826300092150143,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 192.653,
+    "0.03": 2.71,
+    "0.3": 2.992,
+    "3.0": 4.404
+   },
+   "chosen_lam": 0.03,
+   "sr_chosen": 0.6408969784933759
+  },
+  "reach:cube_above": {
+   "n": 14973,
+   "sr_own": 0.8387745711600638,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 3.505,
+    "0.03": 3.563,
+    "0.3": 5.631,
+    "3.0": 10.645
+   },
+   "chosen_lam": 0.0,
+   "sr_chosen": 0.8387745711600638
+  },
+  "reach:cube_grasp": {
+   "n": 7294,
+   "sr_own": 0.970747304572576,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 18.132,
+    "0.03": 3.75,
+    "0.3": 3.933,
+    "3.0": 4.551
+   },
+   "chosen_lam": 0.03,
+   "sr_chosen": 0.6465484057502818
+  },
+  "grasp:cube": {
+   "n": 5200,
+   "sr_own": 0.8688189514490793,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 2.043,
+    "0.03": 1.674,
+    "0.3": 1.71,
+    "3.0": 1.721
+   },
+   "chosen_lam": 0.03,
+   "sr_chosen": 0.6403648258675303
+  },
+  "lift:cube": {
+   "n": 5800,
+   "sr_own": 0.79776791117459,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 2.602,
+    "0.03": 2.662,
+    "0.3": 2.947,
+    "3.0": 2.885
+   },
+   "chosen_lam": 0.0,
+   "sr_chosen": 0.79776791117459
+  },
+  "transport:cube_above": {
+   "n": 11934,
+   "sr_own": 0.8244843796764842,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 3.805,
+    "0.03": 3.64,
+    "0.3": 3.028,
+    "3.0": 4.741
+   },
+   "chosen_lam": 0.3,
+   "sr_chosen": 0.6376198726629911
+  },
+  "place:cube_top": {
+   "n": 3629,
+   "sr_own": 0.8196829040680585,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 3.362,
+    "0.03": 2.837,
+    "0.3": 2.585,
+    "3.0": 3.962
+   },
+   "chosen_lam": 0.3,
+   "sr_chosen": 0.6380820144228334
+  },
+  "release:cube": {
+   "n": 5378,
+   "sr_own": 0.760826736524341,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 2.008,
+    "0.03": 1.711,
+    "0.3": 1.915,
+    "3.0": 2.432
+   },
+   "chosen_lam": 0.03,
+   "sr_chosen": 0.638634754627928
+  },
+  "retreat:cube": {
+   "n": 5570,
+   "sr_own": 0.8050288611383272,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 2.456,
+    "0.03": 2.598,
+    "0.3": 3.134,
+    "3.0": 3.799
+   },
+   "chosen_lam": 0.0,
+   "sr_chosen": 0.8050288611383272
+  },
+  "reach:handle_pre": {
+   "n": 11455,
+   "sr_own": 0.9477506913013828,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 32.174,
+    "0.03": 4.643,
+    "0.3": 6.681,
+    "3.0": 13.268
+   },
+   "chosen_lam": 0.03,
+   "sr_chosen": 0.6461353097481045
+  },
+  "reach:handle": {
+   "n": 5007,
+   "sr_own": 0.8299570195205725,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 3.313,
+    "0.03": 2.885,
+    "0.3": 4.344,
+    "3.0": 11.558
+   },
+   "chosen_lam": 0.03,
+   "sr_chosen": 0.6431914505193963
+  },
+  "grasp:handle": {
+   "n": 4131,
+   "sr_own": 0.7952859326279911,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 3.076,
+    "0.03": 1.957,
+    "0.3": 3.807,
+    "3.0": 10.471
+   },
+   "chosen_lam": 0.03,
+   "sr_chosen": 0.6346826993324718
+  },
+  "pull:drawer": {
+   "n": 10586,
+   "sr_own": 0.9636742530444259,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 18.066,
+    "0.03": 2.713,
+    "0.3": 3.921,
+    "3.0": 11.128
+   },
+   "chosen_lam": 0.03,
+   "sr_chosen": 0.6375658073089465
+  },
+  "release:handle": {
+   "n": 3800,
+   "sr_own": 0.9602825626442972,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 11.119,
+    "0.03": 2.835,
+    "0.3": 4.528,
+    "3.0": 10.861
+   },
+   "chosen_lam": 0.03,
+   "sr_chosen": 0.6412658804039051
+  },
+  "retreat:handle": {
+   "n": 5973,
+   "sr_own": 0.8204584292102277,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 2.838,
+    "0.03": 3.138,
+    "0.3": 4.863,
+    "3.0": 11.533
+   },
+   "chosen_lam": 0.0,
+   "sr_chosen": 0.8204584292102277
+  },
+  "reach:box_above": {
+   "n": 11117,
+   "sr_own": 0.8349518438629553,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 3.815,
+    "0.03": 3.73,
+    "0.3": 6.431,
+    "3.0": 12.971
+   },
+   "chosen_lam": 0.03,
+   "sr_chosen": 0.6445869364425161
+  },
+  "reach:box_grasp": {
+   "n": 6688,
+   "sr_own": 0.8160280938550237,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 3.174,
+    "0.03": 3.385,
+    "0.3": 3.928,
+    "3.0": 7.847
+   },
+   "chosen_lam": 0.0,
+   "sr_chosen": 0.8160280938550237
+  },
+  "grasp:box": {
+   "n": 5200,
+   "sr_own": 0.7831136783350593,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 2.063,
+    "0.03": 1.843,
+    "0.3": 2.816,
+    "3.0": 5.125
+   },
+   "chosen_lam": 0.03,
+   "sr_chosen": 0.6349045711249753
+  },
+  "lift:box": {
+   "n": 6800,
+   "sr_own": 0.8052631913691339,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 2.362,
+    "0.03": 2.895,
+    "0.3": 4.742,
+    "3.0": 7.773
+   },
+   "chosen_lam": 0.0,
+   "sr_chosen": 0.8052631913691339
+  },
+  "transport:goal_above": {
+   "n": 18012,
+   "sr_own": 0.8232120469476232,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 3.721,
+    "0.03": 3.366,
+    "0.3": 5.062,
+    "3.0": 9.346
+   },
+   "chosen_lam": 0.03,
+   "sr_chosen": 0.6412909393467159
+  },
+  "place:goal": {
+   "n": 15810,
+   "sr_own": 0.8241354285918319,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 2.999,
+    "0.03": 3.952,
+    "0.3": 5.735,
+    "3.0": 8.903
+   },
+   "chosen_lam": 0.0,
+   "sr_chosen": 0.8241354285918319
+  },
+  "release:box": {
+   "n": 5800,
+   "sr_own": 0.6396907331612521,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 1.422,
+    "0.03": 1.422,
+    "0.3": 1.422,
+    "3.0": 1.422
+   },
+   "chosen_lam": 0.0,
+   "sr_chosen": 0.6396907331612521
+  },
+  "retreat:box": {
+   "n": 7000,
+   "sr_own": 0.8136866057045525,
+   "cond_gram": Infinity,
+   "own_certified": true,
+   "tube_cm_by_lam": {
+    "0.0": 2.607,
+    "0.03": 3.226,
+    "0.3": 3.913,
+    "3.0": 4.251
+   },
+   "chosen_lam": 0.0,
+   "sr_chosen": 0.8136866057045525
+  }
+ }
+}

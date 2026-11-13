@@ -1,0 +1,47 @@
+# Peg tightening (LEAP): eddies.envs task leap_peg_tighten_sb (class attributes mirrored here; tests/test_config.py checks they agree)
+name: leap_peg_tighten_sb
+display: Peg tightening (LEAP)
+robot: leap
+registry: eddies.envs.tasks.hand_sb:HandPegTightenTokens
+kwargs:
+  hand: leap
+legacy: eddies.envs.tasks.hand_peg_tighten:HandPegTightenTask
+horizon_s: 90.0
+failure_budget: 3
+rho_step: 0.009
+rho_game: 1.0
+control_dt: 0.02
+formula: G !bad & F(seated & F released)
+tag: sb
+conditions:
+- nominal
+isaac: false
+n_eddies: 7          # the paper's count (Table D.1): the tightening loop grasp-turn-release-unwind counts once; the plan below has 26 steps
+n_distinct_eddies: 7
+nominal_plan:
+- reach:peg_above
+- reach:peg_grasp
+- grasp:peg
+- turn:peg
+- release:peg
+- turn:unwind
+- grasp:peg
+- turn:peg
+- release:peg
+- turn:unwind
+- grasp:peg
+- turn:peg
+- release:peg
+- turn:unwind
+- grasp:peg
+- turn:peg
+- release:peg
+- turn:unwind
+- grasp:peg
+- turn:peg
+- release:peg
+- turn:unwind
+- grasp:peg
+- turn:peg
+- release:peg
+- retreat:peg

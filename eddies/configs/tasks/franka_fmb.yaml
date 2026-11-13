@@ -1,0 +1,37 @@
+# Staged insertion (FMB): eddies.envs task franka_fmb (class attributes mirrored here; tests/test_config.py checks they agree)
+name: franka_fmb
+display: Staged insertion (FMB)
+robot: franka
+registry: eddies.envs.tasks.franka_sb:FrankaFMBTokens
+kwargs: {}
+legacy: eddies.envs.tasks.franka_fmb:FrankaFMBTask
+horizon_s: 90.0
+failure_budget: 2
+rho_step: 0.012
+rho_game: 1.2
+control_dt: 0.02
+formula: G !bad & F(grasped & F(staged & F(grasped & F(inserted & F(seated & released)))))
+tag: sb
+conditions:
+- nominal
+isaac: true
+ltl_variant: eddies.envs.tasks.franka_ltl:FrankaFMBLTL
+n_eddies: 16
+n_distinct_eddies: 11
+nominal_plan:
+- reach:peg_above
+- reach:peg_grasp
+- grasp:peg
+- lift:peg
+- transport:fixture_above
+- place:fixture
+- release:peg
+- reach:peg_above
+- reach:peg_grasp
+- grasp:peg
+- lift:peg
+- transport:hole_above
+- insert:hole
+- release:peg
+- push:peg_top
+- retreat:peg

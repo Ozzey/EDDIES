@@ -1,0 +1,2787 @@
+{
+ "task": "franka_cube_stack",
+ "tag": "tokprop",
+ "seeds": "2000-2099",
+ "mu_m": [
+  0.02,
+  0.03,
+  0.04,
+  0.05,
+  0.075,
+  0.1
+ ],
+ "alpha": 0.1,
+ "rows": {
+  "bistl|nominal": {
+   "method": "bistl",
+   "condition": "nominal",
+   "closed_loop": {
+    "n": 100,
+    "success": 99,
+    "task_success": 99,
+    "property_success": 99,
+    "bad_episodes": 0,
+    "stop_reasons": {
+     "task_success": 99,
+     "horizon": 1
+    },
+    "cover_violations": 2102,
+    "budget_assumption_violations": 2087,
+    "eddies_executed_mean": 28.98,
+    "completion_time_mean_s": 5.645838383837985
+   },
+   "certificate": {
+    "q": 1.232630073015472,
+    "violations": 0,
+    "n": 100,
+    "tube_p90_cm": 3.783349066237004,
+    "tube_max_cm": 4.298706554292553,
+    "tube_p90_steps_cm": 4.298706554292553,
+    "planned_certified": 8,
+    "planned": 8
+   },
+   "fixed_gate": {
+    "0.02": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 100,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.03": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.04": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.05": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 89,
+     "stopped": 11,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 89,
+      "residual": 11
+     }
+    },
+    "0.075": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 89,
+     "stopped": 11,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 89,
+      "residual": 11
+     }
+    },
+    "0.1": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 89,
+     "stopped": 11,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 89,
+      "residual": 11
+     }
+    }
+   },
+   "adaptive_gate": {
+    "0.02": {
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 91,
+     "false_stops": 0,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.1,
+     "causes": {
+      "predicted": 100
+     }
+    },
+    "0.03": {
+     "completed": 67,
+     "stopped": 33,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 33,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 33,
+      "completed": 67
+     }
+    },
+    "0.04": {
+     "completed": 95,
+     "stopped": 5,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 5,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 5,
+      "completed": 95
+     }
+    },
+    "0.05": {
+     "completed": 96,
+     "stopped": 4,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 4,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 4,
+      "completed": 96
+     }
+    },
+    "0.075": {
+     "completed": 97,
+     "stopped": 3,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 3,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 3,
+      "completed": 97
+     }
+    },
+    "0.1": {
+     "completed": 100,
+     "stopped": 0,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 0,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "completed": 100
+     }
+    }
+   }
+  },
+  "bistl_learned|nominal": {
+   "method": "bistl_learned",
+   "condition": "nominal",
+   "closed_loop": {
+    "n": 100,
+    "success": 99,
+    "task_success": 99,
+    "property_success": 99,
+    "bad_episodes": 0,
+    "stop_reasons": {
+     "task_success": 99,
+     "horizon": 1
+    },
+    "cover_violations": 2102,
+    "budget_assumption_violations": 2087,
+    "eddies_executed_mean": 28.98,
+    "completion_time_mean_s": 5.645838383837985,
+    "proposer": {
+     "proposals": 2998,
+     "rejected": 2103,
+     "agree_symbolic": 895,
+     "masked_choice_not_top": 2103,
+     "unvetted_executed": 0,
+     "done_proposed": 99,
+     "done_premature": 0,
+     "guard_stops": 0,
+     "episodes_with_rejection": 10,
+     "rejections_by_state": {
+      "lifted: place:cube_top (allowed transport:cube_above)": 2102,
+      "over_blue: transport:cube_above (allowed place:cube_top)": 1
+     }
+    }
+   },
+   "certificate": {
+    "q": 1.232630073015472,
+    "violations": 0,
+    "n": 100,
+    "tube_p90_cm": 3.783349066237004,
+    "tube_max_cm": 4.298706554292553,
+    "tube_p90_steps_cm": 4.298706554292553,
+    "planned_certified": 8,
+    "planned": 8
+   },
+   "fixed_gate": {
+    "0.02": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 100,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.03": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.04": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.05": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 89,
+     "stopped": 11,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 89,
+      "residual": 11
+     }
+    },
+    "0.075": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 89,
+     "stopped": 11,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 89,
+      "residual": 11
+     }
+    },
+    "0.1": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 89,
+     "stopped": 11,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 89,
+      "residual": 11
+     }
+    }
+   },
+   "adaptive_gate": {
+    "0.02": {
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 91,
+     "false_stops": 0,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.1,
+     "causes": {
+      "predicted": 100
+     }
+    },
+    "0.03": {
+     "completed": 67,
+     "stopped": 33,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 33,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 33,
+      "completed": 67
+     }
+    },
+    "0.04": {
+     "completed": 95,
+     "stopped": 5,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 5,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 5,
+      "completed": 95
+     }
+    },
+    "0.05": {
+     "completed": 96,
+     "stopped": 4,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 4,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 4,
+      "completed": 96
+     }
+    },
+    "0.075": {
+     "completed": 97,
+     "stopped": 3,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 3,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 3,
+      "completed": 97
+     }
+    },
+    "0.1": {
+     "completed": 100,
+     "stopped": 0,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 0,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "completed": 100
+     }
+    }
+   }
+  },
+  "bistl_learned_raw|nominal": {
+   "method": "bistl_learned_raw",
+   "condition": "nominal",
+   "closed_loop": {
+    "n": 100,
+    "success": 100,
+    "task_success": 100,
+    "property_success": 100,
+    "bad_episodes": 0,
+    "stop_reasons": {
+     "task_success": 100
+    },
+    "cover_violations": 9,
+    "budget_assumption_violations": 0,
+    "eddies_executed_mean": 8.21,
+    "completion_time_mean_s": 5.635319999999601,
+    "proposer": {
+     "proposals": 921,
+     "rejected": 30,
+     "agree_symbolic": 891,
+     "masked_choice_not_top": 0,
+     "unvetted_executed": 30,
+     "done_proposed": 100,
+     "done_premature": 0,
+     "guard_stops": 0,
+     "episodes_with_rejection": 10,
+     "rejections_by_state": {
+      "over_blue: transport:cube_above (allowed place:cube_top)": 21,
+      "lifted: place:cube_top (allowed transport:cube_above)": 9
+     }
+    }
+   },
+   "certificate": {
+    "q": 1.232630073015472,
+    "violations": 0,
+    "n": 100,
+    "tube_p90_cm": 3.783349066237004,
+    "tube_max_cm": 4.298706554292553,
+    "tube_p90_steps_cm": 4.298706554292553,
+    "planned_certified": 8,
+    "planned": 8
+   },
+   "fixed_gate": {
+    "0.02": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 100,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.03": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.04": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.05": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 90,
+     "stopped": 10,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 90,
+      "residual": 10
+     }
+    },
+    "0.075": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 90,
+     "stopped": 10,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 90,
+      "residual": 10
+     }
+    },
+    "0.1": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 90,
+     "stopped": 10,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 90,
+      "residual": 10
+     }
+    }
+   },
+   "adaptive_gate": {
+    "0.02": {
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 91,
+     "false_stops": 0,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.1,
+     "causes": {
+      "predicted": 100
+     }
+    },
+    "0.03": {
+     "completed": 86,
+     "stopped": 14,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 14,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 14,
+      "completed": 86
+     }
+    },
+    "0.04": {
+     "completed": 95,
+     "stopped": 5,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 5,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 5,
+      "completed": 95
+     }
+    },
+    "0.05": {
+     "completed": 96,
+     "stopped": 4,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 4,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 4,
+      "completed": 96
+     }
+    },
+    "0.075": {
+     "completed": 97,
+     "stopped": 3,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 3,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 3,
+      "completed": 97
+     }
+    },
+    "0.1": {
+     "completed": 100,
+     "stopped": 0,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 0,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "completed": 100
+     }
+    }
+   }
+  },
+  "bistl_learned_state|nominal": {
+   "method": "bistl_learned_state",
+   "condition": "nominal",
+   "closed_loop": {
+    "n": 100,
+    "success": 99,
+    "task_success": 99,
+    "property_success": 99,
+    "bad_episodes": 0,
+    "stop_reasons": {
+     "task_success": 99,
+     "horizon": 1
+    },
+    "cover_violations": 2102,
+    "budget_assumption_violations": 2087,
+    "eddies_executed_mean": 28.98,
+    "completion_time_mean_s": 5.645838383837985,
+    "proposer": {
+     "proposals": 2998,
+     "rejected": 2105,
+     "agree_symbolic": 893,
+     "masked_choice_not_top": 2105,
+     "unvetted_executed": 0,
+     "done_proposed": 99,
+     "done_premature": 0,
+     "guard_stops": 0,
+     "episodes_with_rejection": 12,
+     "rejections_by_state": {
+      "lifted: place:cube_top (allowed transport:cube_above)": 2101,
+      "over_blue: transport:cube_above (allowed place:cube_top)": 4
+     }
+    }
+   },
+   "certificate": {
+    "q": 1.232630073015472,
+    "violations": 0,
+    "n": 100,
+    "tube_p90_cm": 3.783349066237004,
+    "tube_max_cm": 4.298706554292553,
+    "tube_p90_steps_cm": 4.298706554292553,
+    "planned_certified": 8,
+    "planned": 8
+   },
+   "fixed_gate": {
+    "0.02": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 100,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.03": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.04": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.05": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 89,
+     "stopped": 11,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 89,
+      "residual": 11
+     }
+    },
+    "0.075": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 89,
+     "stopped": 11,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 89,
+      "residual": 11
+     }
+    },
+    "0.1": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 89,
+     "stopped": 11,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 89,
+      "residual": 11
+     }
+    }
+   },
+   "adaptive_gate": {
+    "0.02": {
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 91,
+     "false_stops": 0,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.1,
+     "causes": {
+      "predicted": 100
+     }
+    },
+    "0.03": {
+     "completed": 67,
+     "stopped": 33,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 33,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 33,
+      "completed": 67
+     }
+    },
+    "0.04": {
+     "completed": 95,
+     "stopped": 5,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 5,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 5,
+      "completed": 95
+     }
+    },
+    "0.05": {
+     "completed": 96,
+     "stopped": 4,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 4,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 4,
+      "completed": 96
+     }
+    },
+    "0.075": {
+     "completed": 97,
+     "stopped": 3,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 3,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 3,
+      "completed": 97
+     }
+    },
+    "0.1": {
+     "completed": 100,
+     "stopped": 0,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 0,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "completed": 100
+     }
+    }
+   }
+  },
+  "bistl_learned_state_raw|nominal": {
+   "method": "bistl_learned_state_raw",
+   "condition": "nominal",
+   "closed_loop": {
+    "n": 100,
+    "success": 100,
+    "task_success": 100,
+    "property_success": 100,
+    "bad_episodes": 0,
+    "stop_reasons": {
+     "task_success": 100
+    },
+    "cover_violations": 9,
+    "budget_assumption_violations": 0,
+    "eddies_executed_mean": 18.98,
+    "completion_time_mean_s": 5.850819999999567,
+    "proposer": {
+     "proposals": 1998,
+     "rejected": 1105,
+     "agree_symbolic": 893,
+     "masked_choice_not_top": 0,
+     "unvetted_executed": 1105,
+     "done_proposed": 100,
+     "done_premature": 0,
+     "guard_stops": 0,
+     "episodes_with_rejection": 12,
+     "rejections_by_state": {
+      "over_blue: transport:cube_above (allowed place:cube_top)": 1097,
+      "lifted: place:cube_top (allowed transport:cube_above)": 8
+     }
+    }
+   },
+   "certificate": {
+    "q": 1.232630073015472,
+    "violations": 0,
+    "n": 100,
+    "tube_p90_cm": 3.783349066237004,
+    "tube_max_cm": 4.298706554292553,
+    "tube_p90_steps_cm": 4.298706554292553,
+    "planned_certified": 8,
+    "planned": 8
+   },
+   "fixed_gate": {
+    "0.02": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 100,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.03": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.04": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.05": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 90,
+     "stopped": 10,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 90,
+      "residual": 10
+     }
+    },
+    "0.075": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 90,
+     "stopped": 10,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 90,
+      "residual": 10
+     }
+    },
+    "0.1": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 90,
+     "stopped": 10,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 90,
+      "residual": 10
+     }
+    }
+   },
+   "adaptive_gate": {
+    "0.02": {
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 91,
+     "false_stops": 0,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.1,
+     "causes": {
+      "predicted": 100
+     }
+    },
+    "0.03": {
+     "completed": 71,
+     "stopped": 29,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 29,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 29,
+      "completed": 71
+     }
+    },
+    "0.04": {
+     "completed": 95,
+     "stopped": 5,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 5,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 5,
+      "completed": 95
+     }
+    },
+    "0.05": {
+     "completed": 96,
+     "stopped": 4,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 4,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 4,
+      "completed": 96
+     }
+    },
+    "0.075": {
+     "completed": 97,
+     "stopped": 3,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 3,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 3,
+      "completed": 97
+     }
+    },
+    "0.1": {
+     "completed": 100,
+     "stopped": 0,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 0,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "completed": 100
+     }
+    }
+   }
+  },
+  "bistl_cmd|nominal": {
+   "method": "bistl_cmd",
+   "condition": "nominal",
+   "closed_loop": {
+    "n": 100,
+    "success": 16,
+    "task_success": 16,
+    "property_success": 16,
+    "bad_episodes": 3,
+    "stop_reasons": {
+     "task_success": 16,
+     "horizon": 81,
+     "method_stop:property_violated": 3
+    },
+    "cover_violations": 384,
+    "budget_assumption_violations": 201,
+    "eddies_executed_mean": 8.94,
+    "completion_time_mean_s": 17.941499999998737
+   },
+   "certificate": {
+    "q": 1.232630073015472,
+    "violations": 67,
+    "n": 100,
+    "tube_p90_cm": 3.783349066237004,
+    "tube_max_cm": 4.298706554292553,
+    "tube_p90_steps_cm": 3.562481571356055,
+    "planned_certified": 8,
+    "planned": 8
+   },
+   "fixed_gate": {
+    "0.02": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 100,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.03": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 67,
+     "caught_before": 67,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.04": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 62,
+     "caught_before": 62,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.05": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 27,
+     "caught_before": 27,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "residual": 100
+     }
+    },
+    "0.075": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 4,
+     "caught_before": 4,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "residual": 100
+     }
+    },
+    "0.1": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "residual": 100
+     }
+    }
+   },
+   "adaptive_gate": {
+    "0.02": {
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 73,
+     "false_stops": 0,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.09,
+     "causes": {
+      "predicted": 100
+     }
+    },
+    "0.03": {
+     "completed": 2,
+     "stopped": 98,
+     "would_exceed": 67,
+     "caught_before": 67,
+     "false_stops": 31,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.12,
+     "causes": {
+      "predicted": 98,
+      "completed": 2
+     }
+    },
+    "0.04": {
+     "completed": 1,
+     "stopped": 99,
+     "would_exceed": 62,
+     "caught_before": 61,
+     "false_stops": 37,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.12,
+     "causes": {
+      "predicted": 99,
+      "completed": 1
+     }
+    },
+    "0.05": {
+     "completed": 4,
+     "stopped": 96,
+     "would_exceed": 27,
+     "caught_before": 27,
+     "false_stops": 69,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.13,
+     "causes": {
+      "predicted": 96,
+      "completed": 4
+     }
+    },
+    "0.075": {
+     "completed": 9,
+     "stopped": 91,
+     "would_exceed": 4,
+     "caught_before": 4,
+     "false_stops": 87,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.13,
+     "causes": {
+      "predicted": 91,
+      "completed": 9
+     }
+    },
+    "0.1": {
+     "completed": 48,
+     "stopped": 52,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 52,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.14,
+     "causes": {
+      "predicted": 52,
+      "completed": 48
+     }
+    }
+   }
+  },
+  "bistl_learned_cmd|nominal": {
+   "method": "bistl_learned_cmd",
+   "condition": "nominal",
+   "closed_loop": {
+    "n": 100,
+    "success": 16,
+    "task_success": 16,
+    "property_success": 16,
+    "bad_episodes": 3,
+    "stop_reasons": {
+     "task_success": 16,
+     "horizon": 81,
+     "method_stop:property_violated": 3
+    },
+    "cover_violations": 384,
+    "budget_assumption_violations": 201,
+    "eddies_executed_mean": 8.94,
+    "completion_time_mean_s": 17.941499999998737,
+    "proposer": {
+     "proposals": 994,
+     "rejected": 349,
+     "agree_symbolic": 645,
+     "masked_choice_not_top": 349,
+     "unvetted_executed": 0,
+     "done_proposed": 15,
+     "done_premature": 0,
+     "guard_stops": 0,
+     "episodes_with_rejection": 86,
+     "rejections_by_state": {
+      "lifted: reach:cube_above (allowed transport:cube_above)": 285,
+      "lifted: place:cube_top (allowed transport:cube_above)": 35,
+      "grasped: reach:cube_above (allowed lift:cube)": 19,
+      "over_blue: reach:cube_above (allowed place:cube_top)": 5,
+      "released_on_blue: release:cube (allowed retreat:cube)": 3,
+      "released_on_blue: reach:cube_above (allowed retreat:cube)": 1,
+      "over_blue: transport:cube_above (allowed place:cube_top)": 1
+     }
+    }
+   },
+   "certificate": {
+    "q": 1.232630073015472,
+    "violations": 67,
+    "n": 100,
+    "tube_p90_cm": 3.783349066237004,
+    "tube_max_cm": 4.298706554292553,
+    "tube_p90_steps_cm": 3.562481571356055,
+    "planned_certified": 8,
+    "planned": 8
+   },
+   "fixed_gate": {
+    "0.02": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 100,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.03": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 67,
+     "caught_before": 67,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.04": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 62,
+     "caught_before": 62,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.05": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 27,
+     "caught_before": 27,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "residual": 100
+     }
+    },
+    "0.075": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 4,
+     "caught_before": 4,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "residual": 100
+     }
+    },
+    "0.1": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "residual": 100
+     }
+    }
+   },
+   "adaptive_gate": {
+    "0.02": {
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 73,
+     "false_stops": 0,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.09,
+     "causes": {
+      "predicted": 100
+     }
+    },
+    "0.03": {
+     "completed": 2,
+     "stopped": 98,
+     "would_exceed": 67,
+     "caught_before": 67,
+     "false_stops": 31,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.12,
+     "causes": {
+      "predicted": 98,
+      "completed": 2
+     }
+    },
+    "0.04": {
+     "completed": 1,
+     "stopped": 99,
+     "would_exceed": 62,
+     "caught_before": 61,
+     "false_stops": 37,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.12,
+     "causes": {
+      "predicted": 99,
+      "completed": 1
+     }
+    },
+    "0.05": {
+     "completed": 4,
+     "stopped": 96,
+     "would_exceed": 27,
+     "caught_before": 27,
+     "false_stops": 69,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.13,
+     "causes": {
+      "predicted": 96,
+      "completed": 4
+     }
+    },
+    "0.075": {
+     "completed": 9,
+     "stopped": 91,
+     "would_exceed": 4,
+     "caught_before": 4,
+     "false_stops": 87,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.13,
+     "causes": {
+      "predicted": 91,
+      "completed": 9
+     }
+    },
+    "0.1": {
+     "completed": 48,
+     "stopped": 52,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 52,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.14,
+     "causes": {
+      "predicted": 52,
+      "completed": 48
+     }
+    }
+   }
+  },
+  "bistl|perturbed": {
+   "method": "bistl",
+   "condition": "perturbed",
+   "closed_loop": {
+    "n": 100,
+    "success": 86,
+    "task_success": 86,
+    "property_success": 86,
+    "bad_episodes": 2,
+    "stop_reasons": {
+     "task_success": 86,
+     "method_stop:not_in_winning_set": 11,
+     "method_stop:property_violated": 2,
+     "horizon": 1
+    },
+    "cover_violations": 1960,
+    "budget_assumption_violations": 1938,
+    "eddies_executed_mean": 28.53,
+    "completion_time_mean_s": 7.2819069767438505
+   },
+   "certificate": {
+    "q": 1.232630073015472,
+    "violations": 12,
+    "n": 100,
+    "tube_p90_cm": 3.783349066237004,
+    "tube_max_cm": 4.298706554292553,
+    "tube_p90_steps_cm": 4.298706554292553,
+    "planned_certified": 8,
+    "planned": 8
+   },
+   "fixed_gate": {
+    "0.02": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 100,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.03": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 36,
+     "caught_before": 36,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.04": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 13,
+     "caught_before": 13,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.05": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 16,
+     "stopped": 84,
+     "would_exceed": 9,
+     "caught_before": 9,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 16,
+      "residual": 84
+     }
+    },
+    "0.075": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 16,
+     "stopped": 84,
+     "would_exceed": 1,
+     "caught_before": 1,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 16,
+      "residual": 84
+     }
+    },
+    "0.1": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 16,
+     "stopped": 84,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 16,
+      "residual": 84
+     }
+    }
+   },
+   "adaptive_gate": {
+    "0.02": {
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 91,
+     "false_stops": 0,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.1,
+     "causes": {
+      "predicted": 100
+     }
+    },
+    "0.03": {
+     "completed": 15,
+     "stopped": 85,
+     "would_exceed": 36,
+     "caught_before": 36,
+     "false_stops": 49,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 85,
+      "completed": 15
+     }
+    },
+    "0.04": {
+     "completed": 14,
+     "stopped": 86,
+     "would_exceed": 13,
+     "caught_before": 13,
+     "false_stops": 73,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.12,
+     "causes": {
+      "predicted": 86,
+      "completed": 14
+     }
+    },
+    "0.05": {
+     "completed": 6,
+     "stopped": 94,
+     "would_exceed": 9,
+     "caught_before": 9,
+     "false_stops": 85,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.1,
+     "causes": {
+      "predicted": 94,
+      "completed": 6
+     }
+    },
+    "0.075": {
+     "completed": 27,
+     "stopped": 73,
+     "would_exceed": 1,
+     "caught_before": 1,
+     "false_stops": 72,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 73,
+      "completed": 27
+     }
+    },
+    "0.1": {
+     "completed": 39,
+     "stopped": 61,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 61,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.12,
+     "causes": {
+      "predicted": 61,
+      "completed": 39
+     }
+    }
+   }
+  },
+  "bistl_learned|perturbed": {
+   "method": "bistl_learned",
+   "condition": "perturbed",
+   "closed_loop": {
+    "n": 100,
+    "success": 86,
+    "task_success": 86,
+    "property_success": 86,
+    "bad_episodes": 2,
+    "stop_reasons": {
+     "task_success": 86,
+     "method_stop:not_in_winning_set": 11,
+     "method_stop:property_violated": 2,
+     "horizon": 1
+    },
+    "cover_violations": 1960,
+    "budget_assumption_violations": 1938,
+    "eddies_executed_mean": 28.53,
+    "completion_time_mean_s": 7.2819069767438505,
+    "proposer": {
+     "proposals": 2953,
+     "rejected": 1945,
+     "agree_symbolic": 997,
+     "masked_choice_not_top": 1943,
+     "unvetted_executed": 0,
+     "done_proposed": 85,
+     "done_premature": 2,
+     "guard_stops": 11,
+     "episodes_with_rejection": 7,
+     "rejections_by_state": {
+      "lifted: place:cube_top (allowed transport:cube_above)": 1939,
+      "done: reach:cube_grasp (allowed <done>)": 2,
+      "released_on_blue: release:cube (allowed retreat:cube)": 1,
+      "at_red: retreat:cube (allowed grasp:cube)": 1,
+      "over_blue: transport:cube_above (allowed place:cube_top)": 1,
+      "free: <done> (allowed reach:cube_above)": 1
+     }
+    }
+   },
+   "certificate": {
+    "q": 1.232630073015472,
+    "violations": 12,
+    "n": 100,
+    "tube_p90_cm": 3.783349066237004,
+    "tube_max_cm": 4.298706554292553,
+    "tube_p90_steps_cm": 4.298706554292553,
+    "planned_certified": 8,
+    "planned": 8
+   },
+   "fixed_gate": {
+    "0.02": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 100,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.03": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 36,
+     "caught_before": 36,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.04": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 13,
+     "caught_before": 13,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.05": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 16,
+     "stopped": 84,
+     "would_exceed": 9,
+     "caught_before": 9,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 16,
+      "residual": 84
+     }
+    },
+    "0.075": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 16,
+     "stopped": 84,
+     "would_exceed": 1,
+     "caught_before": 1,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 16,
+      "residual": 84
+     }
+    },
+    "0.1": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 16,
+     "stopped": 84,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 16,
+      "residual": 84
+     }
+    }
+   },
+   "adaptive_gate": {
+    "0.02": {
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 91,
+     "false_stops": 0,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.1,
+     "causes": {
+      "predicted": 100
+     }
+    },
+    "0.03": {
+     "completed": 15,
+     "stopped": 85,
+     "would_exceed": 36,
+     "caught_before": 36,
+     "false_stops": 49,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 85,
+      "completed": 15
+     }
+    },
+    "0.04": {
+     "completed": 14,
+     "stopped": 86,
+     "would_exceed": 13,
+     "caught_before": 13,
+     "false_stops": 73,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.12,
+     "causes": {
+      "predicted": 86,
+      "completed": 14
+     }
+    },
+    "0.05": {
+     "completed": 6,
+     "stopped": 94,
+     "would_exceed": 9,
+     "caught_before": 9,
+     "false_stops": 85,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.1,
+     "causes": {
+      "predicted": 94,
+      "completed": 6
+     }
+    },
+    "0.075": {
+     "completed": 27,
+     "stopped": 73,
+     "would_exceed": 1,
+     "caught_before": 1,
+     "false_stops": 72,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 73,
+      "completed": 27
+     }
+    },
+    "0.1": {
+     "completed": 39,
+     "stopped": 61,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 61,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.12,
+     "causes": {
+      "predicted": 61,
+      "completed": 39
+     }
+    }
+   }
+  },
+  "bistl_learned_raw|perturbed": {
+   "method": "bistl_learned_raw",
+   "condition": "perturbed",
+   "closed_loop": {
+    "n": 100,
+    "success": 98,
+    "task_success": 98,
+    "property_success": 98,
+    "bad_episodes": 2,
+    "stop_reasons": {
+     "task_success": 98,
+     "method_stop:property_violated": 2
+    },
+    "cover_violations": 21,
+    "budget_assumption_violations": 1,
+    "eddies_executed_mean": 9.33,
+    "completion_time_mean_s": 7.012591836734347,
+    "proposer": {
+     "proposals": 1034,
+     "rejected": 8,
+     "agree_symbolic": 1016,
+     "masked_choice_not_top": 0,
+     "unvetted_executed": 17,
+     "done_proposed": 96,
+     "done_premature": 1,
+     "guard_stops": 0,
+     "episodes_with_rejection": 7,
+     "rejections_by_state": {
+      "lifted: place:cube_top (allowed transport:cube_above)": 4,
+      "released_on_blue: release:cube (allowed retreat:cube)": 1,
+      "done: reach:cube_grasp (allowed <done>)": 1,
+      "at_red: retreat:cube (allowed grasp:cube)": 1,
+      "free: <done> (allowed reach:cube_above)": 1
+     }
+    }
+   },
+   "certificate": {
+    "q": 1.232630073015472,
+    "violations": 12,
+    "n": 100,
+    "tube_p90_cm": 3.783349066237004,
+    "tube_max_cm": 4.298706554292553,
+    "tube_p90_steps_cm": 4.298706554292553,
+    "planned_certified": 8,
+    "planned": 8
+   },
+   "fixed_gate": {
+    "0.02": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 100,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.03": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 36,
+     "caught_before": 36,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.04": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 12,
+     "caught_before": 12,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.05": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 13,
+     "stopped": 87,
+     "would_exceed": 9,
+     "caught_before": 9,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 13,
+      "residual": 87
+     }
+    },
+    "0.075": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 13,
+     "stopped": 87,
+     "would_exceed": 1,
+     "caught_before": 1,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 13,
+      "residual": 87
+     }
+    },
+    "0.1": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 13,
+     "stopped": 87,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 13,
+      "residual": 87
+     }
+    }
+   },
+   "adaptive_gate": {
+    "0.02": {
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 91,
+     "false_stops": 0,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.1,
+     "causes": {
+      "predicted": 100
+     }
+    },
+    "0.03": {
+     "completed": 14,
+     "stopped": 86,
+     "would_exceed": 36,
+     "caught_before": 36,
+     "false_stops": 50,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 86,
+      "completed": 14
+     }
+    },
+    "0.04": {
+     "completed": 14,
+     "stopped": 86,
+     "would_exceed": 12,
+     "caught_before": 12,
+     "false_stops": 74,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.12,
+     "causes": {
+      "predicted": 86,
+      "completed": 14
+     }
+    },
+    "0.05": {
+     "completed": 6,
+     "stopped": 94,
+     "would_exceed": 9,
+     "caught_before": 9,
+     "false_stops": 85,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 94,
+      "completed": 6
+     }
+    },
+    "0.075": {
+     "completed": 28,
+     "stopped": 72,
+     "would_exceed": 1,
+     "caught_before": 1,
+     "false_stops": 71,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 72,
+      "completed": 28
+     }
+    },
+    "0.1": {
+     "completed": 34,
+     "stopped": 66,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 66,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.12,
+     "causes": {
+      "predicted": 66,
+      "completed": 34
+     }
+    }
+   }
+  },
+  "bistl_learned_state|perturbed": {
+   "method": "bistl_learned_state",
+   "condition": "perturbed",
+   "closed_loop": {
+    "n": 100,
+    "success": 86,
+    "task_success": 86,
+    "property_success": 86,
+    "bad_episodes": 2,
+    "stop_reasons": {
+     "task_success": 86,
+     "method_stop:not_in_winning_set": 11,
+     "method_stop:property_violated": 2,
+     "horizon": 1
+    },
+    "cover_violations": 1960,
+    "budget_assumption_violations": 1938,
+    "eddies_executed_mean": 28.53,
+    "completion_time_mean_s": 7.2819069767438505,
+    "proposer": {
+     "proposals": 2953,
+     "rejected": 1953,
+     "agree_symbolic": 989,
+     "masked_choice_not_top": 1953,
+     "unvetted_executed": 0,
+     "done_proposed": 86,
+     "done_premature": 1,
+     "guard_stops": 11,
+     "episodes_with_rejection": 11,
+     "rejections_by_state": {
+      "lifted: place:cube_top (allowed transport:cube_above)": 1941,
+      "grasped: release:cube (allowed lift:cube)": 5,
+      "over_blue: transport:cube_above (allowed place:cube_top)": 2,
+      "released_on_blue: reach:cube_above (allowed retreat:cube)": 1,
+      "above_red: <done> (allowed reach:cube_grasp)": 1,
+      "at_red: retreat:cube (allowed grasp:cube)": 1,
+      "free: reach:cube_grasp (allowed reach:cube_above)": 1,
+      "placed_held: retreat:cube (allowed release:cube)": 1
+     }
+    }
+   },
+   "certificate": {
+    "q": 1.232630073015472,
+    "violations": 12,
+    "n": 100,
+    "tube_p90_cm": 3.783349066237004,
+    "tube_max_cm": 4.298706554292553,
+    "tube_p90_steps_cm": 4.298706554292553,
+    "planned_certified": 8,
+    "planned": 8
+   },
+   "fixed_gate": {
+    "0.02": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 100,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.03": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 36,
+     "caught_before": 36,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.04": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 13,
+     "caught_before": 13,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.05": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 16,
+     "stopped": 84,
+     "would_exceed": 9,
+     "caught_before": 9,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 16,
+      "residual": 84
+     }
+    },
+    "0.075": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 16,
+     "stopped": 84,
+     "would_exceed": 1,
+     "caught_before": 1,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 16,
+      "residual": 84
+     }
+    },
+    "0.1": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 16,
+     "stopped": 84,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 16,
+      "residual": 84
+     }
+    }
+   },
+   "adaptive_gate": {
+    "0.02": {
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 91,
+     "false_stops": 0,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.1,
+     "causes": {
+      "predicted": 100
+     }
+    },
+    "0.03": {
+     "completed": 15,
+     "stopped": 85,
+     "would_exceed": 36,
+     "caught_before": 36,
+     "false_stops": 49,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 85,
+      "completed": 15
+     }
+    },
+    "0.04": {
+     "completed": 14,
+     "stopped": 86,
+     "would_exceed": 13,
+     "caught_before": 13,
+     "false_stops": 73,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.12,
+     "causes": {
+      "predicted": 86,
+      "completed": 14
+     }
+    },
+    "0.05": {
+     "completed": 6,
+     "stopped": 94,
+     "would_exceed": 9,
+     "caught_before": 9,
+     "false_stops": 85,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.1,
+     "causes": {
+      "predicted": 94,
+      "completed": 6
+     }
+    },
+    "0.075": {
+     "completed": 27,
+     "stopped": 73,
+     "would_exceed": 1,
+     "caught_before": 1,
+     "false_stops": 72,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 73,
+      "completed": 27
+     }
+    },
+    "0.1": {
+     "completed": 39,
+     "stopped": 61,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 61,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.12,
+     "causes": {
+      "predicted": 61,
+      "completed": 39
+     }
+    }
+   }
+  },
+  "bistl_learned_state_raw|perturbed": {
+   "method": "bistl_learned_state_raw",
+   "condition": "perturbed",
+   "closed_loop": {
+    "n": 100,
+    "success": 97,
+    "task_success": 97,
+    "property_success": 97,
+    "bad_episodes": 2,
+    "stop_reasons": {
+     "task_success": 97,
+     "horizon": 1,
+     "method_stop:property_violated": 2
+    },
+    "cover_violations": 20,
+    "budget_assumption_violations": 1,
+    "eddies_executed_mean": 10.48,
+    "completion_time_mean_s": 7.410041237113041,
+    "proposer": {
+     "proposals": 1148,
+     "rejected": 100,
+     "agree_symbolic": 1037,
+     "masked_choice_not_top": 0,
+     "unvetted_executed": 109,
+     "done_proposed": 96,
+     "done_premature": 2,
+     "guard_stops": 0,
+     "episodes_with_rejection": 11,
+     "rejections_by_state": {
+      "over_blue: transport:cube_above (allowed place:cube_top)": 53,
+      "grasped: release:cube (allowed lift:cube)": 20,
+      "at_red: retreat:cube (allowed grasp:cube)": 19,
+      "lifted: place:cube_top (allowed transport:cube_above)": 4,
+      "free: reach:cube_grasp (allowed reach:cube_above)": 2,
+      "released_on_blue: reach:cube_above (allowed retreat:cube)": 1,
+      "above_red: <done> (allowed reach:cube_grasp)": 1
+     }
+    }
+   },
+   "certificate": {
+    "q": 1.232630073015472,
+    "violations": 11,
+    "n": 100,
+    "tube_p90_cm": 3.783349066237004,
+    "tube_max_cm": 4.298706554292553,
+    "tube_p90_steps_cm": 4.298706554292553,
+    "planned_certified": 8,
+    "planned": 8
+   },
+   "fixed_gate": {
+    "0.02": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 100,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.03": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 35,
+     "caught_before": 35,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.04": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 12,
+     "caught_before": 12,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.05": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 13,
+     "stopped": 87,
+     "would_exceed": 9,
+     "caught_before": 9,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 13,
+      "residual": 87
+     }
+    },
+    "0.075": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 13,
+     "stopped": 87,
+     "would_exceed": 1,
+     "caught_before": 1,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 13,
+      "residual": 87
+     }
+    },
+    "0.1": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 13,
+     "stopped": 87,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "completed": 13,
+      "residual": 87
+     }
+    }
+   },
+   "adaptive_gate": {
+    "0.02": {
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 91,
+     "false_stops": 0,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.1,
+     "causes": {
+      "predicted": 100
+     }
+    },
+    "0.03": {
+     "completed": 14,
+     "stopped": 86,
+     "would_exceed": 35,
+     "caught_before": 35,
+     "false_stops": 51,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 86,
+      "completed": 14
+     }
+    },
+    "0.04": {
+     "completed": 14,
+     "stopped": 86,
+     "would_exceed": 12,
+     "caught_before": 12,
+     "false_stops": 74,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.12,
+     "causes": {
+      "predicted": 86,
+      "completed": 14
+     }
+    },
+    "0.05": {
+     "completed": 6,
+     "stopped": 94,
+     "would_exceed": 9,
+     "caught_before": 9,
+     "false_stops": 85,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 94,
+      "completed": 6
+     }
+    },
+    "0.075": {
+     "completed": 37,
+     "stopped": 63,
+     "would_exceed": 1,
+     "caught_before": 1,
+     "false_stops": 62,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.12,
+     "causes": {
+      "predicted": 63,
+      "completed": 37
+     }
+    },
+    "0.1": {
+     "completed": 30,
+     "stopped": 70,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 70,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.12,
+     "causes": {
+      "predicted": 70,
+      "completed": 30
+     }
+    }
+   }
+  },
+  "bistl_cmd|perturbed": {
+   "method": "bistl_cmd",
+   "condition": "perturbed",
+   "closed_loop": {
+    "n": 100,
+    "success": 8,
+    "task_success": 8,
+    "property_success": 8,
+    "bad_episodes": 18,
+    "stop_reasons": {
+     "horizon": 73,
+     "method_stop:property_violated": 18,
+     "task_success": 8,
+     "method_stop:not_in_winning_set": 1
+    },
+    "cover_violations": 307,
+    "budget_assumption_violations": 173,
+    "eddies_executed_mean": 8.09,
+    "completion_time_mean_s": 14.806249999999867
+   },
+   "certificate": {
+    "q": 1.232630073015472,
+    "violations": 42,
+    "n": 100,
+    "tube_p90_cm": 3.783349066237004,
+    "tube_max_cm": 4.298706554292553,
+    "tube_p90_steps_cm": 4.298706554292553,
+    "planned_certified": 8,
+    "planned": 8
+   },
+   "fixed_gate": {
+    "0.02": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 100,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.03": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 62,
+     "caught_before": 62,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.04": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 41,
+     "caught_before": 41,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.05": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 1,
+     "stopped": 99,
+     "would_exceed": 13,
+     "caught_before": 13,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "residual": 99,
+      "completed": 1
+     }
+    },
+    "0.075": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 1,
+     "stopped": 99,
+     "would_exceed": 5,
+     "caught_before": 5,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "residual": 99,
+      "completed": 1
+     }
+    },
+    "0.1": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 1,
+     "stopped": 99,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "residual": 99,
+      "completed": 1
+     }
+    }
+   },
+   "adaptive_gate": {
+    "0.02": {
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 73,
+     "false_stops": 0,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.09,
+     "causes": {
+      "predicted": 100
+     }
+    },
+    "0.03": {
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 62,
+     "caught_before": 62,
+     "false_stops": 38,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 100
+     }
+    },
+    "0.04": {
+     "completed": 6,
+     "stopped": 94,
+     "would_exceed": 41,
+     "caught_before": 41,
+     "false_stops": 53,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.12,
+     "causes": {
+      "predicted": 94,
+      "completed": 6
+     }
+    },
+    "0.05": {
+     "completed": 5,
+     "stopped": 95,
+     "would_exceed": 13,
+     "caught_before": 13,
+     "false_stops": 82,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 95,
+      "completed": 5
+     }
+    },
+    "0.075": {
+     "completed": 10,
+     "stopped": 90,
+     "would_exceed": 5,
+     "caught_before": 5,
+     "false_stops": 85,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.13,
+     "causes": {
+      "predicted": 90,
+      "completed": 10
+     }
+    },
+    "0.1": {
+     "completed": 20,
+     "stopped": 80,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 80,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.14,
+     "causes": {
+      "predicted": 80,
+      "completed": 20
+     }
+    }
+   }
+  },
+  "bistl_learned_cmd|perturbed": {
+   "method": "bistl_learned_cmd",
+   "condition": "perturbed",
+   "closed_loop": {
+    "n": 100,
+    "success": 8,
+    "task_success": 8,
+    "property_success": 8,
+    "bad_episodes": 18,
+    "stop_reasons": {
+     "horizon": 73,
+     "method_stop:property_violated": 18,
+     "task_success": 8,
+     "method_stop:not_in_winning_set": 1
+    },
+    "cover_violations": 307,
+    "budget_assumption_violations": 173,
+    "eddies_executed_mean": 8.09,
+    "completion_time_mean_s": 14.806249999999867,
+    "proposer": {
+     "proposals": 909,
+     "rejected": 143,
+     "agree_symbolic": 765,
+     "masked_choice_not_top": 143,
+     "unvetted_executed": 0,
+     "done_proposed": 9,
+     "done_premature": 2,
+     "guard_stops": 1,
+     "episodes_with_rejection": 46,
+     "rejections_by_state": {
+      "lifted: reach:cube_above (allowed transport:cube_above)": 111,
+      "lifted: place:cube_top (allowed transport:cube_above)": 10,
+      "grasped: reach:cube_above (allowed lift:cube)": 10,
+      "at_red: reach:cube_above (allowed grasp:cube)": 3,
+      "released_on_blue: reach:cube_above (allowed retreat:cube)": 2,
+      "at_red: release:cube (allowed grasp:cube)": 1,
+      "at_red: retreat:cube (allowed grasp:cube)": 1,
+      "placed_held: lift:cube (allowed release:cube)": 1,
+      "free: retreat:cube (allowed reach:cube_above)": 1,
+      "over_blue: reach:cube_above (allowed place:cube_top)": 1,
+      "free: <done> (allowed reach:cube_above)": 1,
+      "grasped: grasp:cube (allowed lift:cube)": 1
+     }
+    }
+   },
+   "certificate": {
+    "q": 1.232630073015472,
+    "violations": 42,
+    "n": 100,
+    "tube_p90_cm": 3.783349066237004,
+    "tube_max_cm": 4.298706554292553,
+    "tube_p90_steps_cm": 4.298706554292553,
+    "planned_certified": 8,
+    "planned": 8
+   },
+   "fixed_gate": {
+    "0.02": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 100,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.03": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 62,
+     "caught_before": 62,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.04": {
+     "n": 100,
+     "accepted": 0,
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 41,
+     "caught_before": 41,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    "0.05": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 1,
+     "stopped": 99,
+     "would_exceed": 13,
+     "caught_before": 13,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "residual": 99,
+      "completed": 1
+     }
+    },
+    "0.075": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 1,
+     "stopped": 99,
+     "would_exceed": 5,
+     "caught_before": 5,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "residual": 99,
+      "completed": 1
+     }
+    },
+    "0.1": {
+     "n": 100,
+     "accepted": 100,
+     "completed": 1,
+     "stopped": 99,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "completed_beyond_mu": 0,
+     "causes": {
+      "residual": 99,
+      "completed": 1
+     }
+    }
+   },
+   "adaptive_gate": {
+    "0.02": {
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 100,
+     "caught_before": 73,
+     "false_stops": 0,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.09,
+     "causes": {
+      "predicted": 100
+     }
+    },
+    "0.03": {
+     "completed": 0,
+     "stopped": 100,
+     "would_exceed": 62,
+     "caught_before": 62,
+     "false_stops": 38,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 100
+     }
+    },
+    "0.04": {
+     "completed": 6,
+     "stopped": 94,
+     "would_exceed": 41,
+     "caught_before": 41,
+     "false_stops": 53,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.12,
+     "causes": {
+      "predicted": 94,
+      "completed": 6
+     }
+    },
+    "0.05": {
+     "completed": 5,
+     "stopped": 95,
+     "would_exceed": 13,
+     "caught_before": 13,
+     "false_stops": 82,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.11,
+     "causes": {
+      "predicted": 95,
+      "completed": 5
+     }
+    },
+    "0.075": {
+     "completed": 10,
+     "stopped": 90,
+     "would_exceed": 5,
+     "caught_before": 5,
+     "false_stops": 85,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.13,
+     "causes": {
+      "predicted": 90,
+      "completed": 10
+     }
+    },
+    "0.1": {
+     "completed": 20,
+     "stopped": 80,
+     "would_exceed": 0,
+     "caught_before": 0,
+     "false_stops": 80,
+     "completed_beyond_mu": 0,
+     "miscoverage": 0.14,
+     "causes": {
+      "predicted": 80,
+      "completed": 20
+     }
+    }
+   }
+  }
+ }
+}

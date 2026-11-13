@@ -1,0 +1,1693 @@
+{
+ "alpha": 0.1,
+ "mu_m": [
+  0.03,
+  0.05,
+  0.075,
+  0.1,
+  0.15
+ ],
+ "runs": [
+  {
+   "scene": "franka_cube_stack",
+   "task": "franka_cube_stack",
+   "label": "bistl",
+   "spec": null,
+   "condition": "nominal",
+   "plan": [
+    "reach:cube_above",
+    "reach:cube_grasp",
+    "grasp:cube",
+    "lift:cube",
+    "transport:cube_above",
+    "place:cube_top",
+    "release:cube",
+    "retreat:cube"
+   ],
+   "n": 100,
+   "success": 0.99,
+   "episodes_with_cover_violation": 9,
+   "cover_violations": 2102,
+   "bad": 0,
+   "executed_nominal_plan": 91,
+   "extensions": 0,
+   "stop_reasons": {
+    "task_success": 99,
+    "horizon": 1
+   },
+   "gate": [
+    {
+     "mu_m": 0.03,
+     "accepted": 0,
+     "completed": 0,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    {
+     "mu_m": 0.05,
+     "accepted": 100,
+     "completed": 89,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 1,
+     "causes": {
+      "completed": 89,
+      "residual": 11
+     }
+    },
+    {
+     "mu_m": 0.075,
+     "accepted": 100,
+     "completed": 89,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 1,
+     "causes": {
+      "completed": 89,
+      "residual": 11
+     }
+    },
+    {
+     "mu_m": 0.1,
+     "accepted": 100,
+     "completed": 89,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 1,
+     "causes": {
+      "completed": 89,
+      "residual": 11
+     }
+    },
+    {
+     "mu_m": 0.15,
+     "accepted": 100,
+     "completed": 89,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 1,
+     "causes": {
+      "completed": 89,
+      "residual": 11
+     }
+    }
+   ]
+  },
+  {
+   "scene": "franka_cube_stack",
+   "task": "franka_cube_stack",
+   "label": "bistl",
+   "spec": null,
+   "condition": "perturbed",
+   "plan": [
+    "reach:cube_above",
+    "reach:cube_grasp",
+    "grasp:cube",
+    "lift:cube",
+    "transport:cube_above",
+    "place:cube_top",
+    "release:cube",
+    "retreat:cube"
+   ],
+   "n": 100,
+   "success": 0.86,
+   "episodes_with_cover_violation": 21,
+   "cover_violations": 1960,
+   "bad": 2,
+   "executed_nominal_plan": 49,
+   "extensions": 0,
+   "stop_reasons": {
+    "task_success": 86,
+    "method_stop:not_in_winning_set": 11,
+    "method_stop:property_violated": 2,
+    "horizon": 1
+   },
+   "gate": []
+  },
+  {
+   "scene": "franka_cube_stack",
+   "task": "franka_cube_stack_ltl",
+   "label": "bistl",
+   "spec": "G !bad & F(on_red_blue)",
+   "condition": "nominal",
+   "plan": [
+    "reach:cube_above",
+    "reach:cube_grasp",
+    "grasp:cube",
+    "lift:cube",
+    "transport:cube_above",
+    "place:cube_top",
+    "release:cube",
+    "retreat:cube"
+   ],
+   "n": 100,
+   "success": 0.99,
+   "episodes_with_cover_violation": 9,
+   "cover_violations": 2102,
+   "bad": 0,
+   "executed_nominal_plan": 91,
+   "extensions": 0,
+   "stop_reasons": {
+    "task_success": 99,
+    "horizon": 1
+   },
+   "gate": [
+    {
+     "mu_m": 0.03,
+     "accepted": 0,
+     "completed": 0,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    {
+     "mu_m": 0.05,
+     "accepted": 100,
+     "completed": 89,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 1,
+     "causes": {
+      "completed": 89,
+      "residual": 11
+     }
+    },
+    {
+     "mu_m": 0.075,
+     "accepted": 100,
+     "completed": 89,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 1,
+     "causes": {
+      "completed": 89,
+      "residual": 11
+     }
+    },
+    {
+     "mu_m": 0.1,
+     "accepted": 100,
+     "completed": 89,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 1,
+     "causes": {
+      "completed": 89,
+      "residual": 11
+     }
+    },
+    {
+     "mu_m": 0.15,
+     "accepted": 100,
+     "completed": 89,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 1,
+     "causes": {
+      "completed": 89,
+      "residual": 11
+     }
+    }
+   ]
+  },
+  {
+   "scene": "franka_cube_stack",
+   "task": "franka_cube_stack_ltl",
+   "label": "bistl",
+   "spec": "G !bad & F(on_red_blue)",
+   "condition": "perturbed",
+   "plan": [
+    "reach:cube_above",
+    "reach:cube_grasp",
+    "grasp:cube",
+    "lift:cube",
+    "transport:cube_above",
+    "place:cube_top",
+    "release:cube",
+    "retreat:cube"
+   ],
+   "n": 100,
+   "success": 0.97,
+   "episodes_with_cover_violation": 23,
+   "cover_violations": 2326,
+   "bad": 2,
+   "executed_nominal_plan": 49,
+   "extensions": 7,
+   "stop_reasons": {
+    "task_success": 97,
+    "method_stop:property_violated": 2,
+    "horizon": 1
+   },
+   "gate": []
+  },
+  {
+   "scene": "franka_peg_insertion",
+   "task": "franka_peg_insertion",
+   "label": "bistl",
+   "spec": null,
+   "condition": "nominal",
+   "plan": [
+    "reach:peg_above",
+    "reach:peg_grasp",
+    "grasp:peg",
+    "lift:peg",
+    "transport:hole_above",
+    "insert:hole",
+    "release:peg",
+    "retreat:peg"
+   ],
+   "n": 100,
+   "success": 1.0,
+   "episodes_with_cover_violation": 0,
+   "cover_violations": 0,
+   "bad": 0,
+   "executed_nominal_plan": 99,
+   "extensions": 0,
+   "stop_reasons": {
+    "task_success": 100
+   },
+   "gate": [
+    {
+     "mu_m": 0.03,
+     "accepted": 0,
+     "completed": 0,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 1,
+     "exceed_total": 1,
+     "completed_failed": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    {
+     "mu_m": 0.05,
+     "accepted": 100,
+     "completed": 91,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 91,
+      "residual": 8,
+      "uncertified": 1
+     }
+    },
+    {
+     "mu_m": 0.075,
+     "accepted": 100,
+     "completed": 91,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 91,
+      "residual": 8,
+      "uncertified": 1
+     }
+    },
+    {
+     "mu_m": 0.1,
+     "accepted": 100,
+     "completed": 91,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 91,
+      "residual": 8,
+      "uncertified": 1
+     }
+    },
+    {
+     "mu_m": 0.15,
+     "accepted": 100,
+     "completed": 91,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 91,
+      "residual": 8,
+      "uncertified": 1
+     }
+    }
+   ]
+  },
+  {
+   "scene": "franka_peg_insertion",
+   "task": "franka_peg_insertion",
+   "label": "bistl",
+   "spec": null,
+   "condition": "perturbed",
+   "plan": [
+    "reach:peg_above",
+    "reach:peg_grasp",
+    "grasp:peg",
+    "lift:peg",
+    "transport:hole_above",
+    "insert:hole",
+    "release:peg",
+    "retreat:peg"
+   ],
+   "n": 100,
+   "success": 0.33,
+   "episodes_with_cover_violation": 68,
+   "cover_violations": 68,
+   "bad": 0,
+   "executed_nominal_plan": 0,
+   "extensions": 0,
+   "stop_reasons": {
+    "task_success": 33,
+    "method_stop:not_in_winning_set": 67
+   },
+   "gate": []
+  },
+  {
+   "scene": "franka_peg_insertion",
+   "task": "franka_peg_insertion_ltl",
+   "label": "bistl",
+   "spec": "G !bad & F(in_peg_hole)",
+   "condition": "nominal",
+   "plan": [
+    "reach:peg_above",
+    "reach:peg_grasp",
+    "grasp:peg",
+    "lift:peg",
+    "transport:hole_above",
+    "insert:hole",
+    "release:peg",
+    "retreat:peg"
+   ],
+   "n": 100,
+   "success": 1.0,
+   "episodes_with_cover_violation": 0,
+   "cover_violations": 0,
+   "bad": 0,
+   "executed_nominal_plan": 99,
+   "extensions": 0,
+   "stop_reasons": {
+    "task_success": 100
+   },
+   "gate": [
+    {
+     "mu_m": 0.03,
+     "accepted": 0,
+     "completed": 0,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 1,
+     "exceed_total": 1,
+     "completed_failed": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    {
+     "mu_m": 0.05,
+     "accepted": 100,
+     "completed": 91,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 91,
+      "residual": 8,
+      "uncertified": 1
+     }
+    },
+    {
+     "mu_m": 0.075,
+     "accepted": 100,
+     "completed": 91,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 91,
+      "residual": 8,
+      "uncertified": 1
+     }
+    },
+    {
+     "mu_m": 0.1,
+     "accepted": 100,
+     "completed": 91,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 91,
+      "residual": 8,
+      "uncertified": 1
+     }
+    },
+    {
+     "mu_m": 0.15,
+     "accepted": 100,
+     "completed": 91,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 91,
+      "residual": 8,
+      "uncertified": 1
+     }
+    }
+   ]
+  },
+  {
+   "scene": "franka_peg_insertion",
+   "task": "franka_peg_insertion_ltl",
+   "label": "bistl",
+   "spec": "G !bad & F(in_peg_hole)",
+   "condition": "perturbed",
+   "plan": [
+    "reach:peg_above",
+    "reach:peg_grasp",
+    "grasp:peg",
+    "lift:peg",
+    "transport:hole_above",
+    "insert:hole",
+    "release:peg",
+    "retreat:peg"
+   ],
+   "n": 100,
+   "success": 0.33,
+   "episodes_with_cover_violation": 68,
+   "cover_violations": 69,
+   "bad": 0,
+   "executed_nominal_plan": 0,
+   "extensions": 68,
+   "stop_reasons": {
+    "task_success": 33,
+    "method_stop:not_in_winning_set": 67
+   },
+   "gate": []
+  },
+  {
+   "scene": "franka_drawer",
+   "task": "franka_drawer",
+   "label": "bistl",
+   "spec": null,
+   "condition": "nominal",
+   "plan": [
+    "reach:handle_pre",
+    "reach:handle",
+    "grasp:handle",
+    "pull:drawer",
+    "release:handle",
+    "retreat:handle",
+    "reach:box_above",
+    "reach:box_grasp",
+    "grasp:box",
+    "lift:box",
+    "transport:goal_above",
+    "place:goal",
+    "release:box",
+    "retreat:box"
+   ],
+   "n": 100,
+   "success": 1.0,
+   "episodes_with_cover_violation": 0,
+   "cover_violations": 0,
+   "bad": 0,
+   "executed_nominal_plan": 100,
+   "extensions": 0,
+   "stop_reasons": {
+    "task_success": 100
+   },
+   "gate": [
+    {
+     "mu_m": 0.03,
+     "accepted": 0,
+     "completed": 0,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    {
+     "mu_m": 0.05,
+     "accepted": 0,
+     "completed": 0,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    {
+     "mu_m": 0.075,
+     "accepted": 100,
+     "completed": 84,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 84,
+      "residual": 16
+     }
+    },
+    {
+     "mu_m": 0.1,
+     "accepted": 100,
+     "completed": 84,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 84,
+      "residual": 16
+     }
+    },
+    {
+     "mu_m": 0.15,
+     "accepted": 100,
+     "completed": 84,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 84,
+      "residual": 16
+     }
+    }
+   ]
+  },
+  {
+   "scene": "franka_drawer",
+   "task": "franka_drawer",
+   "label": "bistl",
+   "spec": null,
+   "condition": "perturbed",
+   "plan": [
+    "reach:handle_pre",
+    "reach:handle",
+    "grasp:handle",
+    "pull:drawer",
+    "release:handle",
+    "retreat:handle",
+    "reach:box_above",
+    "reach:box_grasp",
+    "grasp:box",
+    "lift:box",
+    "transport:goal_above",
+    "place:goal",
+    "release:box",
+    "retreat:box"
+   ],
+   "n": 100,
+   "success": 1.0,
+   "episodes_with_cover_violation": 0,
+   "cover_violations": 0,
+   "bad": 0,
+   "executed_nominal_plan": 0,
+   "extensions": 0,
+   "stop_reasons": {
+    "task_success": 100
+   },
+   "gate": []
+  },
+  {
+   "scene": "franka_drawer",
+   "task": "franka_drawer_ltl",
+   "label": "bistl",
+   "spec": "G !bad & F(on_box_goal)",
+   "condition": "nominal",
+   "plan": [
+    "reach:handle_pre",
+    "reach:handle",
+    "grasp:handle",
+    "pull:drawer",
+    "release:handle",
+    "retreat:handle",
+    "reach:box_above",
+    "reach:box_grasp",
+    "grasp:box",
+    "lift:box",
+    "transport:goal_above",
+    "place:goal",
+    "release:box",
+    "retreat:box"
+   ],
+   "n": 100,
+   "success": 1.0,
+   "episodes_with_cover_violation": 0,
+   "cover_violations": 0,
+   "bad": 0,
+   "executed_nominal_plan": 100,
+   "extensions": 0,
+   "stop_reasons": {
+    "task_success": 100
+   },
+   "gate": [
+    {
+     "mu_m": 0.03,
+     "accepted": 0,
+     "completed": 0,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    {
+     "mu_m": 0.05,
+     "accepted": 0,
+     "completed": 0,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    {
+     "mu_m": 0.075,
+     "accepted": 100,
+     "completed": 84,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 84,
+      "residual": 16
+     }
+    },
+    {
+     "mu_m": 0.1,
+     "accepted": 100,
+     "completed": 84,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 84,
+      "residual": 16
+     }
+    },
+    {
+     "mu_m": 0.15,
+     "accepted": 100,
+     "completed": 84,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 84,
+      "residual": 16
+     }
+    }
+   ]
+  },
+  {
+   "scene": "franka_drawer",
+   "task": "franka_drawer_ltl",
+   "label": "bistl",
+   "spec": "G !bad & F(on_box_goal)",
+   "condition": "perturbed",
+   "plan": [
+    "reach:handle_pre",
+    "reach:handle",
+    "grasp:handle",
+    "pull:drawer",
+    "release:handle",
+    "retreat:handle",
+    "reach:box_above",
+    "reach:box_grasp",
+    "grasp:box",
+    "lift:box",
+    "transport:goal_above",
+    "place:goal",
+    "release:box",
+    "retreat:box"
+   ],
+   "n": 100,
+   "success": 1.0,
+   "episodes_with_cover_violation": 0,
+   "cover_violations": 0,
+   "bad": 0,
+   "executed_nominal_plan": 0,
+   "extensions": 0,
+   "stop_reasons": {
+    "task_success": 100
+   },
+   "gate": []
+  },
+  {
+   "scene": "franka_fmb",
+   "task": "franka_fmb",
+   "label": "bistl",
+   "spec": null,
+   "condition": "nominal",
+   "plan": [
+    "reach:peg_above",
+    "reach:peg_grasp",
+    "grasp:peg",
+    "lift:peg",
+    "transport:fixture_above",
+    "place:fixture",
+    "release:peg",
+    "reach:peg_above",
+    "reach:peg_grasp",
+    "grasp:peg",
+    "lift:peg",
+    "transport:hole_above",
+    "insert:hole",
+    "release:peg",
+    "push:peg_top",
+    "retreat:peg"
+   ],
+   "n": 100,
+   "success": 1.0,
+   "episodes_with_cover_violation": 1,
+   "cover_violations": 2,
+   "bad": 0,
+   "executed_nominal_plan": 99,
+   "extensions": 0,
+   "stop_reasons": {
+    "task_success": 100
+   },
+   "gate": [
+    {
+     "mu_m": 0.03,
+     "accepted": 0,
+     "completed": 0,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 1,
+     "exceed_total": 1,
+     "completed_failed": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    {
+     "mu_m": 0.05,
+     "accepted": 100,
+     "completed": 95,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 95,
+      "residual": 4,
+      "uncertified": 1
+     }
+    },
+    {
+     "mu_m": 0.075,
+     "accepted": 100,
+     "completed": 95,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 95,
+      "residual": 4,
+      "uncertified": 1
+     }
+    },
+    {
+     "mu_m": 0.1,
+     "accepted": 100,
+     "completed": 95,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 95,
+      "residual": 4,
+      "uncertified": 1
+     }
+    },
+    {
+     "mu_m": 0.15,
+     "accepted": 100,
+     "completed": 95,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 95,
+      "residual": 4,
+      "uncertified": 1
+     }
+    }
+   ]
+  },
+  {
+   "scene": "franka_fmb",
+   "task": "franka_fmb",
+   "label": "bistl",
+   "spec": null,
+   "condition": "perturbed",
+   "plan": [
+    "reach:peg_above",
+    "reach:peg_grasp",
+    "grasp:peg",
+    "lift:peg",
+    "transport:fixture_above",
+    "place:fixture",
+    "release:peg",
+    "reach:peg_above",
+    "reach:peg_grasp",
+    "grasp:peg",
+    "lift:peg",
+    "transport:hole_above",
+    "insert:hole",
+    "release:peg",
+    "push:peg_top",
+    "retreat:peg"
+   ],
+   "n": 100,
+   "success": 0.55,
+   "episodes_with_cover_violation": 42,
+   "cover_violations": 42,
+   "bad": 3,
+   "executed_nominal_plan": 19,
+   "extensions": 0,
+   "stop_reasons": {
+    "method_stop:not_in_winning_set": 42,
+    "task_success": 55,
+    "method_stop:property_violated": 3
+   },
+   "gate": []
+  },
+  {
+   "scene": "franka_fmb",
+   "task": "franka_fmb_ltl",
+   "label": "bistl",
+   "spec": "G !bad & F(in_peg_fixture & !holding_peg & F(latched_peg))",
+   "condition": "nominal",
+   "plan": [
+    "reach:peg_above",
+    "reach:peg_grasp",
+    "grasp:peg",
+    "lift:peg",
+    "transport:fixture_above",
+    "place:fixture",
+    "release:peg",
+    "reach:peg_above",
+    "reach:peg_grasp",
+    "grasp:peg",
+    "lift:peg",
+    "transport:hole_above",
+    "insert:hole",
+    "release:peg",
+    "push:peg_top",
+    "retreat:peg"
+   ],
+   "n": 100,
+   "success": 1.0,
+   "episodes_with_cover_violation": 1,
+   "cover_violations": 2,
+   "bad": 0,
+   "executed_nominal_plan": 99,
+   "extensions": 0,
+   "stop_reasons": {
+    "task_success": 100
+   },
+   "gate": [
+    {
+     "mu_m": 0.03,
+     "accepted": 0,
+     "completed": 0,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 1,
+     "exceed_total": 1,
+     "completed_failed": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    {
+     "mu_m": 0.05,
+     "accepted": 100,
+     "completed": 95,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 95,
+      "residual": 4,
+      "uncertified": 1
+     }
+    },
+    {
+     "mu_m": 0.075,
+     "accepted": 100,
+     "completed": 95,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 95,
+      "residual": 4,
+      "uncertified": 1
+     }
+    },
+    {
+     "mu_m": 0.1,
+     "accepted": 100,
+     "completed": 95,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 95,
+      "residual": 4,
+      "uncertified": 1
+     }
+    },
+    {
+     "mu_m": 0.15,
+     "accepted": 100,
+     "completed": 95,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 95,
+      "residual": 4,
+      "uncertified": 1
+     }
+    }
+   ]
+  },
+  {
+   "scene": "franka_fmb",
+   "task": "franka_fmb_ltl",
+   "label": "bistl",
+   "spec": "G !bad & F(in_peg_fixture & !holding_peg & F(latched_peg))",
+   "condition": "perturbed",
+   "plan": [
+    "reach:peg_above",
+    "reach:peg_grasp",
+    "grasp:peg",
+    "lift:peg",
+    "transport:fixture_above",
+    "place:fixture",
+    "release:peg",
+    "reach:peg_above",
+    "reach:peg_grasp",
+    "grasp:peg",
+    "lift:peg",
+    "transport:hole_above",
+    "insert:hole",
+    "release:peg",
+    "push:peg_top",
+    "retreat:peg"
+   ],
+   "n": 100,
+   "success": 0.55,
+   "episodes_with_cover_violation": 42,
+   "cover_violations": 42,
+   "bad": 3,
+   "executed_nominal_plan": 0,
+   "extensions": 42,
+   "stop_reasons": {
+    "method_stop:not_in_winning_set": 42,
+    "task_success": 55,
+    "method_stop:property_violated": 3
+   },
+   "gate": []
+  },
+  {
+   "scene": "franka_drawer",
+   "task": "franka_drawer_ltl",
+   "label": "drawer_open",
+   "spec": "G !bad & F(open_drawer)",
+   "condition": "nominal",
+   "plan": [
+    "reach:handle_pre",
+    "reach:handle",
+    "grasp:handle",
+    "pull:drawer",
+    "release:handle",
+    "retreat:handle"
+   ],
+   "n": 100,
+   "success": 1.0,
+   "episodes_with_cover_violation": 0,
+   "cover_violations": 0,
+   "bad": 0,
+   "executed_nominal_plan": 100,
+   "extensions": 0,
+   "stop_reasons": {
+    "task_success": 100
+   },
+   "gate": [
+    {
+     "mu_m": 0.03,
+     "accepted": 0,
+     "completed": 0,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    {
+     "mu_m": 0.05,
+     "accepted": 0,
+     "completed": 0,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    {
+     "mu_m": 0.075,
+     "accepted": 100,
+     "completed": 88,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 88,
+      "residual": 12
+     }
+    },
+    {
+     "mu_m": 0.1,
+     "accepted": 100,
+     "completed": 88,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 88,
+      "residual": 12
+     }
+    },
+    {
+     "mu_m": 0.15,
+     "accepted": 100,
+     "completed": 88,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 88,
+      "residual": 12
+     }
+    }
+   ]
+  },
+  {
+   "scene": "franka_drawer",
+   "task": "franka_drawer_ltl",
+   "label": "drawer_open",
+   "spec": "G !bad & F(open_drawer)",
+   "condition": "perturbed",
+   "plan": [
+    "reach:handle_pre",
+    "reach:handle",
+    "grasp:handle",
+    "pull:drawer",
+    "release:handle",
+    "retreat:handle"
+   ],
+   "n": 100,
+   "success": 1.0,
+   "episodes_with_cover_violation": 0,
+   "cover_violations": 0,
+   "bad": 0,
+   "executed_nominal_plan": 100,
+   "extensions": 0,
+   "stop_reasons": {
+    "task_success": 100
+   },
+   "gate": []
+  },
+  {
+   "scene": "franka_drawer",
+   "task": "franka_drawer_ltl",
+   "label": "drawer_hold",
+   "spec": "G !bad & F(open_drawer & F(holding_box))",
+   "condition": "nominal",
+   "plan": [
+    "reach:handle_pre",
+    "reach:handle",
+    "grasp:handle",
+    "pull:drawer",
+    "release:handle",
+    "retreat:handle",
+    "reach:box_above",
+    "reach:box_grasp",
+    "grasp:box",
+    "lift:box",
+    "transport:goal_above",
+    "place:goal",
+    "release:box",
+    "retreat:box"
+   ],
+   "n": 100,
+   "success": 1.0,
+   "episodes_with_cover_violation": 0,
+   "cover_violations": 0,
+   "bad": 0,
+   "executed_nominal_plan": 100,
+   "extensions": 0,
+   "stop_reasons": {
+    "task_success": 100
+   },
+   "gate": [
+    {
+     "mu_m": 0.03,
+     "accepted": 0,
+     "completed": 0,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    {
+     "mu_m": 0.05,
+     "accepted": 0,
+     "completed": 0,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    {
+     "mu_m": 0.075,
+     "accepted": 100,
+     "completed": 84,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 84,
+      "residual": 16
+     }
+    },
+    {
+     "mu_m": 0.1,
+     "accepted": 100,
+     "completed": 84,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 84,
+      "residual": 16
+     }
+    },
+    {
+     "mu_m": 0.15,
+     "accepted": 100,
+     "completed": 84,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 84,
+      "residual": 16
+     }
+    }
+   ]
+  },
+  {
+   "scene": "franka_drawer",
+   "task": "franka_drawer_ltl",
+   "label": "drawer_hold",
+   "spec": "G !bad & F(open_drawer & F(holding_box))",
+   "condition": "perturbed",
+   "plan": [
+    "reach:handle_pre",
+    "reach:handle",
+    "grasp:handle",
+    "pull:drawer",
+    "release:handle",
+    "retreat:handle",
+    "reach:box_above",
+    "reach:box_grasp",
+    "grasp:box",
+    "lift:box",
+    "transport:goal_above",
+    "place:goal",
+    "release:box",
+    "retreat:box"
+   ],
+   "n": 100,
+   "success": 1.0,
+   "episodes_with_cover_violation": 0,
+   "cover_violations": 0,
+   "bad": 0,
+   "executed_nominal_plan": 0,
+   "extensions": 0,
+   "stop_reasons": {
+    "task_success": 100
+   },
+   "gate": []
+  },
+  {
+   "scene": "franka_fmb",
+   "task": "franka_fmb_ltl",
+   "label": "fmb_stage",
+   "spec": "G !bad & F(in_peg_fixture)",
+   "condition": "nominal",
+   "plan": [
+    "reach:peg_above",
+    "reach:peg_grasp",
+    "grasp:peg",
+    "lift:peg",
+    "transport:fixture_above",
+    "place:fixture",
+    "release:peg",
+    "retreat:peg"
+   ],
+   "n": 100,
+   "success": 1.0,
+   "episodes_with_cover_violation": 0,
+   "cover_violations": 0,
+   "bad": 0,
+   "executed_nominal_plan": 100,
+   "extensions": 0,
+   "stop_reasons": {
+    "task_success": 100
+   },
+   "gate": [
+    {
+     "mu_m": 0.03,
+     "accepted": 0,
+     "completed": 0,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    {
+     "mu_m": 0.05,
+     "accepted": 100,
+     "completed": 99,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 99,
+      "residual": 1
+     }
+    },
+    {
+     "mu_m": 0.075,
+     "accepted": 100,
+     "completed": 99,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 99,
+      "residual": 1
+     }
+    },
+    {
+     "mu_m": 0.1,
+     "accepted": 100,
+     "completed": 99,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 99,
+      "residual": 1
+     }
+    },
+    {
+     "mu_m": 0.15,
+     "accepted": 100,
+     "completed": 99,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 99,
+      "residual": 1
+     }
+    }
+   ]
+  },
+  {
+   "scene": "franka_fmb",
+   "task": "franka_fmb_ltl",
+   "label": "fmb_stage",
+   "spec": "G !bad & F(in_peg_fixture)",
+   "condition": "perturbed",
+   "plan": [
+    "reach:peg_above",
+    "reach:peg_grasp",
+    "grasp:peg",
+    "lift:peg",
+    "transport:fixture_above",
+    "place:fixture",
+    "release:peg",
+    "retreat:peg"
+   ],
+   "n": 100,
+   "success": 0.99,
+   "episodes_with_cover_violation": 1,
+   "cover_violations": 1,
+   "bad": 0,
+   "executed_nominal_plan": 99,
+   "extensions": 1,
+   "stop_reasons": {
+    "task_success": 99,
+    "method_stop:not_in_winning_set": 1
+   },
+   "gate": []
+  },
+  {
+   "scene": "franka_fmb",
+   "task": "franka_fmb_ltl",
+   "label": "fmb_direct",
+   "spec": "G !bad & F(latched_peg)",
+   "condition": "nominal",
+   "plan": [
+    "reach:peg_above",
+    "reach:peg_grasp",
+    "grasp:peg",
+    "lift:peg",
+    "transport:hole_above",
+    "insert:hole",
+    "release:peg",
+    "push:peg_top",
+    "retreat:peg"
+   ],
+   "n": 100,
+   "success": 0.99,
+   "episodes_with_cover_violation": 1,
+   "cover_violations": 2,
+   "bad": 1,
+   "executed_nominal_plan": 98,
+   "extensions": 0,
+   "stop_reasons": {
+    "task_success": 99,
+    "method_stop:property_violated": 1
+   },
+   "gate": [
+    {
+     "mu_m": 0.03,
+     "accepted": 0,
+     "completed": 0,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 1,
+     "exceed_total": 1,
+     "completed_failed": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    {
+     "mu_m": 0.05,
+     "accepted": 100,
+     "completed": 92,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 92,
+      "residual": 6,
+      "uncertified": 2
+     }
+    },
+    {
+     "mu_m": 0.075,
+     "accepted": 100,
+     "completed": 92,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 92,
+      "residual": 6,
+      "uncertified": 2
+     }
+    },
+    {
+     "mu_m": 0.1,
+     "accepted": 100,
+     "completed": 92,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 92,
+      "residual": 6,
+      "uncertified": 2
+     }
+    },
+    {
+     "mu_m": 0.15,
+     "accepted": 100,
+     "completed": 92,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "completed": 92,
+      "residual": 6,
+      "uncertified": 2
+     }
+    }
+   ]
+  },
+  {
+   "scene": "franka_fmb",
+   "task": "franka_fmb_ltl",
+   "label": "fmb_direct",
+   "spec": "G !bad & F(latched_peg)",
+   "condition": "perturbed",
+   "plan": [
+    "reach:peg_above",
+    "reach:peg_grasp",
+    "grasp:peg",
+    "lift:peg",
+    "transport:hole_above",
+    "insert:hole",
+    "release:peg",
+    "push:peg_top",
+    "retreat:peg"
+   ],
+   "n": 100,
+   "success": 0.98,
+   "episodes_with_cover_violation": 2,
+   "cover_violations": 2,
+   "bad": 1,
+   "executed_nominal_plan": 97,
+   "extensions": 1,
+   "stop_reasons": {
+    "task_success": 98,
+    "method_stop:property_violated": 1,
+    "method_stop:not_in_winning_set": 1
+   },
+   "gate": []
+  },
+  {
+   "scene": "franka_fmb",
+   "task": "franka_fmb_ltl",
+   "label": "fmb_hole_fixture",
+   "spec": "G !bad & F(in_peg_hole & F(in_peg_fixture))",
+   "condition": "nominal",
+   "plan": [
+    "reach:peg_above",
+    "reach:peg_grasp",
+    "grasp:peg",
+    "lift:peg",
+    "transport:hole_above",
+    "insert:hole",
+    "lift:peg",
+    "transport:fixture_above",
+    "place:fixture",
+    "release:peg",
+    "retreat:peg"
+   ],
+   "n": 100,
+   "success": 0.99,
+   "episodes_with_cover_violation": 1,
+   "cover_violations": 2,
+   "bad": 1,
+   "executed_nominal_plan": 98,
+   "extensions": 0,
+   "stop_reasons": {
+    "task_success": 99,
+    "method_stop:property_violated": 1
+   },
+   "gate": [
+    {
+     "mu_m": 0.03,
+     "accepted": 0,
+     "completed": 0,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 81,
+     "exceed_total": 81,
+     "completed_failed": 0,
+     "causes": {
+      "plan": 100
+     }
+    },
+    {
+     "mu_m": 0.05,
+     "accepted": 100,
+     "completed": 0,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "residual": 98,
+      "uncertified": 2
+     }
+    },
+    {
+     "mu_m": 0.075,
+     "accepted": 100,
+     "completed": 0,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "residual": 98,
+      "uncertified": 2
+     }
+    },
+    {
+     "mu_m": 0.1,
+     "accepted": 100,
+     "completed": 0,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "residual": 98,
+      "uncertified": 2
+     }
+    },
+    {
+     "mu_m": 0.15,
+     "accepted": 100,
+     "completed": 0,
+     "completed_exceed_mu": 0,
+     "exceed_caught": 0,
+     "exceed_total": 0,
+     "completed_failed": 0,
+     "causes": {
+      "residual": 98,
+      "uncertified": 2
+     }
+    }
+   ]
+  },
+  {
+   "scene": "franka_fmb",
+   "task": "franka_fmb_ltl",
+   "label": "fmb_hole_fixture",
+   "spec": "G !bad & F(in_peg_hole & F(in_peg_fixture))",
+   "condition": "perturbed",
+   "plan": [
+    "reach:peg_above",
+    "reach:peg_grasp",
+    "grasp:peg",
+    "lift:peg",
+    "transport:hole_above",
+    "insert:hole",
+    "lift:peg",
+    "transport:fixture_above",
+    "place:fixture",
+    "release:peg",
+    "retreat:peg"
+   ],
+   "n": 100,
+   "success": 0.98,
+   "episodes_with_cover_violation": 2,
+   "cover_violations": 2,
+   "bad": 1,
+   "executed_nominal_plan": 97,
+   "extensions": 1,
+   "stop_reasons": {
+    "task_success": 98,
+    "method_stop:property_violated": 1,
+    "method_stop:not_in_winning_set": 1
+   },
+   "gate": []
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+# eddies.cert.tables.table1_ci: paired test-episode bootstrap of Table 1 (B draws, stratified by task)
+dirs: [table1]                              # results/<dir>/<variant>.json written with --episodes [--swap]
+robot_dirs: {g1: table1_robots/g1, leap: table1_robots/leap, aero: table1_robots/aero}
+B: 2000
+seed: 0
+mu_cm: [5, 7.5, 10]
+rows:
+  - [Eddies, eddie]
+  - ["Eddies, one reference model", eddie_refonly]
