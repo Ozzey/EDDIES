@@ -5,7 +5,7 @@
 
 supp_gains       one-step gain a_i vs spectral radius, and the factor one run passes to the next Eddie
 supp_gate_tasks  finished runs vs tolerance for every task, self-calibrating vs fixed gate
-supp_qtrace      envelope level q_t of the self-calibrating gate on each held-out Franka task
+supp_qtrace      conformal quantile q_t of the self-calibrating gate on each held-out Franka task
 supp_dynmap      PCA of the dynamics descriptors and descriptor distances (same Eddie / other Eddie / PhysX)
 
 Light: reads result JSONs only.
@@ -126,7 +126,7 @@ def fig_qtrace():
         r = json.loads((R / "adaptive" / f"adaptive_{task}.json").read_text())
         q = [r["q0"]] + r["rows"]["0.05"]["trace"]["q"]
         ax.plot(np.arange(len(q)), q, color=col, lw=1.4, label=name)
-    ax.set_xlabel("episode of the new task"), ax.set_ylabel("envelope level $q_t$")
+    ax.set_xlabel("episode of the new task"), ax.set_ylabel("conformal quantile $q_t$")
     grid(ax)
     ax.legend(loc="upper right", ncol=4, handlelength=1.6, columnspacing=1.2)
     save(fig, "supp_qtrace")

@@ -11,7 +11,7 @@ MuJoCo, Isaac Sim (PhysX) and the robot, with the same eight Eddies, the same St
 | low-level control | the 1 kHz compliant Cartesian controller of CRISP (San José et al., 2025) tracks the 50 Hz Eddie commands; gains fixed for every episode (the certificate is of this closed loop) |
 | command `e` at 50 Hz | TCP position [m], hand rotation vector [rad], gripper aperture [m], force limit [N], normalized as in simulation (`eddies/envs/tasks/franka_base.py`, `configs/robots/franka.yaml: embedding`); slew bound ρ = 0.012 per 20 ms step in the metric M = diag(1, 1, 1, 0.3, 0.3, 0.3, 0.15, 0.05) on `e` (W is its pose part, Table B.1) |
 | measured `z` | the TCP pose from the robot state and the aperture, logged each tick before the new command is applied; only the six pose coordinates are certified |
-| perception | a static Intel RealSense camera, calibrated hand-to-eye (`results/real/calib/T_base_cam.yaml`: `T_base_cam`, intrinsics `K`, 1280×720, reprojection 0.91 px over 12 samples); cube poses in the robot base frame from two sources, boxes in the RGB image (FoundationPose) and heights above the table from the aligned depth (Fig. 8b, c) |
+| perception | a static Intel RealSense camera, calibrated eye-to-hand (`results/real/calib/T_base_cam.yaml`: `T_base_cam`, intrinsics `K`, 1280×720, reprojection 0.91 px over 12 samples); cube poses in the robot base frame from two sources, boxes in the RGB image (FoundationPose) and heights above the table from the aligned depth (Fig. 8b, c) |
 | cubes | two 5 cm cubes: a grey one to pick, a black one to stack on (`red_cube` and `blue_cube` in the code); poses randomized per episode as in simulation (nominal grey at (0.50, −0.12) m, black at (0.50, +0.12) m, ±6 cm in x, ±5 cm in y, ±0.6 rad yaw) |
 | the Eddie stream (8 Eddies, `FrankaStackTokens.nominal_plan`) | `reach:cube_above` → `reach:cube_grasp` → `grasp:cube` → `lift:cube` → `transport:cube_above` → `place:cube_top` → `release:cube` → `retreat:cube` |
 | success | after release the grey cube rests on the black one: centres within 20 mm in xy, 44–56 mm height difference, black cube not lifted, grey cube at rest, gripper retreated ≥ 5 cm (the same `task_success` as in MuJoCo) |
@@ -57,7 +57,7 @@ with 298 / 298 caught, self-calibrating 96 / 4 with 287 / 298; Isaac Sim: 31 / 1
 | in `results/real/` | |
 | --- | --- |
 | `table3_robot_rows.json` | the two robot rows of Table 3 (the values reported in the paper, as above) |
-| `calib/T_base_cam.yaml` | camera calibration (hand-to-eye transform, intrinsics) |
+| `calib/T_base_cam.yaml` | camera calibration (eye-to-hand transform, intrinsics) |
 
 | in `assets/videos/real/` | |
 | --- | --- |
